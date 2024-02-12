@@ -55,6 +55,8 @@ $breakpoint-mobile: 460px;
   .btn {
     &_log_in {
       display: none;
+    
+      border: 0px;
     }
     &_sign_up {
       display: none;

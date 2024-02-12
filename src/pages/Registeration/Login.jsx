@@ -137,7 +137,7 @@ function Login() {
         <div className="logolabel">
           <img
             src="src\assets\images\ShelterStrideSideLogo.svg"
-            alt="Shelters Stride"
+            alt="SSlogo"
           />
         </div>
         <div className="Login-container">

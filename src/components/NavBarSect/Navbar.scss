@@ -87,7 +87,7 @@ $breakpoint-mobile: 460px;
 
 .navbar-logo {
   width: 178.853px;
-  height: 41.802px;
+  height: 41.2px;
   // justify-self: start;
   // margin-left: 20px;
   // cursor: pointer;
@@ -103,27 +103,33 @@ $breakpoint-mobile: 460px;
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(5, auto);
-  grid-gap: 10px;
+  grid-gap: 5px;
   list-style: none;
   text-align: center;
-  width: 50vw;
+  width: 40vw;
+ 
+  margin-top: 10px;
   justify-content: start;
   margin-right: 2rem;
 }
 
 .nav-item {
+ 
+  margin-top: 20px;
   display: flex;
   align-items: center;
-  height: 80px;
+  height: 50px;
 }
 
 .nav-links {
+
   color: rgba(38, 50, 56, 1);
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
 
 .nav-links:hover {
+    border: 0px;
   background-color: #6c9;
   border-radius: 4px;
   transition: all 0.2s ease-out;
@@ -136,17 +142,21 @@ $breakpoint-mobile: 460px;
 
 .nav-links-mobile {
   display: none;
+    border: 0px;
 }
 .nav-links-mobile-log-in {
   display: none;
+  
 }
 
 .menu-icon {
   display: none;
+  
 }
 
 @media (max-width: $breakpoint-mobile) {
   .Navbar {
+     
     font-size: 1.2rem;
   }
   .NavbarItems {
@@ -154,6 +164,7 @@ $breakpoint-mobile: 460px;
   }
   // nav menu responsiveness
   .nav-menu {
+    
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -166,6 +177,7 @@ $breakpoint-mobile: 460px;
   }
 
   .nav-menu.active {
+    
     background: white;
     left: 0;
     opacity: 1;
@@ -226,6 +238,7 @@ $breakpoint-mobile: 460px;
 
   .nav-links-mobile-log-in {
     display: block;
+    
     text-align: center;
     padding: 0.8rem;
     margin-top: 0.8rem;
