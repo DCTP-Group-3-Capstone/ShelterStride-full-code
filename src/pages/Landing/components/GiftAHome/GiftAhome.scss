@@ -23,9 +23,9 @@ $breakpoint-mobiles: 540px;
 
 $breakpoint-mobile: 430px;
 
-$breakpoint-mobile-a: 375px;
 
-$breakpoint-mobile-xxs: 360px;
+
+$breakpoint-mobile-xxs: 390px;
 
 $breakpoint-mobile-xxss: 280px;
 
@@ -799,7 +799,8 @@ margin-left: 0px;
     @media screen and (max-width: $breakpoint-mobile-sm){
 
       .giftAHome{
-        
+
+     
         display: flex;
         margin-left: 50px;
         flex-direction: column;
@@ -954,6 +955,7 @@ margin-left: 0px;
 
         .giftAHome{
           display: flex;
+ 
           margin-left: 0px;
           flex-direction: column;
           max-width: 492px;
@@ -1108,8 +1110,9 @@ margin-left: 0px;
 
           .giftAHome{
     
+        
             display: flex;
-            margin-left: 0px;
+            margin-left: 15px;
             flex-direction: column;
             max-width: 390px;
           
@@ -1265,9 +1268,9 @@ margin-left: 0px;
             .giftAHome{
               display: flex;
        
-              margin-left: 0px;
+              margin-left: 30px;
               flex-direction: column;
-              max-width: 340px;
+              max-width: 350px;
             
             
               .giftAHomeTextandpicture {
@@ -1324,7 +1327,7 @@ margin-left: 0px;
                 margin-left: 0em;
                 flex-direction: column;
                 width: 280px;
-                margin-top: 2em;
+                margin-top: -6em;
                 height: 750px;
             
               }
