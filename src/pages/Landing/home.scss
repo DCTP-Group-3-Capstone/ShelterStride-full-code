@@ -1,0 +1,729 @@
+@use "../../sass/components/button" as *;
+// @use "../../sass/components/input" as *;
+@import "../../sass/base/variables";
+
+//general home page styling
+.home {
+  background-color: $white;
+  color: $black-500;
+  h4 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 30px;
+    line-height: 48px;
+  }
+  .marginSides {
+    margin: 0 1.25rem;
+  }
+}
+///hero section styling
+.heroSect {
+  color: $white;
+  .heroContent {
+    padding: 5px 20px 20px 25px;
+    background-color: transparent;
+    // margin: auto;
+    width: auto;
+
+    span {
+      color: $green-500;
+    }
+
+    .heroText {
+      width: 95%;
+    }
+    //hero button section styling
+    .heroBtn {
+      .pryBtn {
+        @include blueBtn;
+        width: 40%;
+      }
+      .secBtn {
+        @include outlineBtn;
+        color: $white;
+        width: 60%;
+        border: $white solid 1px;
+      }
+
+      //button wrapper main styling
+      // border: 3px solid orange;
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      margin: auto;
+    }
+  }
+}
+
+//commitment section styling
+.commitment {
+  //   border: 3px solid purple;
+
+  h4 {
+    color: $green-500;
+  }
+  img {
+    width: 100%;
+  }
+  .cardContent {
+    display: flex;
+    padding: 5rem 0 2.5rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    display: none;
+  }
+}
+
+//result section styling
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin: 4rem 0;
+  //   border: 3px solid magenta;
+  .resultText {
+    h3 {
+      text-align: center;
+    }
+  }
+
+  .statsWrapper {
+    margin-bottom: 50px;
+    h4 {
+      padding: 0;
+      margin: 0;
+    }
+    // border: 2px solid purple;
+    hr {
+      border: 1px solid $green-500;
+      width: 80%;
+    }
+    text-align: center;
+    .neutral400 {
+      color: $black-400;
+      padding: 8px 0 24px 0;
+      // border: 2px solid yellow;
+    }
+  }
+}
+
+//Gift A Home Section styling
+
+.giftAHome {
+  h3 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  margin-bottom: 2.5rem;
+  .giftCardSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 30px;
+  }
+  .giftCard {
+    background-color: $green-100;
+    border: $green-100 1px solid;
+    border-radius: 16px;
+
+    .giftCardImg {
+      border-radius: 16px 16px 0 0;
+      width: fit-content;
+
+      img {
+        width: 100%;
+        border-radius: 13px 13px 0 0;
+      }
+    }
+
+    .btnWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button {
+        @include textBtn;
+        color: $blue-500;
+        display: flex;
+        gap: 8px;
+      }
+    }
+
+    .cardText {
+      padding: 0 20px;
+    }
+  }
+}
+
+//What we do section
+
+.whatWeDoSect {
+  .weStoryWrapping {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 0;
+
+    .weStoryImg {
+      img {
+        width: 100%;
+      }
+    }
+    .weStoryText {
+      h6 {
+        font-weight: 200;
+      }
+      hr {
+        color: $black-300;
+      }
+    }
+  }
+  .weCardsContainer {
+    // border: 2px solid indianred;
+    margin-top: 48px;
+    .cardBox {
+      display: flex;
+      flex-direction: column;
+      color: $white;
+      .cardContent {
+        background: $blue-500;
+        border-radius: 16px;
+        border: 1px solid $blue-500;
+        padding: 0 3px 1.25rem;
+        margin-bottom: 30px;
+        h4 {
+          text-align: center;
+        }
+        p {
+          padding: 0 1.25rem;
+        }
+        .cardImage {
+          display: none;
+        }
+        .cardBtnWrapper {
+          //   border: 3px solid orange;
+          button {
+            display: flex;
+            @include outlineBtn;
+            color: $green-300;
+            //make the button in OurMission card invisible
+            :first-child {
+              display: none;
+            }
+          }
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+//ShelterStride Blog styling
+
+.shelterStrideBlog-wrapper {
+  // border: 3px solid maroon;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin: 2rem 0;
+  margin-bottom: 3rem;
+  .headerWrapper {
+    // border: 2px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+    //main heading and button styling
+    .blogHeaderBtn {
+      button {
+        @include textBtn;
+        font-weight: 200;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 0;
+        // border: 3px solid orange;
+        color: $black-400;
+
+        // img {
+        //   // border: 3px solid brown;
+        // }
+      }
+    }
+  }
+  .blogPreviewWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+  }
+  //individual card housing
+  .blogPreview {
+    // border: 3px solid palegreen;
+    border-radius: 20px;
+    background: $white;
+    box-shadow: 0px 2px 14px 0px $black-100;
+    padding-bottom: 30px;
+
+    .blogImg {
+      width: fit-content;
+
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-bottom: 10px;
+      h4 {
+        // border: 2px solid burlywood;
+        margin: 0 20px;
+      }
+      img {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+      }
+    }
+
+    .blogBtn {
+      // border: 3px solid orange;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 20px;
+      // text-align: center;
+      button {
+        @include textBtn;
+        color: $green-500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+    }
+    .blogDate {
+      // border: 2px solid orange;
+      display: flex;
+      gap: 16px;
+      margin: 0 20px;
+    }
+  }
+  .blogSectBtnWrapper {
+    button {
+      display: none;
+    }
+  }
+}
+
+//partners section styling
+.partnersWrapper {
+  margin: 3.5rem 0;
+  // border: 3px solid blue;
+  .partnersText {
+    // border: 3px solid indianred;
+    h3 {
+      text-align: center;
+    }
+  }
+
+  .partnersIcon {
+    // border: 3px solid salmon;
+    margin: 4rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    // align-items: center;
+    justify-content: space-between;
+    img {
+      width: 20%;
+      // border: 3px solid purple;
+    }
+  }
+}
+
+//media query styling
+
+//small devices (large phones
+@media only screen and (min-width: 600px) {
+  .home {
+    // border: 3px solid slateblue;
+
+    .marginSides {
+      width: 70%;
+      margin: auto;
+    }
+  }
+  .heroSect {
+    .heroContent {
+      margin: auto;
+      // border: 3px solid red;
+      width: 80%;
+    }
+  }
+}
+
+//medium devices(tablets)
+@media only screen and (min-width: 768px) {
+  .home {
+    // border: 3px solid red;
+
+    .marginSides {
+      width: 60%;
+      margin: auto;
+    }
+  }
+  .heroSect {
+    .heroContent {
+      margin: auto;
+      // border: 3px solid red;
+      width: 60%;
+    }
+  }
+}
+
+//media query styling
+@media only screen and (min-width: 992px) {
+  //general styling
+  .home {
+    // border: 3px solid blue;
+    h4 {
+      font-size: 32px;
+      font-weight: 500;
+    }
+    h3 {
+      font-size: 48px;
+      line-height: 72px;
+      font-weight: 600;
+    }
+    .marginSides {
+      width: auto;
+      // margin: 0 4rem;
+    }
+  }
+  //hero section styling
+  .heroSect {
+    // padding: 0 6rem;
+    h3 {
+      font-size: 60px;
+      margin-bottom: 25px;
+      br {
+        display: block;
+        margin-bottom: 0.5em;
+      }
+    }
+    p {
+      font-size: 18px;
+    }
+
+    .heroContent {
+      padding: 0.3rem 1.8rem 3.2rem 7.5rem;
+      width: auto;
+      // border: 2px solid maroon;
+
+      .heroText {
+        width: 32.5rem;
+      }
+      //hero button section styling
+      .heroBtn {
+        flex-direction: row;
+        width: 25%;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+        margin-top: 30px;
+        // border: 3px solid fuchsia;
+      }
+    }
+  }
+
+  // commitment section styling
+  .commitment {
+    margin: 0 6rem;
+    margin-bottom: 4rem;
+    h4 {
+      size: 48px;
+    }
+    .cardText {
+      width: 50%;
+      margin-right: 50px;
+      margin-left: 0;
+      padding-left: 0;
+      img {
+        width: 60%;
+      }
+    }
+
+    .cardContent {
+      // padding: 5rem 0 2.5rem 0;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      // align-content: end;
+      gap: 0.5rem;
+    }
+  }
+
+  //result styling
+  .result {
+    flex-direction: row;
+    justify-content: space-between;
+    // align-items: center;
+    // align-content: center;
+    gap: 40px;
+    margin: 0.625rem 6rem;
+    // border: 2px solid greenyellow;
+    .resultText {
+      width: 40%;
+      // border: 3px solid orange;
+      gap: 10px;
+      h3 {
+        text-align: start;
+        // border: 3px solid purple;
+      }
+    }
+
+    .statsSection {
+      // border: 3px solid hotpink;
+      display: flex;
+      h4 {
+        font-size: 22px;
+      }
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .statsWrapper {
+      margin-bottom: 50px;
+      h4 {
+        padding: 0;
+        margin: 0;
+      }
+      // border: 2px solid purple;
+      hr {
+        // border: 1px solid $green-500;
+        width: 80%;
+      }
+      text-align: center;
+      .neutral400 {
+        color: $black-400;
+        padding: 8px 0 24px 0;
+        // border: 2px solid yellow;
+      }
+    }
+  }
+
+  //Gift A Home Section styling
+
+  .giftAHome {
+    margin: 4rem 6rem;
+    // border: 3px solid firebrick;
+    h4 {
+      font-size: 24px;
+      margin: 0.5rem 0;
+    }
+    h3 {
+      text-align: start;
+      margin-bottom: 2rem;
+    }
+    .giftAHomeText {
+      width: 60%;
+      margin-bottom: 2rem;
+    }
+    .giftCardSection {
+      flex-direction: row;
+      display: flex;
+      justify-content: space-between;
+      gap: 7rem;
+    }
+    .giftCard {
+      // border: 3px solid darkblue;
+      width: 50%;
+      height: 41.5rem;
+
+      .giftCardImg {
+        display: inline-flex;
+        width: 100%;
+        border-radius: 16px 16px 0 0;
+
+        img {
+          width: 100%;
+          border-radius: 13px 13px 0 0;
+        }
+        width: fit-content;
+      }
+      .giftTextBtn {
+        // border: 4px solid cadetblue;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 17rem;
+        margin: 0;
+        margin-top: 10px;
+        p {
+          margin: 0;
+          height: 9rem;
+          margin-top: 10px;
+          // border: 3px solid orange;
+        }
+        h4 {
+          margin: 0;
+        }
+      }
+      .btnWrapper {
+        // border: 3px solid purple;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 5rem;
+        button {
+          gap: 8px;
+        }
+      }
+
+      .cardText {
+        padding: 0 50px;
+      }
+    }
+  }
+
+  //What we do section
+
+  .whatWeDoSect {
+    // padding: 0 6rem;
+    margin: 2rem 6rem;
+    // margin-top: 8rem;
+    .weStoryWrapping {
+      flex-direction: row;
+      align-items: center;
+      gap: 8rem;
+      // border: 3px solid darkblue;
+      margin: 8rem 0;
+
+      .weStoryImg {
+        img {
+          width: 100%;
+        }
+      }
+      .weStoryText {
+        width: 50%;
+        h6 {
+          font-weight: 200;
+        }
+        hr {
+          color: $black-300;
+        }
+      }
+    }
+    .weCardsContainer {
+      // border: 2px solid indianred;
+      margin-top: 3.5rem;
+      .cardBox {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin: 3.5rem 0;
+        .cardContent {
+          width: 25%;
+          h4 {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  //ShelterStride Blog styling
+
+  .shelterStrideBlog-wrapper {
+    margin: 3.5rem 6rem;
+    // border: 3px solid maroon;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    // h4 {
+    //   font-size: 24px;
+    //   font-weight: 600;
+    // }
+    .headerWrapper {
+      // border: 2px solid blue;
+      justify-content: center;
+
+      //main heading and button styling
+      .blogHeaderBtn {
+        button {
+          display: none;
+        }
+      }
+    }
+    .blogPreviewWrapper {
+      flex-direction: row;
+      gap: 2.8rem;
+    }
+    //individual card housing
+    .blogPreview {
+      // border: 3px solid palegreen;
+      width: 33%;
+      .blogImg {
+        h4 {
+          // border: 2px solid burlywood;
+          margin: 0 20px;
+          font-size: 22px;
+          font-weight: 600;
+        }
+      }
+    }
+    .blogSectBtnWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 3rem 0;
+      //   border: 3px solid teal;
+      button {
+        @include blueBtn;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  //partners section styling
+  .partnersWrapper {
+    // border: 3px solid blue;
+    margin: 3.5rem 6rem;
+    .partnersText {
+      width: 36rem;
+      margin-bottom: 3rem;
+      h3 {
+        text-align: start;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .partnersIcon {
+      // border: 3px solid salmon;
+      gap: 4rem;
+      align-items: center;
+      justify-content: space-around;
+      img {
+        width: 10%;
+        // border: 3px solid purple;
+      }
+    }
+  }
+}

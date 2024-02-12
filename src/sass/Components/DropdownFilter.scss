@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.05rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+}
+
+.dropdown-button {
+  box-sizing: border-box;
+  height: 36px;
+  width: 150px;
+  background-color: white;
+  color: blue;
+  border: 1px solid red;
+  border-radius: 1px;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-text {
+  margin-left: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  position: absolute;
+  list-style-type: none;
+  margin: 5px 0;
+  padding: 0;
+  border: 1px solid grey;
+  width: 150px;
+}
+
+.menu > li {
+  margin: 0;
+  background-color: #fff;
+}
+
+.menu > li:hover {
+  background-color: green;
+}
+
+.menu > li > button {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 5px;
+  font: inherit;
+  cursor: pointer;
+}

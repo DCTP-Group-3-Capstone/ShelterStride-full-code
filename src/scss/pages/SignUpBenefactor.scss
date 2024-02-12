@@ -1,0 +1,900 @@
+//font-family
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+//mobile size declaration
+
+$breakpoint-mobile-xl: 1200px;
+
+$breakpoint-mobile-lg: 992px;
+
+$breakpoint-mobile-lgg: 912px;
+
+$breakpoint-mobile-m: 820px;
+
+$breakpoint-mobile-md: 769px;
+
+$breakpoint-mobiles-sm: 600px;
+
+$breakpoint-mobile-sm: 576px;
+
+$breakpoint-mobile-smm: 540px;
+
+
+$breakpoint-mobiles-smm: 480px;
+
+$breakpoint-mobile: 430px;
+
+$breakpoint-mobile-xxs: 360px;
+
+$breakpoint-mobile-xxss: 280px;
+
+//colours variables
+@import "../../sass/base/variables";
+
+//page conatainer
+.signupben-page {
+overflow-x: hidden;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; // 100% of the viewport height
+
+
+  .logolabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logolabel img {
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+
+
+  }
+
+  .signupben-container {
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    display: grid;
+
+
+  }
+
+  .signupben-container h2 {
+    font-size: 32px;
+    font-family: "Poppins";
+    color: $black-500;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+
+.pro-bar{
+
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  height: 10px;
+}
+
+  //progress bar styling
+  .progress-bar {
+    height: 10px;
+    border-radius: 10px;
+
+    background-color: $green-500;
+
+  }
+
+  //page labels
+  .page-indicator {
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Poppins";
+    text-align: left;
+    margin-top: 5px;
+
+  }
+
+  .signupform-ben {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $green-500;
+    border-radius: 10px;
+    margin-top: 50px;
+    width: 446px;
+    height: 636px;
+
+
+  }
+
+  .signupben-Box {
+    display: flex;
+    margin: 5px auto;
+    width: 390px;
+    height: 540px;
+    flex-direction: column;
+
+  }
+
+  .signupben-form label {
+    margin: 35px 0 15px 0px;
+    color: $black-500;
+    font-size: 18px;
+    font-family: "Poppins";
+    font-weight: 500;
+    display: flex;
+
+  }
+
+  .signupben-group {
+    align-self: center;
+    width: 390px;
+    display: flex;
+    align-items: center;
+    height: 48px;
+    background: #fffdfd;
+    border: 1.5px solid $green-500;
+    border-radius: 16px;
+
+  }
+  //default input changes
+  .signupben-group {
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      transition: background-color 5000s ease-in-out 0s;
+      background-color: transparent;
+    }
+  }
+
+  .signupben-group img {
+    margin: 0px 10px;
+
+  }
+
+  .signupben-group .gen {
+    margin: 0px 5px;
+  }
+
+  .signupben-group input {
+    background: transparent;
+    height: 24px;
+    width: 322px;
+    border: none;
+    color: $black-500;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Poppins";
+
+
+  }
+
+  .other-input{
+    margin-left: 20px;
+ 
+  }
+
+ .password-toggle img {
+    margin: 5px 20px 0px 0px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .signupben-form .error-message,
+  .password-message {
+    font-size: 10px;
+    color: red;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  .signupben-but button {
+    outline: none;
+    appearance: none; // Remove default arrow in some browsers
+    width: 390px;
+    height: 48px;
+    color: $black-50;
+    border: 1px solid $blue-500;
+    font-size: 18px;
+    background-color: $blue-500;
+    margin: 0px 0px 0px 28px;
+    border-radius: 16px;
+    font-weight: 600px;
+
+    &:hover {
+      background-color: $blue-300;
+    }
+
+  }
+
+  .terms-text {
+    margin: 10px 0 0px 0px;
+    font-size: 12px;
+    font-weight: 400px;
+    color: $black-500;
+    text-align: center;
+
+    a {
+      color: $blue-500;
+      text-decoration: none;
+      //   font-weight: 400;
+      margin: 0 5px;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $blue-200;
+      }
+    }
+
+  }
+
+  .signin-text {
+    font-size: 18px;
+    font-weight: 400px;
+    text-align: center;
+    color: $black-500;
+    margin-top: 30px;
+
+    a {
+      color: $green-500;
+      text-decoration: none;
+      //   font-weight: 400;
+      margin: 0 5px;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $green-200;
+      }
+    }
+ 
+  }
+}
+
+
+@media (max-width: $breakpoint-mobile-xxss) {
+
+  //page conatainer
+  .signupben-page {
+  overflow-x: hidden;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; // 100% of the viewport height
+  
+  
+    .logolabel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .logolabel img {
+      justify-content: center;
+      align-content: center;
+      margin-top: 10px;
+  
+  
+    }
+  
+    .signupben-container {
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      display: grid;
+  
+  
+    }
+  
+    .signupben-container h2 {
+      font-size: 32px;
+      font-family: "Poppins";
+      color: $black-500;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  
+    }
+  
+  .pro-bar{
+  
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    height: 10px;
+  }
+  
+    //progress bar styling
+    .progress-bar {
+      height: 10px;
+      border-radius: 10px;
+  
+      background-color: $green-500;
+  
+    }
+  
+    //page labels
+    .page-indicator {
+      font-weight: 400;
+      font-size: 18px;
+      font-family: "Poppins";
+      text-align: left;
+      margin-top: 5px;
+  
+    }
+  
+    .signupform-ben {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid $green-500;
+      border-radius: 10px;
+      margin-top: 50px;
+      width: 446px;
+      height: 636px;
+  
+  
+    }
+  
+    .signupben-Box {
+      display: flex;
+      margin: 5px auto;
+      width: 390px;
+      height: 540px;
+      flex-direction: column;
+  
+    }
+  
+    .signupben-form label {
+      margin: 35px 0 15px 0px;
+      color: $black-500;
+      font-size: 18px;
+      font-family: "Poppins";
+      font-weight: 500;
+      display: flex;
+  
+    }
+  
+    .signupben-group {
+      align-self: center;
+      width: 280px;
+      display: flex;
+      align-items: center;
+      height: 48px;
+      background: #fffdfd;
+      border: 1.5px solid $green-500;
+      border-radius: 16px;
+  
+    }
+    //default input changes
+    .signupben-group {
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+        background-color: transparent;
+      }
+    }
+  
+    .signupben-group img {
+      margin: 0px 10px;
+  
+    }
+  
+    .signupben-group .gen {
+      margin: 0px 5px;
+    }
+  
+    .signupben-group input {
+      background: transparent;
+      height: 24px;
+      width: 280px;
+      border: none;
+      color: $black-500;
+      outline: none;
+      font-weight: 600;
+      font-size: 16px;
+      font-family: "Poppins";
+  
+  
+    }
+
+    .other-input{
+      margin-left: 20px;
+   
+    }
+  
+.password-toggle img {
+      margin: 5px 0px 0px 0px;
+      right: 0px;
+   
+      cursor: pointer;
+    }
+  
+    .signupben-form .error-message,
+    .password-message {
+      font-size: 10px;
+      color: red;
+      text-align: center;
+      margin-top: 0px;
+    }
+  
+    .signupben-but button {
+      outline: none;
+      appearance: none; // Remove default arrow in some browsers
+      width: 390px;
+      height: 48px;
+      color: $black-50;
+      border: 1px solid $blue-500;
+      font-size: 18px;
+      background-color: $blue-500;
+      margin: 0px 0px 0px 28px;
+      border-radius: 16px;
+      font-weight: 600px;
+  
+      &:hover {
+        background-color: $blue-300;
+      }
+  
+    }
+  
+    .terms-text {
+      margin: 10px 0 0px 0px;
+      font-size: 12px;
+      font-weight: 400px;
+      text-align: center;
+  
+      a {
+        color: $blue-500;
+        text-decoration: none;
+        //   font-weight: 400;
+        margin: 0 5px;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: $blue-200;
+        }
+      }
+  
+    }
+  
+    .signin-text {
+      font-size: 18px;
+      font-weight: 400px;
+      text-align: center;
+      color: $black-500;
+      margin-top: 0px;
+  
+      a {
+        color: $green-500;
+        text-decoration: none;
+        //   font-weight: 400;
+        margin: 0 5px;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: $green-200;
+        }
+      }
+   
+    }
+  }
+  
+    
+
+
+
+}
+
+@media (max-width: $breakpoint-mobile-xxs) {
+
+  //page conatainer
+  .signupben-page {
+  overflow-x: hidden;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; // 100% of the viewport height
+  
+  
+    .logolabel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .logolabel img {
+      justify-content: center;
+      align-content: center;
+      margin-top: 10px;
+  
+  
+    }
+  
+    .signupben-container {
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      display: grid;
+  
+  
+    }
+  
+    .signupben-container h2 {
+      font-size: 32px;
+      font-family: "Poppins";
+      color: $black-500;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  
+    }
+  
+  .pro-bar{
+  
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    height: 10px;
+  }
+  
+    //progress bar styling
+    .progress-bar {
+      height: 10px;
+      border-radius: 10px;
+  
+      background-color: $green-500;
+  
+    }
+  
+    //page labels
+    .page-indicator {
+      font-weight: 400;
+      font-size: 18px;
+      font-family: "Poppins";
+      text-align: left;
+      margin-top: 5px;
+  
+    }
+  
+    .signupform-ben {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid $green-500;
+      border-radius: 10px;
+      margin-top: 50px;
+      width: 446px;
+      height: 636px;
+  
+  
+    }
+  
+    .signupben-Box {
+      display: flex;
+      margin: 5px auto;
+      width: 390px;
+      height: 540px;
+      flex-direction: column;
+  
+    }
+  
+    .signupben-form label {
+      margin: 35px 0 15px 0px;
+      color: $black-500;
+      font-size: 18px;
+      font-family: "Poppins";
+      font-weight: 500;
+      display: flex;
+  
+    }
+  
+    .signupben-group {
+      align-self: center;
+      width: 360px;
+      display: flex;
+      align-items: center;
+      height: 48px;
+      background: #fffdfd;
+      border: 1.5px solid $green-500;
+      border-radius: 16px;
+  
+    }
+    //default input changes
+    .signupben-group {
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+        background-color: transparent;
+      }
+    }
+  
+    .signupben-group img {
+      margin: 0px 10px;
+  
+    }
+  
+    .signupben-group .gen {
+      margin: 0px 5px;
+    }
+  
+    .signupben-group input {
+   
+      height: 24px;
+      width: 300px;
+      border: none;
+      color: $black-500;
+      outline: none;
+      font-weight: 400;
+      font-size: 12px;
+      font-family: "Poppins";
+  
+  
+    }
+
+    .other-input{
+      margin-left: 20px;
+   
+    }
+  
+    .password-toggle img {
+      margin: 5px 0px 0px 0px;
+
+      right: 0px;
+     
+      cursor: pointer;
+    }
+  
+    .signupben-form .error-message,
+    .password-message {
+      font-size: 10px;
+      color: red;
+      text-align: center;
+      margin-top: 0px;
+    }
+  
+    .signupben-but button {
+      outline: none;
+      appearance: none; // Remove default arrow in some browsers
+      width: 390px;
+      height: 48px;
+      color: $black-50;
+      border: 1px solid $blue-500;
+      font-size: 18px;
+      background-color: $blue-500;
+      margin: 0px 0px 0px 28px;
+      border-radius: 16px;
+      font-weight: 600px;
+  
+      &:hover {
+        background-color: $blue-300;
+      }
+  
+    }
+  
+    .terms-text {
+      margin: 10px 0 0px 0px;
+      font-size: 12px;
+      font-weight: 400px;
+      text-align: center;
+  
+      a {
+        color: $blue-500;
+        text-decoration: none;
+        //   font-weight: 400;
+        margin: 0 5px;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: $blue-200;
+        }
+      }
+  
+    }
+  
+    .signin-text {
+      font-size: 18px;
+      font-weight: 400px;
+      text-align: center;
+      color: $black-500;
+      margin-top: 0px;
+  
+      a {
+        color: $green-500;
+        text-decoration: none;
+        //   font-weight: 400;
+        margin: 0 5px;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: $green-200;
+        }
+      }
+   
+    }
+  }
+  
+
+
+
+}
+
+@media (max-width: $breakpoint-mobile) {
+
+
+  .signupben-page {
+    
+    width: 280px;
+    
+         
+        
+          .logolabel img {
+          width: 120px;
+        
+        
+          }
+        
+        
+        
+          .signupben-container h2 {
+            font-size: 22px;
+        
+          }
+        
+        .pro-bar{
+        width: 273px;
+      margin-left: 5px;
+        }
+   
+        
+          //page labels
+          .page-indicator {
+          font-size: 14px;
+         
+          
+        
+          }
+        
+          .signupform-ben {
+      border: 0px;
+            margin-top: 50px;
+            width: 280px;
+            height: 636px;
+        
+        
+          }
+        
+          .signupben-Box {
+            margin: 5px auto;
+            width: 280px;
+            height: 520px;
+    
+        
+          }
+        
+          .signupben-form label {
+            margin: 35px 0 15px 5px;
+            font-size: 15px;
+    
+        
+          }
+        
+          .signupben-group {
+            width: 270px;    
+            height: 42px;
+            margin-left: 5px;
+    
+        
+          }
+          
+          //default input changes
+          .signupben-group {
+            input:-webkit-autofill,
+            input:-webkit-autofill:hover,
+            input:-webkit-autofill:focus,
+            input:-webkit-autofill:active {
+              transition: background-color 5000s ease-in-out 0s;
+              background-color: transparent;
+            }
+          }
+        
+          .signupben-group img {
+            margin: 0px 10px;
+        
+          }
+        
+          .signupben-group .gen {
+            margin: 0px 10px;
+           
+          }
+        
+          .signupben-group input {
+            width: 230px;
+            font-size: 14px;
+    
+        
+        
+          }
+       
+        
+          .other-input{
+            margin-left: 10px;
+          }
+        
+          .signupben-group .password-toggle img {
+            margin: 5px 0px 0px 10px;
+            right: 20px;
+            cursor: pointer;
+          }
+        
+          .signupben-form .error-message,
+          .password-message {
+            font-size: 8px;
+    
+    
+          }
+        
+          .signupben-but button {
+            outline: none;
+            appearance: none; // Remove default arrow in some browsers
+            width: 270px;
+            height: 42px;       
+            font-size: 15px;
+            margin: 0px 0px 0px 5px;
+    
+        
+          }
+        
+          .terms-text {
+            margin: 10px 0 0px 0px;
+            font-size: 8px;
+            font-weight: 400px;
+            text-align: center;
+        
+            a {
+              color: $blue-500;
+              text-decoration: none;
+              //   font-weight: 400;
+              margin: 0 5px;
+              transition: color 0.3s;
+        
+              &:hover {
+                color: $blue-200;
+              }
+            }
+        
+          }
+        
+          .signin-text {
+            font-size: 13px;
+            margin-top: 0px;
+        
+            a {
+              color: $green-500;
+              text-decoration: none;
+              //   font-weight: 400;
+              margin: 0 5px;
+              transition: color 0.3s;
+        
+              &:hover {
+                color: $green-200;
+              }
+            }
+         
+          }
+        }
+        
+
+
+
+}

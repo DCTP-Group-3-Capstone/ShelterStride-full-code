@@ -1,0 +1,64 @@
+//primary button//
+@mixin blueBtn {
+  background-color: rgba(23, 106, 150, 1);
+  color: rgba(246, 249, 246, 1);
+  border: 1px solid rgba(23, 106, 150, 1);
+  border-radius: 16px;
+  padding: 14px 19px;
+  font-size: 16px;
+  font-weight: 600;
+  
+  // height: 48px;
+  line-height: 120%; /* 21.6px */
+  letter-spacing: 0.18px;
+  // height: 8px;
+  text-decoration: none;
+  &:hover {
+    background-color: rgba(19, 144, 210, 1);
+    border: 1px solid rgba(19, 144, 210, 1);
+  }
+  &:focus {
+    background-color: rgba(6, 78, 116, 1);
+    border: 1px solid rgba(6, 78, 116, 1);
+    color: rgba(246, 249, 246, 1);
+  }
+  &:disabled {
+    background-color: rgba(226, 228, 229, 1);
+    color: rgba(226, 228, 229, 1);
+  }
+}
+
+//secondary button//
+@mixin outlineBtn {
+  background-color: transparent;
+  border: 1.5px solid rgba(23, 106, 150, 1);
+  border-radius: 16px;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  &:hover {
+    background-color: rgba(183, 209, 222, 1);
+  }
+  &:focus {
+    background-color: rgba(6, 78, 116, 1);
+  }
+  &:disabled {
+    background-color: rgba(226, 228, 229, 1);
+    color: rgba(226, 228, 229, 1);
+  }
+}
+
+//tertiary button//
+@mixin textBtn {
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  &:disabled {
+    background-color: rgba(226, 228, 229, 1);
+    color: rgba(226, 228, 229, 1);
+  }
+}

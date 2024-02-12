@@ -1,0 +1,111 @@
+@import "../../sass/base/variables";
+
+//mobile size declaration
+$breakpoint-mobile: 460px;
+// $breakpoints:(phone:640px,
+// tablet:768px,
+// desktop:1024px) !default;
+
+.btn {
+  &_log_in {
+    width: 123.9px;
+ //   height: 45px;
+    padding: 10px 10px;
+    border-radius: 16px;
+    background: #f6f6f6;
+    border: 1px solid #176a96;
+    color: #176a96;
+
+    &:hover {
+      background-color:  #B7D1DE;
+      border: 1px solid rgba(19, 144, 210, 1);
+    }
+
+    &:focus {
+      background-color: rgba(6, 78, 116, 1);
+      border: 1px solid rgba(6, 78, 116, 1);
+      color: rgba(246, 249, 246, 1);
+    }
+  }
+  &_sign_up {
+    width: 123.9px;
+  //  height: 48px;
+    padding: 10px 10px;
+    margin-left: 8px;
+    border-radius: 16px;
+    border: 1px solid #176a96;
+    background: #176a96;
+    box-shadow: 0px 8px 16px 0px rgba(148, 186, 207, 0.25);
+    color: $white;
+
+    &:hover {
+      background-color: rgba(19, 144, 210, 1);
+      border: 1px solid rgba(19, 144, 210, 1);
+    }
+
+    &:focus {
+      background-color: rgba(6, 78, 116, 1);
+      border: 1px solid rgba(6, 78, 116, 1);
+      color: rgba(246, 249, 246, 1);
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .btn {
+    &_log_in {
+      display: none;
+    }
+    &_sign_up {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .btn {
+    &_log_in {
+      width: 50px;
+      height: 16px;
+      padding: 4px 10px;
+      border-radius: 16px;
+      border: 1px solid #176a96;
+      color: #176a96;
+    }
+    &_sign_up {
+      width: 50px;
+      height: 16px;
+      padding: 4px 10px;
+      margin-left: 8px;
+      border-radius: 16px;
+      border: 1px solid #176a96;
+      background: #176a96;
+      box-shadow: 0px 8px 16px 0px rgba(148, 186, 207, 0.25);
+      color: $white;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .btn {
+    &_log_in {
+      width: 123.9px;
+      height: 48px;
+      padding: 15px 20px;
+      border-radius: 16px;
+      border: 1px solid #176a96;
+      color: #176a96;
+    }
+    &_sign_up {
+      width: 123.9px;
+      height: 48px;
+      padding: 15px 20px;
+      margin-left: 8px;
+      border-radius: 16px;
+      border: 1px solid #176a96;
+      background: #176a96;
+      box-shadow: 0px 8px 16px 0px rgba(148, 186, 207, 0.25);
+      color: $white;
+    }
+  }
+}

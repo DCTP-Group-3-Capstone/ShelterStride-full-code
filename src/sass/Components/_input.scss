@@ -1,0 +1,29 @@
+@mixin inputField {
+  background-color: rgba(255, 253, 253, 1);
+  color: rgba(81, 91, 96, 1);
+  border: 1px solid rgba(110, 118, 122, 1);
+  border-radius: 16px;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  &:focus {
+    background-color: rgba(255, 253, 253, 1);
+    color: rgba(38, 50, 56, 1);
+    border: rgba(23, 106, 150, 1);
+  }
+}
+
+@mixin inputFieldSuccess {
+  border: 1px solid rgba(102, 204, 153, 1);
+  color: rgba(38, 50, 56, 1);
+  background-color: rgba(255, 253, 253, 1);
+  border-radius: 16px;
+  padding: 12px 16px;
+}
+@mixin inputFieldError {
+  border: 1px solid rgba(204, 82, 44, 1);
+  background-color: rgba(255, 253, 253, 1);
+  color: rgba(81, 91, 96, 1);
+  border-radius: 16px;
+  padding: 12px 16px;
+}

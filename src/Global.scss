@@ -1,0 +1,33 @@
+/* Import Google Fonts in your HTML file or a global CSS file */
+
+/* Define font family */
+:root {
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+/* Body styles */
+body {
+  overflow-x: hidden;
+  height: 100vh;
+  min-width: 280px;
+  overflow-y: scroll;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hide the scrollbar while still allowing scrolling */
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Hide the scrollbar thumb */
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* Hide the scrollbar track */
+body::-webkit-scrollbar-track {
+  background: transparent;
+}

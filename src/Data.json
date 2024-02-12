@@ -1,0 +1,290 @@
+[
+  {
+    "id": 1,
+    "image": "/src/assets/images/RentContainer1.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 2,
+    "image": "/src/assets/images/RentContainer2.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Lagos",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 3,
+    "image": "/src/assets/images/RentContainer3.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Abuja",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 4,
+    "image": "/src/assets/images/RentContainer1.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 5,
+    "image": "/src/assets/images/RentContainer3.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 6,
+    "image": "/src/assets/images/RentContainer2.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Lagos",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 7,
+    "image": "/src/assets/images/RentContainer3.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 8,
+    "image": "/src/assets/images/RentContainer2.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 9,
+    "image": "/src/assets/images/RentContainer3.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Abuja",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 10,
+    "image": "/src/assets/images/RentContainer1.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Anambra state",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 11,
+    "image": "/src/assets/images/RentContainer2.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 12,
+    "image": "/src/assets/images/RentContainer3.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Port Harcourt",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 13,
+    "image": "/src/assets/images/RentContainer1.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 14,
+    "image": "/src/assets/images/RentContainer3.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 15,
+    "image": "/src/assets/images/RentContainer3.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 16,
+    "image": "/src/assets/images/RentContainer1.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 17,
+    "image": "/src/assets/images/RentContainer2.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 18,
+    "image": "/src/assets/images/RentContainer3.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 19,
+    "image": "/src/assets/images/RentContainer1.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 20,
+    "image": "/src/assets/images/RentContainer2.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 21,
+    "image": "/src/assets/images/RentContainer3.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 22,
+    "image": "/src/assets/images/RentContainer1.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 23,
+    "image": "/src/assets/images/RentContainer2.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 24,
+    "image": "/src/assets/images/RentContainer3.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 25,
+    "image": "/src/assets/images/RentContainer1.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 26,
+    "image": "/src/assets/images/RentContainer2.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 27,
+    "image": "/src/assets/images/RentContainer3.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 28,
+    "image": "/src/assets/images/RentContainer1.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 29,
+    "image": "/src/assets/images/RentContainer2.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 30,
+    "image": "/src/assets/images/RentContainer3.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 31,
+    "image": "/src/assets/images/RentContainer1.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 32,
+    "image": "/src/assets/images/RentContainer2.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 33,
+    "image": "/src/assets/images/RentContainer3.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 34,
+    "image": "/src/assets/images/RentContainer1.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 35,
+    "image": "/src/assets/images/RentContainer2.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  },
+  {
+    "id": 36,
+    "image": "/src/assets/images/RentContainer3.svg",
+    "pricing": "30,000/month",
+    "cancelled": "#50,000/month",
+    "address": "Akinwumi str off Babola close",
+    "description": "1 Bed 1 Bath Iyana-Ipaja "
+  }
+]

@@ -1,0 +1,891 @@
+//font family
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+// mobile size variable declaration
+
+$breakpoint-mobile-xl: 1200px;
+
+$breakpoint-mobile-lg: 992px;
+
+$breakpoint-mobile-lgg: 912px;
+
+$breakpoint-mobile-m: 820px;
+
+$breakpoint-mobile-md: 769px;
+
+$breakpoint-mobile-sm: 576px;
+
+$breakpoint-mobile-smm: 540px;
+
+//mobile size declaration
+$breakpoint-mobile: 430px;
+
+$breakpoint-mobile-xxs: 360px;
+
+$breakpoint-mobile-xxss: 280px;
+
+
+//imported variable
+@import "../../sass/base/variables";
+
+//signup scss body
+.Signupsponsor-page {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin: 40px 0 0 0px;
+  min-height: 100vh; // 100% of the viewport height
+
+
+
+  //logo&label styling
+  .logolabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  .logolabel img {
+    height: 51px; //  height
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+
+ 
+  }
+
+  //container header and body styling
+  .Signupsponsor-container {
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    display: grid;
+  margin-top: 20px;
+  }
+
+  //container header text styling
+  .Signupsponsor-container h2 {
+    font-size: 30px;
+    font-family: 'Poppins';
+    color: $black-500;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+
+
+
+  }
+
+  //form box styling
+  .Signupsponsor-Box {
+    display: flex;
+    border: 1px solid $green-500;
+    border-radius: 10px;
+    width: 446px;
+    height: 733px;
+    flex-direction: column;
+    margin-top: 20px;
+
+ 
+  }
+
+  //form scss
+  .Signupsponsor-form {
+    align-content: center;
+    margin: 0px 30px;
+    width: 390px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+
+
+  }
+
+  //form labels styling
+  .Signupsponsor-form label {
+    margin: 30px 0 10px 0px;
+    color: $black-500;
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    display: flex;
+
+ 
+  }
+
+  .Signupsponsorform-group {
+    align-self: center;
+    width: 390px;
+    display: flex;
+    align-items: center;
+    height: 48px;
+    border: 1.5px solid $green-500;
+    border-radius: 16px;
+
+
+  }
+
+  // default inputs div styling
+  .Signupsponsorform-group {
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      transition: background-color 5000s ease-in-out 0s;
+      background-color: transparent;
+    }
+  }
+
+  //all inout icons styling
+  .Signupsponsorform-group img {
+    margin: 0px 10px;
+  }
+
+
+  //actual inputs and select styling
+  .Signupsponsorform-group input {
+    height: 24px;
+    width: 322px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Poppins';
+
+
+  }
+
+  //passowrd icon styling
+  .Signupsponsorform-group .password-toggle img {
+    margin: 5px 20px 0px 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .forgot-password {
+    text-align: right;
+
+    //password link styling
+    a {
+      color: $black-500;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 12px;
+      font-family: 'Poppins';
+      transition: color 0.3s;
+
+      &:hover {
+        color: $black-200;
+      }
+    }
+  }
+
+  //button styles
+  .Signupsponsorbutton-group button {
+    outline: none;
+    appearance: none; // Remove default arrow in some browsers
+    width: 390px;
+    height: 48px;
+    color: $black-50;
+    border: 1px solid $blue-500;
+    font-size: 18px;
+    background-color: $blue-500;
+    margin-top: 40px;
+    border-radius: 16px;
+    font-weight: 600px;
+
+    //mousehover styles
+    &:hover {
+      background-color: $blue-300;
+    }
+
+  }
+
+  //term and privacy styling
+  .terms-text {
+    margin: 5px 0 5px 0px;
+    font-size: 12px;
+    font-family: 'Poppins';
+    font-weight: 400px;
+    text-align: center;
+    color: $black-500;
+    //hover and link
+    a {
+      color: $blue-500;
+      text-decoration: none;
+      //   font-weight: 400;
+      margin: 0 5px;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $blue-200;
+      }
+    }
+
+  }
+
+  //signin text styling
+  .signin-text {
+    font-size: 18px;
+    font-weight: 600px;
+    text-align: center;
+    font-family: 'Poppins';
+    color: $black-500;
+    margin-top: 20px;
+
+    //hover and link styling
+    a {
+      color: $green-500;
+      text-decoration: none;
+      margin: 0 5px;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $green-200;
+      }
+    }
+
+
+  }
+
+  p {
+    font-size: 10px;
+    font-family: 'Poppins';
+
+  }
+  
+  .error-message {
+    font-size: 10px;
+    font-family: 'Poppins';
+    color: red;
+    margin-top: 0px;
+
+  }
+
+}
+
+
+
+
+@media (max-width: $breakpoint-mobile-xxss) {
+
+  .Signupsponsor-page {
+    overflow-y: hidden;
+  overflow-x: hidden;
+    .logolabel {
+   
+  margin-left: 0px;
+  
+    }
+  
+    .logolabel img {
+      height: 41px; //  height
+  
+   
+    }
+  
+
+  
+    //container header text styling
+    .Signupsponsor-container h2 {
+      font-size: 20px;
+      font-weight: 600; 
+  
+    }
+  
+    //form box styling
+    .Signupsponsor-Box {
+    
+      border: 0px;
+      border-radius: 10px;
+      width: 280px;
+      height: 700px;
+      margin-top: 10px;
+  
+   
+    }
+  
+    //form scss
+    .Signupsponsor-form {
+      margin: 0px 0px;
+      width: 280px;
+
+  
+    }
+  
+    //form labels styling
+    .Signupsponsor-form label {
+    margin-left: 5px;
+      font-size: 14px;
+   
+    }
+  
+    .Signupsponsorform-group {
+      width: 270px;
+      margin-left: 5px;
+      display: flex;
+      align-items: center;
+      height: 42px;
+      border: 1.5px solid $green-500;
+      border-radius: 16px;
+  
+  
+    }
+  
+    // default inputs div styling
+    .Signupsponsorform-group {
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+        background-color: transparent;
+      }
+    }
+  
+    //all inout icons styling
+    .Signupsponsorform-group img {
+      margin: 0px 5px;
+    }
+  
+  
+    //actual inputs and select styling
+    .Signupsponsorform-group input {
+      height: 24px;
+      width: 200px;
+      outline: none;
+      font-size: 14px;
+  
+    }
+  
+    //passowrd icon styling
+    .Signupsponsorform-group .password-toggle img {
+      margin: 5px 10px 0px 0px;
+    }
+  
+    .forgot-password {
+      text-align: right;
+  
+      //password link styling
+      a {
+        color: $black-500;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 12px;
+        font-family: 'Poppins';
+        transition: color 0.3s;
+  
+        &:hover {
+          color: $black-200;
+        }
+      }
+    }
+  
+    //button styles
+    .Signupsponsorbutton-group button {
+      outline: none;
+      appearance: none; // Remove default arrow in some browsers
+      width: 270px;
+      height: 42px;
+      color: $black-50;
+      gap: 0px;
+      font-size: 15px;
+  margin-left: 0px;
+      //mousehover styles
+      &:hover {
+        background-color: $blue-300;
+      }
+  
+     
+    }
+  
+
+    .overlay {
+      position: absolute;
+      top: 50%; // Position at the vertical center of the page
+      left: 50%; // Position at the horizontal center of the page
+      transform: translate(-50%, -50%); // Center the overlay precisely
+      background-color: rgba(255, 255, 255, 0.5); // Semi-transparent white background
+      z-index: 1000; // Ensure the overlay is above other content
+      width: 100%; // Cover the entire width of the page
+      height: 100%; // Cover the entire height of the page
+      display: flex; // Use flexbox for centering the spinner vertically and horizontally
+      justify-content: center; // Center content horizontally
+      align-items: center; // Center content vertically
+      
+      .spin {
+        animation: spin 1s linear infinite; // Add animation to spinner
+      }
+    }
+    
+    // Animation for spinner
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    //term and privacy styling
+    .terms-text {
+      margin: 5px 0 5px 0px;
+      font-size: 8px;
+      font-family: 'Poppins';
+      font-weight: 400px;
+      text-align: center;
+  
+      //hover and link
+      a {
+        color: $blue-500;
+        text-decoration: none;
+        //   font-weight: 400;
+        margin: 0 5px;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: $blue-200;
+        }
+      }
+  
+    }
+  
+    //signin text styling
+    .signin-text {
+      font-size: 14px;
+      margin-top: 0px;
+  margin-right: 15px;
+      //hover and link styling
+      a {
+        color: $green-500;
+        text-decoration: none;
+        //   font-weight: 400;
+        margin: 0 0px;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: $green-200;
+        }
+      }
+  
+  
+    }
+  
+    p {
+      font-size: 10px;
+      font-family: 'Poppins';
+  
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 10px;
+        
+      }
+    }
+    
+    .error-message {
+      font-size: 6px;
+      font-family: 'Poppins';
+      color: red;
+      margin-top: 0px;
+  
+    }
+  
+  }
+
+
+
+}
+
+
+@media (max-width: $breakpoint-mobile-xxs) {
+
+  .Signupsponsor-page {
+    
+  
+    .logolabel {
+   
+  margin-left: 0px;
+  
+    }
+  
+    .logolabel img {
+      height: 41px; //  height
+  
+   
+    }
+
+  
+    //container header text styling
+    .Signupsponsor-container h2 {
+      font-size: 20px;
+      font-weight: 600; 
+  
+    }
+  
+    //form box styling
+    .Signupsponsor-Box {
+    
+      border: 0px;
+      border-radius: 10px;
+      width: 280px;
+      height: 700px;
+      margin-top: 10px;
+  
+   
+    }
+  
+    //form scss
+    .Signupsponsor-form {
+      margin: 0px 0px;
+      width: 280px;
+
+  
+    }
+  
+    //form labels styling
+    .Signupsponsor-form label {
+    margin-left: 5px;
+      font-size: 14px;
+   
+    }
+  
+    .Signupsponsorform-group {
+      width: 270px;
+      margin-left: 5px;
+      display: flex;
+      align-items: center;
+      height: 42px;
+      border: 1.5px solid $green-500;
+      border-radius: 16px;
+  
+  
+    }
+  
+    // default inputs div styling
+    .Signupsponsorform-group {
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+        background-color: transparent;
+      }
+    }
+  
+    //all inout icons styling
+    .Signupsponsorform-group img {
+      margin: 0px 5px;
+    }
+  
+  
+    //actual inputs and select styling
+    .Signupsponsorform-group input {
+      height: 24px;
+      width: 200px;
+      outline: none;
+      font-size: 14px;
+  
+    }
+  
+    //passowrd icon styling
+    .Signupsponsorform-group .password-toggle img {
+      margin: 5px 10px 0px 0px;
+    }
+  
+    .forgot-password {
+      text-align: right;
+  
+      //password link styling
+      a {
+        color: $black-500;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 12px;
+        font-family: 'Poppins';
+        transition: color 0.3s;
+  
+        &:hover {
+          color: $black-200;
+        }
+      }
+    }
+  
+    //button styles
+    .Signupsponsorbutton-group button {
+      outline: none;
+      appearance: none; // Remove default arrow in some browsers
+      width: 270px;
+      height: 42px;
+      color: $black-50;
+      gap: 0px;
+      font-size: 15px;
+  margin-left: 0px;
+      //mousehover styles
+      &:hover {
+        background-color: $blue-300;
+      }
+  
+    }
+  
+    //term and privacy styling
+    .terms-text {
+      margin: 5px 0 5px 0px;
+      font-size: 8px;
+      font-family: 'Poppins';
+      font-weight: 400px;
+      text-align: center;
+  
+      //hover and link
+      a {
+        color: $blue-500;
+        text-decoration: none;
+        //   font-weight: 400;
+        margin: 0 5px;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: $blue-200;
+        }
+      }
+  
+    }
+  
+    //signin text styling
+    .signin-text {
+      font-size: 14px;
+      margin-top: 0px;
+  margin-right: 15px;
+      //hover and link styling
+      a {
+        color: $green-500;
+        text-decoration: none;
+        //   font-weight: 400;
+        margin: 0 0px;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: $green-200;
+        }
+      }
+  
+  
+    }
+  
+    p {
+      font-size: 10px;
+      font-family: 'Poppins';
+  
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 10px;
+        
+      }
+    }
+    
+    .error-message {
+      font-size: 6px;
+      font-family: 'Poppins';
+      color: red;
+      margin-top: 0px;
+  
+    }
+  
+  }
+
+
+
+}
+
+@media (max-width: $breakpoint-mobile) {
+
+  .Signupsponsor-page {
+    
+  
+    .logolabel {
+   
+  margin-left: 0px;
+  
+    }
+  
+    .logolabel img {
+      height: 41px; //  height
+  
+   
+    }
+
+  
+    //container header text styling
+    .Signupsponsor-container h2 {
+      font-size: 20px;
+      font-weight: 600; 
+  
+    }
+  
+    //form box styling
+    .Signupsponsor-Box {
+    
+      border: 0px;
+      border-radius: 10px;
+      width: 280px;
+      height: 700px;
+      margin-top: 10px;
+  
+   
+    }
+  
+    //form scss
+    .Signupsponsor-form {
+      margin: 0px 0px;
+      width: 280px;
+
+  
+    }
+  
+    //form labels styling
+    .Signupsponsor-form label {
+    margin-left: 5px;
+      font-size: 14px;
+   
+    }
+  
+    .Signupsponsorform-group {
+      width: 270px;
+      margin-left: 5px;
+      display: flex;
+      align-items: center;
+      height: 42px;
+      border: 1.5px solid $green-500;
+      border-radius: 16px;
+  
+  
+    }
+  
+    // default inputs div styling
+    .Signupsponsorform-group {
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+        background-color: transparent;
+      }
+    }
+  
+    //all inout icons styling
+    .Signupsponsorform-group img {
+      margin: 0px 5px;
+    }
+  
+  
+    //actual inputs and select styling
+    .Signupsponsorform-group input {
+      height: 24px;
+      width: 200px;
+      outline: none;
+      font-size: 14px;
+  
+    }
+  
+    //passowrd icon styling
+    .Signupsponsorform-group .password-toggle img {
+      margin: 5px 10px 0px 0px;
+    }
+  
+    .forgot-password {
+      text-align: right;
+  
+      //password link styling
+      a {
+        color: $black-500;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 12px;
+        font-family: 'Poppins';
+        transition: color 0.3s;
+  
+        &:hover {
+          color: $black-200;
+        }
+      }
+    }
+  
+    //button styles
+    .Signupsponsorbutton-group button {
+      outline: none;
+      appearance: none; // Remove default arrow in some browsers
+      width: 270px;
+      height: 42px;
+      color: $black-50;
+      gap: 0px;
+      font-size: 15px;
+  margin-left: 0px;
+      //mousehover styles
+      &:hover {
+        background-color: $blue-300;
+      }
+  
+    }
+  
+    //term and privacy styling
+    .terms-text {
+      margin: 5px 0 5px 0px;
+      font-size: 8px;
+      font-family: 'Poppins';
+      font-weight: 400px;
+      text-align: center;
+  
+      //hover and link
+      a {
+        color: $blue-500;
+        text-decoration: none;
+        //   font-weight: 400;
+        margin: 0 5px;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: $blue-200;
+        }
+      }
+  
+    }
+  
+    //signin text styling
+    .signin-text {
+      font-size: 14px;
+      margin-top: 0px;
+  margin-right: 15px;
+      //hover and link styling
+      a {
+        color: $green-500;
+        text-decoration: none;
+        //   font-weight: 400;
+        margin: 0 0px;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: $green-200;
+        }
+      }
+  
+  
+    }
+  
+    p {
+      font-size: 10px;
+      font-family: 'Poppins';
+  
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 10px;
+        
+      }
+    }
+    
+    .error-message {
+      font-size: 6px;
+      font-family: 'Poppins';
+      color: red;
+      margin-top: 0px;
+  
+    }
+  
+  }
+
+
+
+}

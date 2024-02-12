@@ -1,0 +1,825 @@
+//font import
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+
+// mobile size variable declaration
+
+$breakpoint-mobile-xl: 1200px;
+
+$breakpoint-mobile-lg: 992px;
+
+$breakpoint-mobile-lgg: 912px;
+
+$breakpoint-mobile-m: 820px;
+
+$breakpoint-mobile-md: 769px;
+
+$breakpoint-mobile-sm: 576px;
+
+$breakpoint-mobile-smm: 540px;
+
+//mobile size declaration
+$breakpoint-mobile: 430px;
+
+$breakpoint-mobile-xxs: 360px;
+
+$breakpoint-mobile-xxss: 280px;
+
+
+
+
+//external variable for colours
+@import "../../sass/base/variables";
+
+
+//page container 
+.container {
+margin-left: 500px;
+    overflow-x: hidden;
+    margin-top: 40px;
+    min-height: 100vh;  
+    display: flex;
+    font-family: 'Poppins';
+    flex-direction: column;
+   // place-items: center;
+    justify-content: center;
+    align-items: center;
+
+
+//page header
+.heading {
+    text-align: center;
+
+}
+
+
+
+// h3 text
+.question h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: $black-500;
+
+
+}
+
+.account-type {
+    width: 608px;
+    height: 550px;
+    margin-top: 20px;
+    border: 1px solid $green-400;
+    border-radius: 20px;
+
+}
+
+//benefactor and sponsor container
+.account-type .benefactor,
+.sponsor {
+    width: 466px;
+    justify-content: center;
+    height: 224px;
+    margin: 0px 0 20px 50px;
+
+}
+
+//benefactor and sponsor paragraph
+.benefactor p,
+.sponsor p {
+    color: $black-500;
+    font-weight: 400;
+    margin: auto;
+    font-size: 14px;
+    margin-top: 20px;
+    font-family: 'Poppins';
+    text-align: justify;
+
+
+}
+
+.title {
+    margin-top: 0px;
+    gap: 16px;
+    display: flex;
+
+
+}
+
+.title img {
+    justify-items: center;
+    margin-top: 20px;
+
+}
+
+.title h4 {
+    color: $black-500;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 500;
+margin-top: 25px;
+ 
+}
+
+//separator line
+hr {
+    margin: 40px 0px 20px 50px;
+    width: 466px;
+    place-items: center;
+
+
+}
+
+
+//buttons styling
+.button1, .button2 {
+    height: 48px;
+    outline: none;
+    border: 1.5px solid $blue-500;
+    border-radius: 16px;
+    color: $blue-500;
+    border-radius: 16px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    font-size: 18px;
+    background-color: #fff;
+    margin-top: 30px;
+   
+
+    &:hover {
+        background-color: $blue-100;
+    }
+}
+//button 1 only
+.button1 {
+
+    width: 281px;
+    
+    //mobile view styling
+    @media (max-width: $breakpoint-mobile) {
+   
+        // background image (right arrow icon)
+        background-image: url('../../src/assets/icon/right2.png');
+        background-repeat: no-repeat;
+        background-position: right 20px center;
+        padding-right: 30px; //padding to accommodate the icon
+
+    }
+
+}
+
+//button 2 only
+.button2 {
+
+    width: 255px; 
+
+
+
+}
+
+.signin-text {
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 600px;
+    text-align: center;
+    color: $black-500;
+
+
+}
+
+
+//link and hover style
+a {
+    color: $blue-300;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 0 0px;
+    transition: color 0.3s;
+    color: $green-400;
+
+    &:hover {
+        color: $green-200;
+    }
+}
+
+
+}
+
+
+@media (max-width: $breakpoint-mobile-xxss) {
+
+
+
+
+    //page container 
+    .container {
+    
+    width: 280px;
+    
+
+    
+    //logo
+    .heading img {
+    
+    width: 150px;
+    
+    }
+    
+    // h3 text
+    .question h3 {
+        font-size: 14px;
+   margin-left: 5px;
+    
+    }
+    
+    .account-type {
+        width: 280px;
+        height: 500px;
+        border: 0px;
+        border-radius: 20px;
+    
+    }
+    
+    //benefactor and sponsor container
+    .account-type .benefactor,
+    .sponsor {
+        width: 200px;
+        height: 224px;
+        margin: 0px 0 20px 30px;
+    
+    }
+    
+    //benefactor and sponsor paragraph
+    .benefactor p,
+    .sponsor p {
+        color: $black-500;
+        font-weight: 400;
+      
+        font-size: 10px;
+        font-family: 'Poppins';
+        text-align: justify;
+    
+    
+    }
+    
+    .title {
+        margin-top: 0px;
+        gap: 6px;
+        display: flex;
+    
+    
+    }
+    
+    .title img {
+        justify-items: center;
+    width: 30px;
+    
+    }
+    
+    .title h4 {
+    
+        font-size: 15px;
+
+    
+     
+    }
+    
+    //separator line
+    hr {
+        margin: 0px 0px 0px 30px;
+        width: 220px;
+        place-items: center;
+    
+    
+    }
+    
+    
+    //buttons styling
+    .button1, .button2 {
+        height: 42px;
+        font-size: 14px;
+        background-color: #fff;
+        margin-top: 30px;
+       
+    
+        &:hover {
+            background-color: $blue-100;
+        }
+    }
+    //button 1 only
+    .button1 {
+           width: 220px;
+              
+            // background image (right arrow icon)
+            background-image: url('../../src/assets/icon/right2.png');
+            background-repeat: no-repeat;
+            background-position: right 20px center;
+            padding-right: 30px; //padding to accommodate the icon
+    
+
+    }
+    
+    //button 2 only
+    .button2 {
+    
+        width: 200px; 
+    
+    
+    
+    }
+    
+    .signin-text {
+        font-size: 12px;
+    
+    }
+    
+    
+    //link and hover style
+    a {
+        color: $blue-300;
+        text-decoration: none;
+        font-weight: 400;
+        margin: 0 0px;
+        transition: color 0.3s;
+        color: $green-400;
+    
+        &:hover {
+            color: $green-200;
+        }
+    }
+    
+    
+    }
+    
+
+
+
+
+
+
+
+
+
+}
+
+
+@media (max-width: $breakpoint-mobile-xxs) {
+
+
+
+
+    //page container 
+    .container {
+    
+    width: 280px;
+    
+    //page header
+  
+    
+    //logo
+    .heading img {
+    
+    width: 150px;
+    
+    }
+    
+    // h3 text
+    .question h3 {
+        font-size: 14px;
+   margin-left: 30px;
+    
+    }
+    
+    .account-type {
+        width: 280px;
+        height: 500px;
+        border: 0px;;
+    
+    }
+    
+    //benefactor and sponsor container
+    .account-type .benefactor,
+    .sponsor {
+        width: 200px;
+        height: 224px;
+        margin: 0px 0 20px 30px;
+    
+    }
+    
+    //benefactor and sponsor paragraph
+    .benefactor p,
+    .sponsor p {
+        color: $black-500;
+        font-weight: 400;
+      
+        font-size: 10px;
+        font-family: 'Poppins';
+        text-align: justify;
+    
+    
+    }
+    
+    .title {
+        margin-top: 0px;
+        gap: 6px;
+        display: flex;
+    
+    
+    }
+    
+    .title img {
+        justify-items: center;
+    width: 30px;
+    
+    }
+    
+    .title h4 {
+    
+        font-size: 15px;
+
+    
+     
+    }
+    
+    //separator line
+    hr {
+        margin: 0px 0px 0px 30px;
+        width: 220px;
+        place-items: center;
+    
+    
+    }
+    
+    
+    //buttons styling
+    .button1, .button2 {
+        height: 42px;
+        font-size: 14px;
+        background-color: #fff;
+        margin-top: 30px;
+       
+    
+        &:hover {
+            background-color: $blue-100;
+        }
+    }
+    //button 1 only
+    .button1 {
+           width: 220px;
+              
+            // background image (right arrow icon)
+            background-image: url('../../src/assets/icon/right2.png');
+            background-repeat: no-repeat;
+            background-position: right 20px center;
+            padding-right: 30px; //padding to accommodate the icon
+    
+
+    }
+    
+    //button 2 only
+    .button2 {
+    
+        width: 200px; 
+    
+    
+    
+    }
+    
+    .signin-text {
+        font-size: 12px;
+    
+    }
+    
+    
+    //link and hover style
+    a {
+        color: $blue-300;
+        text-decoration: none;
+        font-weight: 400;
+        margin: 0 0px;
+        transition: color 0.3s;
+        color: $green-400;
+    
+        &:hover {
+            color: $green-200;
+        }
+    }
+    
+    
+    }
+    
+
+
+
+
+
+
+
+
+
+}
+
+
+@media (max-width: $breakpoint-mobile) {
+
+
+
+
+    //page container 
+    .container {
+    
+    width: 280px;
+    
+
+  
+    
+    //logo
+    .heading img {
+    
+    width: 150px;
+    
+    }
+    
+    // h3 text
+    .question h3 {
+        font-size: 14px;
+   margin-left: 30px;
+    
+    }
+    
+    .account-type {
+        width: 280px;
+        height: 500px;
+        border: 0px;
+    
+    }
+    
+    //benefactor and sponsor container
+    .account-type .benefactor,
+    .sponsor {
+        width: 200px;
+        height: 224px;
+        margin: 0px 0 20px 30px;
+    
+    }
+    
+    //benefactor and sponsor paragraph
+    .benefactor p,
+    .sponsor p {
+        color: $black-500;
+        font-weight: 400;
+      
+        font-size: 10px;
+        font-family: 'Poppins';
+        text-align: justify;
+    
+    
+    }
+    
+    .title {
+        margin-top: 0px;
+        gap: 6px;
+        display: flex;
+    
+    
+    }
+    
+    .title img {
+        justify-items: center;
+    width: 30px;
+    
+    }
+    
+    .title h4 {
+    
+        font-size: 15px;
+
+    
+     
+    }
+    
+    //separator line
+    hr {
+        margin: 0px 0px 0px 30px;
+        width: 220px;
+        place-items: center;
+    
+    
+    }
+    
+    
+    //buttons styling
+    .button1, .button2 {
+        height: 42px;
+        font-size: 14px;
+        background-color: #fff;
+        margin-top: 30px;
+       
+    
+        &:hover {
+            background-color: $blue-100;
+        }
+    }
+    //button 1 only
+    .button1 {
+           width: 220px;
+              
+            // background image (right arrow icon)
+            background-image: url('../../src/assets/icon/right2.png');
+            background-repeat: no-repeat;
+            background-position: right 20px center;
+            padding-right: 30px; //padding to accommodate the icon
+    
+
+    }
+    
+    //button 2 only
+    .button2 {
+    
+        width: 200px; 
+    
+    
+    
+    }
+    
+    .signin-text {
+        font-size: 12px;
+    
+    }
+    
+    
+    //link and hover style
+    a {
+        color: $blue-300;
+        text-decoration: none;
+        font-weight: 400;
+        margin: 0 0px;
+        transition: color 0.3s;
+        color: $green-400;
+    
+        &:hover {
+            color: $green-200;
+        }
+    }
+    
+    
+    }
+    
+
+
+
+
+
+
+
+
+
+}
+
+@media (min-width: $breakpoint-mobile-smm) {
+
+
+
+
+    //page container 
+    .container {
+
+    width: 540px;
+    
+
+    
+    //logo
+    .heading img {
+    
+    width: 180px;
+    
+    }
+    
+    // h3 text
+    .question h3 {
+        font-size: 16px;
+   margin-left: 30px;
+    
+    }
+    
+    .account-type {
+        width: 530px;
+        height: 500px;
+        border: 1px solid $green-400;
+        border-radius: 20px;
+    }
+    
+    //benefactor and sponsor container
+    .account-type .benefactor,
+    .sponsor {
+        width: 400px;
+        height: 224px;
+        margin: 0px 0 20px 70px;
+    
+    }
+    
+    //benefactor and sponsor paragraph
+    .benefactor p,
+    .sponsor p {
+        color: $black-500;
+        font-weight: 400;
+      
+        font-size: 14px;
+        font-family: 'Poppins';
+        text-align: justify;
+    
+    
+    }
+    
+    .title {
+        margin-top: 0px;
+        gap: 16px;
+        display: flex;
+    
+    
+    }
+    
+    .title img {
+        justify-items: center;
+   width: 40px;
+    
+    }
+    
+    .title h4 {
+    
+        font-size: 16px;
+
+    
+     
+    }
+    
+    //separator line
+    hr {
+        margin: 0px 0px 0px 70px;
+        width: 400px;
+        place-items: center;
+    
+    
+    }
+    
+    
+    //buttons styling
+    .button1, .button2 {
+        height: 42px;
+        font-size: 14px;
+        background-color: #fff;
+        margin-top: 30px;
+       
+    
+        &:hover {
+            background-color: $blue-100;
+        }
+    }
+    //button 1 only
+    .button1 {
+           width: 220px;
+              
+
+    }
+    
+    //button 2 only
+    .button2 {
+    
+        width: 200px; 
+    
+    
+    
+    }
+    
+    .signin-text {
+        font-size: 15px;
+    
+    }
+    
+    
+    //link and hover style
+    a {
+        color: $blue-300;
+        text-decoration: none;
+        font-weight: 400;
+        margin: 0 0px;
+        transition: color 0.3s;
+        color: $green-400;
+    
+        &:hover {
+            color: $green-200;
+        }
+    }
+    
+    
+    }
+    
+
+
+
+
+
+
+
+
+
+}

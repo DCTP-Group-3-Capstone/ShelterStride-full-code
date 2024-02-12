@@ -1,0 +1,609 @@
+//font-family import
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+//imported variable
+@import "../../sass/base/variables";
+
+//mobile size edeclaration
+
+$breakpoint-mobile-xll: 1200px;
+
+$breakpoint-mobile-xl: 1024px;
+
+$breakpoint-mobile-lg: 992px;
+
+$breakpoint-mobile-lgg: 912px;
+
+$breakpoint-mobile-m: 820px;
+
+$breakpoint-mobile-md: 769px;
+
+$breakpoint-mobile-sm: 576px;
+
+$breakpoint-mobile-smm: 540px;
+
+$breakpoint-mobile: 430px;
+
+$breakpoint-mobiles: 414px;
+
+$breakpoint-mobile-a: 375px;
+
+$breakpoint-mobile-xxs: 360px;
+
+$breakpoint-mobile-xxss: 280px;
+
+//container styling
+.Login-page {
+  overflow-x: hidden;
+  margin: 40px 0 0 0px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; // 100% of the viewport height
+
+  .logolabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logolabel img {
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+    margin-right: 0px;
+
+  }
+
+  .Login-container {
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    display: grid;
+
+  }
+
+  .welcome-back {
+    text-align: center;
+    color: $black-500;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .Login-Box {
+    display: flex;
+    border: 1px solid $green-500;
+    border-radius: 10px;
+    width: 446px;
+    height: 430px;
+    flex-direction: column;
+  }
+
+  .Login-form {
+    align-content: center;
+    margin: 5px 30px;
+    width: 390px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  //form label styles
+  .Login-form label {
+    margin: 35px 0 15px 0px;
+    color: $black-500;
+    line-height: 20px;
+    font-size: 18px;
+    font-family: "Poppins";
+    font-weight: 500;
+    display: flex;
+  }
+
+  .form-group {
+    align-self: center;
+    width: 390px;
+    display: flex;
+    align-items: center;
+    height: 48px;
+    border: 1.5px solid $green-500;
+    border-radius: 16px;
+  }
+
+  //default styles changes
+  .form-group {
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      transition: background-color 5000s ease-in-out 0s;
+      background-color: transparent;
+    }
+  }
+
+  .form-group img {
+    margin: 0px 10px;
+  }
+
+  .form-group input {
+    background: transparent;
+    height: 24px;
+    width: 322px;
+    border: none;
+    outline: none;
+  }
+
+  .form-group .password-toggle img {
+    margin: 5px 20px 0px 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .forgot-password {
+    text-align: right;
+
+    a {
+      color: $black-500;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 12px;
+      margin: 0px;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $black-200;
+      }
+    }
+  }
+
+  .button-group button {
+    outline: none;
+    appearance: none; // Remove default arrow in some browsers
+    width: 390px;
+    height: 48px;
+    color: $black-50;
+    border: 1px solid $blue-500;
+    font-size: 18px;
+    background-color: $blue-500;
+    margin-top: 45px;
+    border-radius: 16px;
+    font-weight: 600px;
+
+    &:hover {
+      background-color: $blue-300;
+    }
+  }
+
+  .signup-text {
+    font-size: 18px;
+    font-family: "Poppins";
+    font-weight: 400px;
+    text-align: center;
+    color: $black-500;
+    margin-top: 40px;
+
+    a {
+      color: $green-500;
+      text-decoration: none;
+      margin: 0 5px;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $green-200;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile-xxss) {
+  .Login-page {
+   
+    margin: 40px 0 0 0px;
+    
+    .logolabel img {
+      width: 140px;
+      margin-left: 20px;
+    }
+    .Login-container {
+      margin-left: 0px;
+      width: 280px;
+    }
+    .welcome-back {
+      font-size: 18px;
+      margin-left: 20px;
+    }
+
+    .Login-Box {
+      border: 0px;
+      margin-left: 4.3em;
+      width: 250px;
+      height: 330px;
+    }
+
+    .Login-form {
+      margin: 5px 0px;
+      width: 120px;
+      margin-left: 35px;
+
+      label {
+        margin: 15px 10px 10px -60px;
+        line-height: 10px;
+        font-size: 14px;
+      }
+    }
+
+    .form-group {
+      align-self: center;
+      width: 240px;
+      height: 38px;
+      gap: 0px;
+    }
+    .form-group img {
+      margin: 0px 5px;
+    }
+
+    .form-group .password-toggle img {
+      margin: 5px 10px 0px 0px;
+      right: 20px;
+      cursor: pointer;
+    }
+
+    .form-group input {
+      height: 24px;
+      width: 200px;
+    }
+
+    .forgot-password {
+      margin-right: -60px;
+    }
+
+    .button-group button {
+      width: 240px;
+      height: 38px;
+      gap: 2px;
+      align-content: center;
+      font-size: 16px;
+      margin-top: 25px;
+      font-weight: 400px;
+      margin-left: -60px;
+    }
+
+    .signup-text {
+      font-size: 12px;
+      font-weight: 400px;
+      margin-top: 0px;
+      margin-left: 0em;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile-xxs) {
+    .Login-page {
+     
+      margin: 40px 0 0 0px;
+      
+      .logolabel img {
+        width: 140px;
+        margin-left: 20px;
+      }
+      .Login-container {
+        margin-left: 0px;
+        width: 280px;
+      }
+      .welcome-back {
+        font-size: 18px;
+        margin-left: 20px;
+      }
+  
+      .Login-Box {
+        border: 0px;
+        margin-left: 4.3em;
+        width: 250px;
+        height: 330px;
+      }
+  
+      .Login-form {
+        margin: 5px 0px;
+        width: 120px;
+        margin-left: 35px;
+  
+        label {
+          margin: 15px 10px 10px -60px;
+          line-height: 10px;
+          font-size: 14px;
+        }
+      }
+  
+      .form-group {
+        align-self: center;
+        width: 240px;
+        height: 38px;
+        gap: 0px;
+      }
+      .form-group img {
+        margin: 0px 5px;
+      }
+  
+      .form-group .password-toggle img {
+        margin: 5px 10px 0px 0px;
+        right: 20px;
+        cursor: pointer;
+      }
+  
+      .form-group input {
+        height: 24px;
+        width: 200px;
+      }
+  
+      .forgot-password {
+        margin-right: -60px;
+      }
+  
+      .button-group button {
+        width: 240px;
+        height: 38px;
+        gap: 2px;
+        align-content: center;
+        font-size: 16px;
+        margin-top: 25px;
+        font-weight: 400px;
+        margin-left: -60px;
+      }
+  
+      .signup-text {
+        font-size: 12px;
+        font-weight: 400px;
+        margin-top: 0px;
+        margin-left: 0em;
+      }
+    }
+  }
+  
+@media (max-width: $breakpoint-mobile-a) {
+    .Login-page {
+     
+      margin: 40px 0 0 0px;
+      
+      .logolabel img {
+        width: 140px;
+        margin-left: 20px;
+      }
+      .Login-container {
+        margin-left: 0px;
+        width: 280px;
+      }
+      .welcome-back {
+        font-size: 18px;
+        margin-left: 20px;
+      }
+  
+      .Login-Box {
+        border: 0px;
+        margin-left: 4.3em;
+        width: 250px;
+        height: 330px;
+      }
+  
+      .Login-form {
+        margin: 5px 0px;
+        width: 120px;
+        margin-left: 35px;
+  
+        label {
+          margin: 15px 10px 10px -60px;
+          line-height: 10px;
+          font-size: 14px;
+        }
+      }
+  
+      .form-group {
+        align-self: center;
+        width: 240px;
+        height: 38px;
+        gap: 0px;
+      }
+      .form-group img {
+        margin: 0px 5px;
+      }
+  
+      .form-group .password-toggle img {
+        margin: 5px 10px 0px 0px;
+        right: 20px;
+        cursor: pointer;
+      }
+  
+      .form-group input {
+        height: 24px;
+        width: 200px;
+      }
+  
+      .forgot-password {
+        margin-right: -60px;
+      }
+  
+      .button-group button {
+        width: 240px;
+        height: 38px;
+        gap: 2px;
+        align-content: center;
+        font-size: 16px;
+        margin-top: 25px;
+        font-weight: 400px;
+        margin-left: -60px;
+      }
+  
+      .signup-text {
+        font-size: 12px;
+        font-weight: 400px;
+        margin-top: 0px;
+        margin-left: 0em;
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-mobiles) {
+    .Login-page {
+     
+      margin: 40px 0 0 0px;
+      
+      .logolabel img {
+        width: 140px;
+        margin-left: 20px;
+      }
+      .Login-container {
+        margin-left: 0px;
+        width: 280px;
+      }
+      .welcome-back {
+        font-size: 18px;
+        margin-left: 20px;
+      }
+  
+      .Login-Box {
+        border: 0px;
+        margin-left: 4.3em;
+        width: 250px;
+        height: 330px;
+      }
+  
+      .Login-form {
+        margin: 5px 0px;
+        width: 120px;
+        margin-left: 35px;
+  
+        label {
+          margin: 15px 10px 10px -60px;
+          line-height: 10px;
+          font-size: 14px;
+        }
+      }
+  
+      .form-group {
+        align-self: center;
+        width: 240px;
+        height: 38px;
+        gap: 0px;
+      }
+      .form-group img {
+        margin: 0px 5px;
+      }
+  
+      .form-group .password-toggle img {
+        margin: 5px 10px 0px 0px;
+        right: 20px;
+        cursor: pointer;
+      }
+  
+      .form-group input {
+        height: 24px;
+        width: 200px;
+      }
+  
+      .forgot-password {
+        margin-right: -60px;
+      }
+  
+      .button-group button {
+        width: 240px;
+        height: 38px;
+        gap: 2px;
+        align-content: center;
+        font-size: 16px;
+        margin-top: 25px;
+        font-weight: 400px;
+        margin-left: -60px;
+      }
+  
+      .signup-text {
+        font-size: 12px;
+        font-weight: 400px;
+        margin-top: 0px;
+        margin-left: 0em;
+      }
+    }
+  }
+
+    @media (max-width: $breakpoint-mobile) {
+    .Login-page {
+     
+      margin: 40px 0 0 0px;
+      
+      .logolabel img {
+        width: 140px;
+        margin-left: 20px;
+      }
+      .Login-container {
+        margin-left: 0px;
+        width: 280px;
+      }
+      .welcome-back {
+        font-size: 18px;
+        margin-left: 20px;
+      }
+  
+      .Login-Box {
+        border: 0px;
+        margin-left: 4.3em;
+        width: 250px;
+        height: 330px;
+      }
+  
+      .Login-form {
+        margin: 5px 0px;
+        width: 120px;
+        margin-left: 35px;
+  
+        label {
+          margin: 15px 10px 10px -60px;
+          line-height: 10px;
+          font-size: 14px;
+        }
+      }
+  
+      .form-group {
+        align-self: center;
+        width: 240px;
+        height: 38px;
+        gap: 0px;
+      }
+      .form-group img {
+        margin: 0px 5px;
+      }
+  
+      .form-group .password-toggle img {
+        margin: 5px 0px 0px 0px;
+        right: 0px;
+     
+        cursor: pointer;
+      }
+  
+      .form-group input {
+        height: 24px;
+        font-size: 14px;
+        width: 160px;    
+        font-weight: 400;
+      }
+  
+      .forgot-password {
+        margin-right: -60px;
+      }
+  
+      .button-group button {
+        width: 240px;
+        height: 38px;
+        gap: 2px;
+        align-content: center;
+        font-size: 16px;
+        margin-top: 25px;
+        font-weight: 400px;
+        margin-left: -60px;
+      }
+  
+      .signup-text {
+        font-size: 12px;
+        font-weight: 400px;
+        margin-top: 0px;
+        margin-left: 0em;
+      }
+    }
+  }

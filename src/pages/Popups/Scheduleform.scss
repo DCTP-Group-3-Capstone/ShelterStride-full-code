@@ -1,0 +1,79 @@
+// SubscribePopupForm.scss
+
+.popupsche-form {
+  position: fixed;
+  top: 50%; /* Adjust as needed */
+  left: 70%; /* Adjust as needed */
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Set a high z-index to ensure it appears on top */
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 300px;
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+      
+      .label-d {
+        margin-bottom: 5px;
+      //  margin-left: 30px; /* Adjusted margin-left */
+
+        label{
+
+          margin-left: 0px;
+        }
+      }
+  
+      input[type="time"],
+      input[type="date"] {
+        width: 95%;
+        height: 18px;
+        padding: 10px;
+        margin-left: -5px;
+        border: 1px solid #66CC99;
+        border-radius: 16px;
+        font-size: 14px;
+      }
+  
+      button[type="submit"] {
+        background-color: #176a96;
+        color: #fff;
+        border: none;
+        margin-top: 20px;
+        border-radius: 16px;
+        padding: 10px 0;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    }
+  
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: transparent;
+      color: red;
+      font-size: 12px;
+      cursor: pointer;
+      padding: 5px;
+    }
+
+    .form-check {
+      font-size: 12px;
+      margin-top: 20px;     
+    }
+
+    .check {
+      margin-right: 5px;
+    }
+
+
+
+  }

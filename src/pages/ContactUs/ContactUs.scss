@@ -1,0 +1,251 @@
+//font-family
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+$breakpoint-mobile-lg: 430px;
+
+
+$breakpoint-mobile-xxss: 280px;
+// ContactForm.scss
+
+.contact-form-container {
+ overflow-x: hidden;
+margin-top: 40px;
+ //   padding: 20px;
+//    border: 1px solid #ccc;
+    border-radius: 5px;
+ //   background-color: #f9f9f9;
+  
+    h2 {
+      margin-left: -20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    
+    p {
+      margin-left: -20px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .form-contact{
+
+   width: 430px;
+   margin: 0 auto;
+
+
+      }
+  
+    .form-group {
+        
+      margin-bottom: 15px;
+  
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 400px;
+      }
+  
+      input[type='text'],
+      input[type='email'],
+      textarea {
+        width: 390px;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 16px;
+        font-size: 16px;
+      }
+  
+      textarea {
+        width: 390px;
+        height: 150px;
+        background-color: #fff;
+      }
+    }
+  
+    button[type='submit'] {
+    //  display: block;
+      width: 87px;
+      margin-left: 150px;
+      padding: 10px;
+      background-color: #fff;
+      color: #176a96;
+      border: 1px solid #176a96;
+      border-radius: 16px;
+      font-size: 16px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+
+    .foot{
+        margin-top: 5em;
+    }
+  }
+  
+
+  @media (max-width: $breakpoint-mobile-lg){
+
+.contact-form-container {
+ overflow-x: hidden;
+margin-top: 40px;
+ //   padding: 20px;
+//    border: 1px solid #ccc;
+    border-radius: 5px;
+ //   background-color: #f9f9f9;
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    
+    p {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .form-contact{
+
+      margin: 0 auto;
+      width: 430px;
+
+
+      }
+  
+    .form-group {
+        
+      margin-bottom: 15px;
+  
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 400px;
+      }
+  
+      input[type='text'],
+      input[type='email'],
+      textarea {
+        width: 390px;
+        margin-left: 10px;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 16px;
+        font-size: 16px;
+      }
+  
+      textarea {
+        width: 390px;
+        height: 150px;
+        background-color: #fff;
+      }
+    }
+  
+    button[type='submit'] {
+    //  display: block;
+      width: 87px;
+      margin-left: 180px;
+      padding: 10px;
+      background-color: #fff;
+      color: #176a96;
+      border: 1px solid #176a96;
+      border-radius: 16px;
+      font-size: 16px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+
+    .foot{
+        margin-top: 5em;
+    }
+  }
+
+  }
+
+    @media (max-width: $breakpoint-mobile-xxss){
+
+.contact-form-container {
+ overflow-x: hidden;
+margin-top: 40px;
+ //   padding: 20px;
+//    border: 1px solid #ccc;
+    border-radius: 5px;
+ //   background-color: #f9f9f9;
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    
+    p {
+    font-size: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .form-contact{
+
+     width: 280px;
+     margin: 0 auto;
+
+      }
+  
+    .form-group {
+        
+      margin-bottom: 15px;
+  
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 400px;
+      }
+  
+      input[type='text'],
+      input[type='email'],
+      textarea {
+        width: 255px280px;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 16px;
+        font-size: 16px;
+      }
+  
+      textarea {
+        width: 255px;
+        height: 150px;
+        background-color: #fff;
+      }
+    }
+  
+    button[type='submit'] {
+    //  display: block;
+      width: 87px;
+      margin-left: 90px;
+      padding: 10px;
+      background-color: #fff;
+      color: #176a96;
+      border: 1px solid #176a96;
+      border-radius: 16px;
+      font-size: 16px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+
+    .foot{
+        margin-top: 5em;
+    }
+  }
+
+  }

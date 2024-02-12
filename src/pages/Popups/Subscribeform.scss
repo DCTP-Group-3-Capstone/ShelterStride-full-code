@@ -1,0 +1,109 @@
+// SubscribePopupForm.scss
+
+.popupsub-form {
+  position: fixed;
+  top: 50%; /* Adjust as needed */
+  left: 70%; /* Adjust as needed */
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Set a high z-index to ensure it appears on top */
+  background-color: white;
+  padding: 10px;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 300px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+     // margin-top: 10px;
+   
+
+      .form-group {
+       // margin-bottom: 5px;
+        align-self: center;
+        
+      }
+      
+      .label-d {
+        margin-bottom: 0px;
+      //  margin-left: 30px; /* Adjusted margin-left */
+
+        label{
+          font-size: 12px;
+          margin-left: -95px;
+        }
+      }
+
+      .paymentplan{
+        padding: 0px 10px;
+        width: 280px;
+        border: 1px solid #66CC99;
+        border-radius: 16px;
+        font-size: 14px;
+
+        justify-content: ce;
+        align-self: center;
+       
+      }
+   
+      input[type="date"] {
+        padding: 10px 10px;
+        width: 280px;
+        border: 1px solid #66CC99;
+        border-radius: 16px;
+        font-size: 14px;
+        align-self: center;
+      }
+  
+      button[type="submit"] {
+        background-color: #176a96;
+        color: #fff;
+        border: none;
+        width: 300px;
+        align-self: center;
+        margin-top: 15px;
+        border-radius: 16px;
+        padding: 5px 0;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    }
+  
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: transparent;
+      color: red;
+      font-size: 10px;
+      cursor: pointer;
+      padding: 5px;
+    }
+
+    .total-sub{
+      margin-top: 10px;
+      align-self: center;
+border: 1.5px solid #f6f6f6;
+border-radius: 10px;
+width: 300px;
+
+    }
+ 
+    .sub-fees {
+      display: flex;
+   justify-content: space-between;
+      padding: 0 5px;
+    }
+    .sub-fees h5 {
+      margin-right: 0px; // Adjust margin as needed for spacing between labels
+     font-size: 10px;
+    }
+
+
+    hr {
+      width: 290px;
+      margin: 0 5px; // Adjust margin as needed
+      align-items: center;
+    }
+    
+  }

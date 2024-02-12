@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+//mobile size declaration
+$breakpoint-mobile: 480px;
+
+//tablet size declaration
+$breakpoint-tablets: 768px;
+//external variable for colours
+@import "../../scss/base/variables";
+
+//import button
+@import "../../sass/Components/button";
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1240px;
+  height: 375px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  gap: 4px;
+  font-family: "poppins";
+}
+
+.single-grid {
+  max-width: 330px;
+  height: 270px;
+  border-radius: 16px;
+  background-color: #f6f9f6;
+}
+.single-grid img {
+  max-width: 320px;
+  max-height: 187.5px;
+  margin-bottom: 5px;
+  margin-left: 8px;
+}
+.single-grid p {
+  margin-left: 8px;
+}
+.flex {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+  margin-left: 8px;
+}
+.flex p {
+  text-decoration: line-through;
+}
+@media (max-width: $breakpoint-mobile) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 468px;
+    height: 768px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    gap: 4px;
+    font-family: "poppins";
+  }
+}

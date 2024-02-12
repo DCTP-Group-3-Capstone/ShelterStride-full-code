@@ -1,0 +1,48 @@
+//font import
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+//mobile size declaration
+$breakpoint-mobile: 460px;
+
+//external variable for colours
+@import "../../sass/base/variables";
+
+.Herorent_section {
+  // max-width: 1440px;
+  height: 352px;
+  background-image: url("/src/assets/images/Hero.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  margin-top: 0px;
+}
+h1 {
+  font-family: "Poppins";
+  padding-top: 25px;
+  font-size: 64px;
+  font-weight: 600px;
+}
+
+p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+// responsiveness
+@media (max-width: $breakpoint-mobile) {
+  .Herorent_section {
+    // max-width: 768px;
+    height: 220px;
+    margin-top: 0px;
+  }
+  h1 {
+    margin-top: 10px;
+    font-size: 32px;
+  }
+  p {
+    font-size: 12px;
+  }
+}

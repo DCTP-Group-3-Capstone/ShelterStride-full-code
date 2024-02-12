@@ -1,0 +1,262 @@
+//font-family import
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+//mobile size declaration
+$breakpoint-mobile: 430px;
+
+//imported variable
+@import "../base/variables";
+
+
+//container styling
+.Login-page {
+    background-color: $white;
+    margin: 40px 0 0 5px;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; // 100% of the viewport height
+
+    @media (max-width: $breakpoint-mobile) {
+        width: auto; //  width
+        height: auto; //  height
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .logolabel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .logolabel img {
+        width: 224px; //  width
+        height: 51px; //  height
+        justify-content: center;
+        align-content: center;
+        margin-top: 10px;
+        margin-right: 10px;
+        overflow: hidden;
+
+
+        @media (max-width: $breakpoint-mobile) {
+            width: 224px; //  width
+            height: 51px; //  height
+            
+        }
+    }
+
+    .Login-container {
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        display: grid;
+        padding: 20px;
+
+        @media (max-width: $breakpoint-mobile) {
+
+       
+        }
+    }
+
+    //header
+    .Login-container h2 {
+        font-size: 30px;
+        font-family: 'Poppins';
+        width: 336px;
+        color: $black-500;
+        font-weight: 600;
+        text-align: center;
+        margin-top: -5px;
+        margin-bottom: 10px;
+        margin-left: 60px;
+
+        @media (max-width: $breakpoint-mobile) {
+            width: 100%;
+            margin-left: 0;
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+
+    .Login-Box {
+
+        display: flex;
+        border: 1px solid $green-500;
+        border-radius: 10px;
+        width: 446px;
+        height: 430px;
+        flex-direction: column;
+
+        @media (max-width: $breakpoint-mobile) {
+            width: auto;
+            border: 0px;
+            margin-right: 0px;
+            height: auto;
+       
+        }
+    }
+
+    .Login-form {
+        align-content: center;
+        margin: 5px 30px;
+        width: 390px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: $breakpoint-mobile) {
+            border: 0px;
+            padding: 30px;
+            height: auto;     
+            margin-right: 20px;
+
+        }
+    }
+
+//form label styles
+    .Login-form label {
+        margin: 35px 0 15px 0px;
+        color: $black-500;
+        line-height: 20px;
+        font-size: 18px;
+        font-family: 'Poppins';
+        font-weight: 500;
+        display: flex;
+       
+    }
+
+    .form-group {
+        align-self: center;
+        width: 390px;
+        display: flex;
+        align-items: center;
+        height: 48px;    
+        border: 1.5px solid $green-500;
+        gap: 12px;
+        border-radius: 16px;
+
+        @media (max-width: $breakpoint-mobile) {
+            width: 390px;
+            
+        }
+    }
+
+    //default styles changes
+    .form-group {
+
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        input:-webkit-autofill:active {
+            transition: background-color 5000s ease-in-out 0s;
+            background-color: transparent;
+        }
+    }
+
+    .form-group img {
+        margin: 0px 10px;
+
+    }
+
+    .form-group input {
+        background: transparent;
+        height: 24px;
+        font-size: 16px;
+        width: 322px;
+        border: none;
+        outline: none;
+
+        @media (max-width: $breakpoint-mobile) {
+         
+            
+        }
+
+    }
+
+    .error-message {
+        font-size: 10px;
+        font-family: 'Poppins';
+        color: red;
+        margin-top: 0px;
+    
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 10px;
+          
+        }
+      }
+    
+
+    .form-group .password-toggle img {
+        margin: 5px 20px 0px 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .forgot-password {
+        text-align: right;
+
+        a {
+            color: $black-500;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 12px;
+            margin-top: 0px;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $black-200;
+            }
+        }
+
+    }
+
+    .button-group button {
+        outline: none;
+        appearance: none; // Remove default arrow in some browsers
+        width: 390px;
+        height: 48px;
+        color: $black-50;
+        gap: 8px;
+        border: 1px solid $blue-500;
+        font-size: 18px;
+        background-color: $blue-500;
+        margin-top: 45px;
+        border-radius: 16px;
+        font-weight: 600;
+
+
+        &:hover {
+            background-color: $blue-300;
+        }
+    }
+
+    .Login-text {
+        font-size: 18px;
+        font-family: 'Poppins';
+        font-weight: 400;
+        text-align: center;
+        color: $black-500;
+        margin-top: 40px;
+
+        a {
+            color: $green-500;
+            text-decoration: none;
+            margin: 0 5px;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $green-200;
+            }
+        }
+
+        @media (max-width: $breakpoint-mobile) {
+           font-size: 18px;
+           font-weight: 400;
+            
+        }
+    }
+
+}

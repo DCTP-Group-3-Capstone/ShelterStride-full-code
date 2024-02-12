@@ -1,0 +1,2306 @@
+//font import
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@import "../../sass/base/variables";
+
+
+
+$breakpoint-mobile-xll: 1250px;
+
+$breakpoint-mobile-xl: 1024px;
+
+$breakpoint-mobile-lg: 992px;
+
+$breakpoint-mobile-lgg: 912px;
+
+$breakpoint-mobile-m: 870px;
+
+$breakpoint-mobile-md: 820px;
+
+$breakpoint-mobile-sm: 760px;
+
+$breakpoint-mobiles: 600px;
+
+$breakpoint-mobile: 430px;
+
+$breakpoint-mobile-a: 375px;
+
+$breakpoint-mobile-xxs: 360px;
+
+$breakpoint-mobile-xxss: 280px;
+
+
+
+
+
+.rentproduct-section {
+padding: 0 100px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+
+width: 1440px;
+
+  label {
+
+    display: block;
+    font-weight: 500; 
+    font-size: 16px;
+    margin-top: 30px; // Adjust spacing between p and label as needed
+  }
+
+  a {
+    text-decoration: none;
+    color: $blue-500; // Adjust the link color as needed
+
+  }
+
+  a::before {
+    content: "<"; // Unicode arrow character, you can replace it with your preferred icon
+    margin-right: 10px; // Adjust spacing between text and icon as needed
+  }
+
+  .details {
+    width: 1160px;
+    margin-top: 30px;
+  }
+
+
+.self-conprice{
+    display: flex;
+    gap: 0px;
+
+height: 852px;
+
+//background-color: yellow;
+
+.self-con{
+
+    width: 632px;
+}
+
+.header1{
+font-size: 32px;
+font-weight: 600;
+margin-bottom: 0px;
+color: $blue-500;
+}
+
+
+.address{
+    font-size: 20px;
+    font-weight: 400;
+  
+   
+    }
+    
+.content-container, .content-container2{
+
+    display: flex;
+ 
+
+}
+
+
+.icon-textpro{
+    color: $green-300;
+            margin-left: 10px;
+            margin-bottom: 15px;
+        }
+
+.hrs{
+
+    width: 500px;
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+  //  height: 160px;
+
+
+}
+
+.horizontalhr{
+
+ //  width: 100%;
+      border-top: 1px solid black;
+        width: 500px;
+        margin: 10px 0; /* Adjust the margin for spacing above and below the horizontal line */
+}
+
+  .room-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+
+    .bedroom,
+    .bathroom,
+    .toilet,
+    .furnishing {
+
+
+        align-content: center;
+      width: 18%; /* Adjust the width of each room as needed */
+    }
+  
+    .room {
+      border-left: 1px solid black; /* Set the style and color of the room container */
+ 
+   
+      text-align: center;
+    }
+
+    .rom{
+       
+
+      text-align: center; 
+    }
+ 
+  .icon-number{
+      display: flex;
+  margin-left:  25px;
+  }
+  
+  .icon-text{
+      margin-left: 5px;
+      font-size: 14px;
+      font-weight: 400;
+  }
+
+
+  }
+
+.rrroom{
+  font-weight: 400;
+      font-size: 10px;
+}
+
+  
+ 
+.header2{
+font-size: 18px;
+font-weight: 600;
+
+}
+
+.paratext{
+    font-size: 18px;
+    font-weight: 400;
+
+    ::before {
+        content: "<"; // Unicode arrow character, you can replace it with your preferred icon
+        margin-right: 10px; // Adjust spacing between text and icon as needed
+      }
+
+
+}
+
+.attractions, .Amenities, .House-rules{
+
+margin-top: 30px;
+
+
+}
+
+ul{
+
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+  }
+  
+  li {
+    margin-bottom: 10px; /* Add some vertical space between list items */
+  }
+  
+  /* Add custom bullet styles */
+  li::before {
+    content: "•"; /* Use a bullet character as content */
+    font-size: 20px;
+   // color: #ff0000; /* Customize the bullet color */
+    margin-right: 5px; /* Add some space between the bullet and the text */
+  }
+
+.header3{
+
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.ameni{
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.icon-text2{
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.content-container2{
+margin-right:30px;
+margin-bottom: 0px;
+}
+
+.content-container3{
+    display: flex;
+
+    }
+
+.content-con{
+display: flex;
+justify-content: space-between;
+
+width: 70%;
+}
+}
+
+
+.sub-price{
+margin-top:  30px;
+    background-color: #fff;
+    border: 1.5px solid $green-100;
+width: 525px;
+height: 432px;
+    border-radius: 16px;
+}
+
+.labelbutton{
+justify-content: space-between;
+    display: flex;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.hprice{
+font-size: 20px;
+font-weight: 500;
+}
+
+
+.available{
+width: 150px;
+height: 40px;
+margin-top: 20px;
+color: black;
+background-color: #fff;
+    border-radius: 16px;
+    border: 1.5px Solid $green-500;
+}
+
+
+.month-sub{
+    display: flex;
+    padding: 0 20px;
+}
+
+.monthprice{
+    color: $blue-500;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.fee{
+margin: 20px 0px 0 0px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.schedulebut, .subscribebut{
+
+border-radius: 16px;
+width: 479px;
+height: 48px;
+margin: 40px 0 0 20px;
+font-size: 18px;
+font-weight: 600;
+}
+
+.schedulebut{
+    background-color: $blue-500;
+    border: 1.5px light $blue-500;
+    color: $white;
+}
+.subscribebut{
+    border: 1.5px solid $blue-500;
+    color: $blue-500;
+}
+
+.info{
+    font-size: 14px;
+    font-weight: 400;
+ margin-left: 70px;}
+
+
+}
+
+
+@media screen and (max-width: $breakpoint-mobile-xll){
+
+
+ 
+  .rentproduct-section {
+    //background-color: blue;
+    width: 860px;
+    padding: 0 100px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+  
+    label {
+    
+      display: block;
+      font-weight: 500;
+      font-size: 16px;
+      margin-top: 30px; // Adjust spacing between p and label as needed
+    }
+  
+    a {
+      text-decoration: none;
+      color: $blue-500; // Adjust the link color as needed
+  
+    }
+  
+    a::before {
+      content: "<"; // Unicode arrow character, you can replace it with your preferred icon
+      margin-right: 10px; // Adjust spacing between text and icon as needed
+    }
+  
+    .details {
+  width: 750px;
+      margin-top: 30px;
+    }
+  
+  
+  .self-conprice{
+      display: flex;
+      flex-direction: column
+  
+  ;
+  height: 1120px;
+  
+  //background-color: yellow;
+  
+  .self-con{
+
+      width: 680px;
+  }
+  
+  .header1{
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: $blue-500;
+  }
+  
+  
+  .address{
+      font-size: 20px;
+      font-weight: 400;
+    
+     
+      }
+      
+  .content-container, .content-container2{
+  
+      display: flex;
+   
+  
+  }
+  
+  
+  .icon-textpro{
+      color: $green-300;
+              margin-left: 10px;
+              margin-bottom: 5px;
+          }
+  
+          .hrs{
+
+            width: 500px;
+            display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              margin-top: 10px;
+          //  height: 160px;
+        
+        
+        }
+        
+        .horizontalhr{
+        
+         //  width: 100%;
+              border-top: 1px solid black;
+                width: 500px;
+                margin: 10px 0; /* Adjust the margin for spacing above and below the horizontal line */
+        }
+
+
+    .room-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  
+  
+      .bedroom,
+      .bathroom,
+      .toilet,
+      .furnishing {
+  
+  
+          align-content: center;
+        width: 32%; /* Adjust the width of each room as needed */
+      }
+    
+      .room {
+        border-left: 1px solid black; /* Set the style and color of the room container */
+   
+       
+        text-align: center;
+      }
+  
+      .rom{
+         
+      
+        text-align: center; 
+      }
+   
+    .icon-number{
+        display: flex;
+    margin-left:  45px;
+    }
+    
+    .icon-text{
+        margin-left: 5px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+  
+  h1{
+  font-weight: 400;
+  font-size: 24px;
+  
+  }
+  
+    }
+  
+   
+  .header2{
+  font-size: 28px;
+  font-weight: 600;
+  
+  }
+  
+  .paratext{
+    width: 500px;
+      font-size: 18px;
+      font-weight: 400;
+  
+      ::before {
+          content: "<"; // Unicode arrow character, you can replace it with your preferred icon
+          margin-right: 10px; // Adjust spacing between text and icon as needed
+        }
+  
+  
+  }
+  
+  .attractions, .Amenities, .House-rules{
+  
+  margin-top: 0px;
+  
+  
+  }
+  
+  
+  ul{
+  
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+  }
+  
+  li {
+    margin-bottom: 10px; /* Add some vertical space between list items */
+  }
+  
+  /* Add custom bullet styles */
+  li::before {
+    content: "•"; /* Use a bullet character as content */
+    font-size: 20px;
+   // color: #ff0000; /* Customize the bullet color */
+    margin-right: 5px; /* Add some space between the bullet and the text */
+  }
+  
+  .header3{
+  
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 20px;
+  }
+  
+  .ameni{
+      margin-bottom: 0px;
+      font-size: 20px;
+      font-weight: 600;
+  }
+  
+  .icon-text2{
+      margin-left: 10px;
+      font-size: 16px;
+      font-weight: 500;
+  
+  }
+  
+  .content-container2{
+  margin-right:0px;
+  margin-bottom: 0px;
+  }
+  
+  .content-container3{
+      display: flex;
+  
+      }
+  
+  .content-con{
+  display: flex;
+  justify-content: space-between;
+  
+  width: 80%;
+  }
+  }
+  
+  
+  .sub-price{
+  margin-top:  20px;
+      background-color: #fff;
+      border: 1.5px solid $green-100;
+  width: 750px;
+  height: 532px;
+      border-radius: 16px;
+  }
+  
+  .labelbutton{
+  justify-content: space-between;
+      display: flex;
+      margin-top: 20px;
+      padding: 0 30px;
+  }
+  
+  .hprice{
+  font-size: 20px;
+  font-weight: 500;
+  }
+  
+  
+  .available{
+  width: 150px;
+  height: 40px;
+  
+  color: black;
+  margin-top: 10px;
+      border-radius: 16px;
+      border: 1.5px Solid $green-500;
+  }
+  
+  
+  .month-sub{
+      display: flex;
+      padding: 0 30px;
+  }
+  
+  .monthprice{
+  color: $blue-500;
+      font-weight: 500;
+      font-size: 40px;
+  }
+  
+  .fee{
+  margin: 20px 0px 0 60px;
+      font-weight: 500;
+      font-size: 18px;
+  }
+  
+  .schedulebut, .subscribebut{
+  
+  border-radius: 16px;
+  width: 609px;
+  height: 48px;
+  margin: 40px 0 0 50px;
+  font-size: 18px;
+  font-weight: 600;
+  }
+  
+  .schedulebut{
+      background-color: $blue-500;
+      border: 1.5px light $blue-500;
+      color: $white;
+  }
+  .subscribebut{
+      border: 1.5px solid $blue-500;
+      color: $blue-500;
+  }
+  
+  .info{
+      font-size: 14px;
+      font-weight: 400;
+   margin-left: 150px;}
+  
+     
+  }
+  
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width: $breakpoint-mobile-lg){
+
+
+  .rentproduct-section {
+    //background-color: blue;
+    width: 860px;
+    padding: 0 100px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+  
+    label {
+    
+      display: block;
+      font-weight: 500;
+      font-size: 16px;
+      margin-top: 30px; // Adjust spacing between p and label as needed
+    }
+  
+    a {
+      text-decoration: none;
+      color: $blue-500; // Adjust the link color as needed
+  
+    }
+  
+    a::before {
+      content: "<"; // Unicode arrow character, you can replace it with your preferred icon
+      margin-right: 10px; // Adjust spacing between text and icon as needed
+    }
+  
+    .details {
+  width: 750px;
+      margin-top: 30px;
+    }
+  
+  
+  .self-conprice{
+      display: flex;
+      flex-direction: column
+  
+  ;
+  height: 1120px;
+  
+  //background-color: yellow;
+  
+  .self-con{
+
+      width: 680px;
+  }
+  
+  .header1{
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: $blue-500;
+  }
+  
+  
+  .address{
+      font-size: 20px;
+      font-weight: 400;
+    
+     
+      }
+      
+  .content-container, .content-container2{
+  
+      display: flex;
+   
+  
+  }
+  
+  
+  .icon-textpro{
+      color: $green-300;
+              margin-left: 10px;
+              margin-bottom: 5px;
+          }
+  
+
+          
+          .hrs{
+
+            width: 500px;
+            display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              margin-top: 10px;
+          //  height: 160px;
+        
+        
+        }
+        
+        .horizontalhr{
+        
+         //  width: 100%;
+              border-top: 1px solid black;
+                width: 500px;
+        }
+  
+    .room-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  
+  
+      .bedroom,
+      .bathroom,
+      .toilet,
+      .furnishing {
+  
+  
+          align-content: center;
+        width: 23%; /* Adjust the width of each room as needed */
+      }
+    
+      .room {
+        border-left: 1px solid black; /* Set the style and color of the room container */
+   
+       
+        text-align: center;
+      }
+  
+      .rom{
+         
+      
+        text-align: center; 
+      }
+   
+    .icon-number{
+        display: flex;
+    margin-left:  45px;
+    }
+    
+    .icon-text{
+        margin-left: 5px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+  
+  h1{
+  font-weight: 400;
+  font-size: 24px;
+  
+  }
+  
+    }
+  
+   
+  .header2{
+  font-size: 28px;
+  font-weight: 600;
+  
+  }
+  
+  .paratext{
+    width: 500px;
+      font-size: 18px;
+      font-weight: 400;
+  
+      ::before {
+          content: "<"; // Unicode arrow character, you can replace it with your preferred icon
+          margin-right: 10px; // Adjust spacing between text and icon as needed
+        }
+  
+  
+  }
+  
+  .attractions, .Amenities, .House-rules{
+  
+  margin-top: 0px;
+  
+  
+  }
+  
+  
+  ul{
+  
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+  }
+  
+  li {
+    margin-bottom: 10px; /* Add some vertical space between list items */
+  }
+  
+  /* Add custom bullet styles */
+  li::before {
+    content: "•"; /* Use a bullet character as content */
+    font-size: 20px;
+   // color: #ff0000; /* Customize the bullet color */
+    margin-right: 5px; /* Add some space between the bullet and the text */
+  }
+  
+  .header3{
+  
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 20px;
+  }
+  
+  .ameni{
+      margin-bottom: 0px;
+      font-size: 20px;
+      font-weight: 600;
+  }
+  
+  .icon-text2{
+      margin-left: 10px;
+      font-size: 16px;
+      font-weight: 500;
+  
+  }
+  
+  .content-container2{
+  margin-right:0px;
+  margin-bottom: 0px;
+  }
+  
+  .content-container3{
+      display: flex;
+  
+      }
+  
+  .content-con{
+  display: flex;
+  justify-content: space-between;
+  
+  width: 80%;
+  }
+  }
+  
+  
+  .sub-price{
+  margin-top:  30px;
+      background-color: #fff;
+      border: 1.5px solid $green-100;
+  width: 750px;
+  height: 432px;
+      border-radius: 16px;
+  }
+  
+  .labelbutton{
+  justify-content: space-between;
+      display: flex;
+      margin-top: 20px;
+      padding: 0 30px;
+  }
+  
+  .hprice{
+  font-size: 20px;
+  font-weight: 500;
+  }
+  
+  
+  .available{
+  width: 150px;
+  height: 40px;
+  
+  color: black;
+  margin-top: 10px;
+      border-radius: 16px;
+      border: 1.5px Solid $green-500;
+  }
+  
+  
+  .month-sub{
+      display: flex;
+      padding: 0 30px;
+  }
+  
+  .monthprice{
+  color: $blue-500;
+      font-weight: 500;
+      font-size: 40px;
+  }
+  
+  .fee{
+  margin: 20px 0px 0 60px;
+      font-weight: 500;
+      font-size: 18px;
+  }
+  
+  .schedulebut, .subscribebut{
+  
+  border-radius: 16px;
+  width: 609px;
+  height: 48px;
+  margin: 40px 0 0 50px;
+  font-size: 18px;
+  font-weight: 600;
+  }
+  
+  .schedulebut{
+      background-color: $blue-500;
+      border: 1.5px light $blue-500;
+      color: $white;
+  }
+  .subscribebut{
+      border: 1.5px solid $blue-500;
+      color: $blue-500;
+  }
+  
+  .info{
+      font-size: 14px;
+      font-weight: 400;
+   margin-left: 150px;}
+  
+     
+  }
+  
+
+}
+
+@media screen and (max-width: $breakpoint-mobile-m){
+
+
+  .rentproduct-section {
+    //background-color: blue;
+    width: 860px;
+    padding: 0 100px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+  
+    label {
+    
+      display: block;
+      font-weight: 500;
+      font-size: 16px;
+      margin-top: 30px; // Adjust spacing between p and label as needed
+    }
+  
+    a {
+      text-decoration: none;
+      color: $blue-500; // Adjust the link color as needed
+  
+    }
+  
+    a::before {
+      content: "<"; // Unicode arrow character, you can replace it with your preferred icon
+      margin-right: 10px; // Adjust spacing between text and icon as needed
+    }
+  
+    .details {
+  width: 680px;
+      margin-top: 30px;
+    }
+  
+  
+  .self-conprice{
+      display: flex;
+      flex-direction: column
+  
+  ;
+  height: 1120px;
+  
+  //background-color: yellow;
+  
+  .self-con{
+
+      width: 680px;
+  }
+  
+  .header1{
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: $blue-500;
+  }
+  
+  
+  .address{
+      font-size: 20px;
+      font-weight: 400;
+    
+     
+      }
+      
+  .content-container, .content-container2{
+  
+      display: flex;
+   
+  
+  }
+  
+  
+  .icon-textpro{
+      color: $green-300;
+              margin-left: 10px;
+              margin-bottom: 5px;
+          }
+  
+  
+          .hrs{
+
+            width: 500px;
+            display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              margin-top: 10px;
+          //  height: 160px;
+        
+        
+        }
+        
+        .horizontalhr{
+        
+         //  width: 100%;
+              border-top: 1px solid black;
+                width: 500px;
+          }
+  
+    .room-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  
+  
+      .bedroom,
+      .bathroom,
+      .toilet,
+      .furnishing {
+  
+  
+          align-content: center;
+        width: 23%; /* Adjust the width of each room as needed */
+      }
+    
+      .room {
+        border-left: 1px solid black; /* Set the style and color of the room container */
+   
+       
+        text-align: center;
+      }
+  
+      .rom{
+         
+      
+        text-align: center; 
+      }
+   
+    .icon-number{
+        display: flex;
+    margin-left:  45px;
+    }
+    
+    .icon-text{
+        margin-left: 5px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+  
+  h1{
+  font-weight: 400;
+  font-size: 24px;
+  
+  }
+  
+    }
+  
+   
+  .header2{
+  font-size: 28px;
+  font-weight: 600;
+  
+  }
+  
+  .paratext{
+    width: 500px;
+      font-size: 18px;
+      font-weight: 400;
+  
+      ::before {
+          content: "<"; // Unicode arrow character, you can replace it with your preferred icon
+          margin-right: 10px; // Adjust spacing between text and icon as needed
+        }
+  
+  
+  }
+  
+  .attractions, .Amenities, .House-rules{
+  
+  margin-top: 0px;
+  
+  
+  }
+  
+  
+  ul{
+  
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+  }
+  
+  li {
+    margin-bottom: 10px; /* Add some vertical space between list items */
+  }
+  
+  /* Add custom bullet styles */
+  li::before {
+    content: "•"; /* Use a bullet character as content */
+    font-size: 20px;
+   // color: #ff0000; /* Customize the bullet color */
+    margin-right: 5px; /* Add some space between the bullet and the text */
+  }
+  
+  .header3{
+  
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 20px;
+  }
+  
+  .ameni{
+      margin-bottom: 0px;
+      font-size: 20px;
+      font-weight: 600;
+  }
+  
+  .icon-text2{
+      margin-left: 10px;
+      font-size: 16px;
+      font-weight: 500;
+  
+  }
+  
+  .content-container2{
+  margin-right:0px;
+  margin-bottom: 0px;
+  }
+  
+  .content-container3{
+      display: flex;
+  
+      }
+  
+  .content-con{
+  display: flex;
+  justify-content: space-between;
+  
+  width: 80%;
+  }
+  }
+  
+  
+  .sub-price{
+  margin-top:  30px;
+      background-color: #fff;
+      border: 1.5px solid $green-100;
+  width: 680px;
+  height: 432px;
+      border-radius: 16px;
+  }
+  
+  .labelbutton{
+  justify-content: space-between;
+      display: flex;
+      margin-top: 20px;
+      padding: 0 30px;
+  }
+  
+  .hprice{
+  font-size: 20px;
+  font-weight: 500;
+  }
+  
+  
+  .available{
+  width: 150px;
+  height: 40px;
+  
+  color: black;
+  margin-top: 10px;
+      border-radius: 16px;
+      border: 1.5px Solid $green-500;
+  }
+  
+  
+  .month-sub{
+      display: flex;
+      padding: 0 30px;
+  }
+  
+  .monthprice{
+  color: $blue-500;
+      font-weight: 500;
+      font-size: 40px;
+  }
+  
+  .fee{
+  margin: 20px 0px 0 60px;
+      font-weight: 500;
+      font-size: 18px;
+  }
+  
+  .schedulebut, .subscribebut{
+  
+  border-radius: 16px;
+  width: 579px;
+  height: 48px;
+  margin: 30px 0 0 50px;
+  font-size: 18px;
+  font-weight: 600;
+  }
+  
+  .schedulebut{
+      background-color: $blue-500;
+      border: 1.5px light $blue-500;
+      color: $white;
+  }
+  .subscribebut{
+      border: 1.5px solid $blue-500;
+      color: $blue-500;
+  }
+  
+  .info{
+      font-size: 14px;
+      font-weight: 400;
+   margin-left: 70px;}
+  
+  
+   .buy-sub{
+  
+    width: 1240px;
+    
+    //height: 400px;
+      
+    }
+  
+    .buysub-pic{
+  
+      width: 1240px;
+      
+      }
+  
+     
+  }
+  
+
+
+
+
+
+}
+
+
+@media screen and (max-width: $breakpoint-mobile-md){
+
+
+  .rentproduct-section {
+    //background-color: blue;
+    width: 600px;
+    padding: 0 100px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+  
+    label {
+    
+      display: block;
+      font-weight: 500;
+      font-size: 16px;
+      margin-top: 30px; // Adjust spacing between p and label as needed
+    }
+  
+    a {
+      text-decoration: none;
+      color: $blue-500; // Adjust the link color as needed
+  
+    }
+  
+    a::before {
+      content: "<"; // Unicode arrow character, you can replace it with your preferred icon
+      margin-right: 10px; // Adjust spacing between text and icon as needed
+    }
+  
+    .details {
+  width: 500px;
+      margin-top: 30px;
+    }
+  
+  
+  .self-conprice{
+      display: flex;
+      flex-direction: column
+  
+  ;
+  height: 1120px;
+  
+  //background-color: yellow;
+  
+  .self-con{
+
+      width: 680px;
+  }
+  
+  .header1{
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: $blue-500;
+  }
+  
+  
+  .address{
+      font-size: 15px;
+      font-weight: 400;
+    
+     
+      }
+      
+  .content-container, .content-container2{
+  
+      display: flex;
+   
+  
+  }
+  
+  
+  .icon-textpro{
+      color: $green-300;
+              margin-left: 10px;
+              margin-bottom: 5px;
+          }
+  
+  
+
+          .hrs{
+
+            width: 500px;
+            display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              margin-top: 10px;
+          //  height: 160px;
+        
+        
+        }
+        
+        .horizontalhr{
+        
+         //  width: 100%;
+              border-top: 1px solid black;
+                width: 500px;
+          }
+
+    .room-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  
+  
+      .bedroom,
+      .bathroom,
+      .toilet,
+      .furnishing {
+  
+  
+          align-content: center;
+        width: 30%; /* Adjust the width of each room as needed */
+      }
+    
+      .room {
+        border-left: 1px solid black; /* Set the style and color of the room container */
+   
+       
+        text-align: center;
+      }
+  
+      .rom{
+         
+      
+        text-align: center; 
+      }
+   
+    .icon-number{
+        display: flex;
+    margin-left:  45px;
+    }
+    
+    .icon-text{
+        margin-left: 5px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+  
+  h1{
+  font-weight: 400;
+  font-size: 24px;
+  
+  }
+  
+    }
+  
+   
+  .header2{
+  font-size: 24px;
+  font-weight: 600;
+  
+  }
+  
+  .paratext{
+    width: 400px;
+      font-size: 15px;
+      font-weight: 400;
+  
+      ::before {
+          content: "<"; // Unicode arrow character, you can replace it with your preferred icon
+          margin-right: 10px; // Adjust spacing between text and icon as needed
+        }
+  
+  
+  }
+  
+  .attractions, .Amenities, .House-rules{
+  
+  margin-top: 0px;
+  
+  
+  }
+  
+  
+  ul{
+  
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+  }
+  
+  li {
+    margin-bottom: 10px; /* Add some vertical space between list items */
+  }
+  
+  /* Add custom bullet styles */
+  li::before {
+    content: "•"; /* Use a bullet character as content */
+    font-size: 20px;
+   // color: #ff0000; /* Customize the bullet color */
+    margin-right: 5px; /* Add some space between the bullet and the text */
+  }
+  
+  .header3{
+  
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 20px;
+  }
+  
+  .ameni{
+      margin-bottom: 0px;
+      font-size: 20px;
+      font-weight: 600;
+  }
+  
+  .icon-text2{
+      margin-left: 10px;
+      font-size: 16px;
+      font-weight: 500;
+  
+  }
+  
+  .content-container2{
+  margin-right:0px;
+  margin-bottom: 0px;
+  }
+  
+  .content-container3{
+      display: flex;
+  
+      }
+  
+  .content-con{
+  display: flex;
+  justify-content: space-between;
+  
+  width: 60%;
+  }
+  }
+  
+  
+  .sub-price{
+  margin-top:  30px;
+      background-color: #fff;
+      border: 1.5px solid $green-100;
+  width: 500px;
+  height: 532px;
+      border-radius: 16px;
+  }
+  
+  .labelbutton{
+  justify-content: space-between;
+      display: flex;
+      margin-top: 20px;
+      padding: 0 30px;
+  }
+  
+  .hprice{
+  font-size: 15px;
+  font-weight: 500;
+  }
+  
+  
+  .available{
+  width: 150px;
+  height: 40px;
+  
+  color: black;
+  margin-top: 10px;
+      border-radius: 16px;
+      border: 1.5px Solid $green-500;
+  }
+  
+  
+  .month-sub{
+      display: flex;
+      padding: 0 30px;
+  }
+  
+  .monthprice{
+  color: $blue-500;
+      font-weight: 500;
+      font-size: 40px;
+  }
+  
+  .fee{
+  margin: 20px 0px 0 60px;
+      font-weight: 500;
+      font-size: 18px;
+  }
+  
+  .schedulebut, .subscribebut{
+  
+  border-radius: 16px;
+  width: 409px;
+  height: 48px;
+  margin: 30px 0 0 50px;
+  font-size: 18px;
+  font-weight: 600;
+  }
+  
+  .schedulebut{
+      background-color: $blue-500;
+      border: 1.5px light $blue-500;
+      color: $white;
+  }
+  .subscribebut{
+      border: 1.5px solid $blue-500;
+      color: $blue-500;
+  }
+  
+  .info{
+      font-size: 14px;
+      font-weight: 400;
+   margin-left: 70px;}
+  
+  
+   h2{
+   margin-top: 100px;
+
+   }
+  
+     
+  }
+  
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width: $breakpoint-mobiles){
+
+
+  .rentproduct-section {
+    //background-color: blue;
+    width: 400px;
+    padding: 0 40px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+  
+    label {
+    
+      display: block;
+      font-weight: 500;
+      font-size: 16px;
+      margin-top: 30px; // Adjust spacing between p and label as needed
+    }
+  
+    a {
+      text-decoration: none;
+      color: $blue-500; // Adjust the link color as needed
+  
+    }
+  
+    a::before {
+      content: "<"; // Unicode arrow character, you can replace it with your preferred icon
+      margin-right: 10px; // Adjust spacing between text and icon as needed
+    }
+  
+    .details {
+  width: 350px;
+      margin-top: 30px;
+    }
+  
+  
+  .self-conprice{
+      display: flex;
+      flex-direction: column
+  
+  ;
+  height: 1200px;
+  
+  //background-color: yellow;
+  
+  .self-con{
+
+      width: 580px;
+  }
+  
+  .header1{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: $blue-500;
+  }
+  
+  
+  .address{
+      font-size: 10px;
+      font-weight: 400;
+    
+     
+      }
+      
+  .content-container, .content-container2{
+  
+      display: flex;
+   
+  
+  }
+  
+  
+  .icon-textpro{
+      color: $green-300;
+              margin-left: 10px;
+              margin-bottom: 5px;
+          }
+  
+  
+.hrs{
+
+    width: 300px;
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+  //  height: 160px;
+
+
+}
+
+.horizontalhr{
+
+ //  width: 100%;
+      border-top: 1px solid black;
+        width: 300px;
+        margin: 10px 0; /* Adjust the margin for spacing above and below the horizontal line */
+}
+  
+    .room-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  
+  
+      .bedroom,
+      .bathroom,
+      .toilet,
+      .furnishing {
+  
+  
+          align-content: center;
+        width: 30%; /* Adjust the width of each room as needed */
+      }
+    .rrroom{
+    font-size: 12px;
+    }
+      .room {
+        border-left: 1px solid black; /* Set the style and color of the room container */
+   
+       
+        text-align: center;
+      }
+  
+      .rom{
+         
+      
+        text-align: center; 
+      }
+   
+    .icon-number{
+        display: flex;
+    margin-left: 15px;
+    }
+    
+    .icon-text{
+        margin-left: 5px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+  
+  h1{
+  font-weight: 400;
+  font-size: 24px;
+  
+  }
+  
+    }
+  
+   
+  .header2{
+  font-size: 22px;
+  font-weight: 600;
+  
+  }
+  
+  .paratext{
+    width: 300px;
+      font-size: 16px;
+      font-weight: 400;
+  
+      ::before {
+          content: "<"; // Unicode arrow character, you can replace it with your preferred icon
+          margin-right: 10px; // Adjust spacing between text and icon as needed
+        }
+  
+  
+  }
+  
+  .attractions, .Amenities, .House-rules{
+  
+  margin-top: 0px;
+  
+  
+  }
+  
+  
+  ul{
+  
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+  }
+  
+  li {
+    margin-bottom: 10px; /* Add some vertical space between list items */
+  }
+  
+  /* Add custom bullet styles */
+  li::before {
+    content: "•"; /* Use a bullet character as content */
+    font-size: 20px;
+   // color: #ff0000; /* Customize the bullet color */
+    margin-right: 5px; /* Add some space between the bullet and the text */
+  }
+  
+  .header3{
+  
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 20px;
+  }
+  
+  .ameni{
+      margin-bottom: 0px;
+      font-size: 18px;
+      font-weight: 600;
+  }
+  
+  .icon-text2{
+      margin-left: 10px;
+      font-size: 16px;
+      font-weight: 500;
+  
+  }
+  
+  .content-container2{
+  margin-right:0px;
+  margin-bottom: 0px;
+  }
+  
+  .content-container3{
+      display: flex;
+  
+      }
+  
+  .content-con{
+  display: flex;
+  justify-content: space-between;
+  
+  width: 40%;
+  }
+  }
+  
+  
+  .sub-price{
+  margin-top:  30px;
+      background-color: #fff;
+      border: 1.5px solid $green-100;
+  width: 350px;
+  height: 432px;
+      border-radius: 16px;
+  }
+  
+  .labelbutton{
+  justify-content: space-between;
+      display: flex;
+      margin-top: 20px;
+      padding: 0 30px;
+  }
+  
+  .hprice{
+  font-size: 20px;
+  font-weight: 500;
+  }
+  
+  
+  .available{
+  width: 120px;
+  height: 40px;
+  
+  color: black;
+  margin-top: 10px;
+      border-radius: 16px;
+      border: 1.5px Solid $green-500;
+  }
+  
+  
+  .month-sub{
+      display: flex;
+      padding: 0 30px;
+      flex-direction: column;
+  }
+  
+  .monthprice{
+  color: $blue-500;
+      font-weight: 500;
+      font-size: 40px;
+  }
+  
+  .fee{
+  margin: 0px 0px 0 0px;
+      font-weight: 500;
+      font-size: 16px;
+  }
+  
+  .schedulebut, .subscribebut{
+  
+  border-radius: 16px;
+  width: 279px;
+  height: 48px;
+  margin: 30px 0 0 30px;
+  font-size: 18px;
+  font-weight: 600;
+  }
+  
+  .schedulebut{
+      background-color: $blue-500;
+      border: 1.5px light $blue-500;
+      color: $white;
+  }
+  .subscribebut{
+      border: 1.5px solid $blue-500;
+      color: $blue-500;
+  }
+  
+  .info{
+      font-size: 12px;
+      margin-top: 20px;
+      font-weight: 400;
+   margin-left: 5%;}
+  
+  
+   .buy-sub{
+  
+    width: 1240px;
+    
+    //height: 400px;
+      
+    }
+  
+    .buysub-pic{
+  
+      width: 1240px;
+      
+      }
+  
+     
+  }
+  
+
+
+
+
+
+}
+
+
+
+
+
+@media screen and (max-width: $breakpoint-mobile-xxs) {
+
+
+  .rentproduct-section {
+
+    width: 280px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+  
+    label {
+    
+      display: block;
+      font-weight: 500;
+      font-size: 13px;
+      margin-top: 30px; // Adjust spacing between p and label as needed
+    }
+  
+    a {
+      text-decoration: none;
+      color: $blue-500; // Adjust the link color as needed
+  
+    }
+  
+    a::before {
+      content: "<"; // Unicode arrow character, you can replace it with your preferred icon
+      margin-right: 10px; // Adjust spacing between text and icon as needed
+    }
+  
+    .details {
+  width: 240px;
+      margin-top: 30px;
+    }
+  
+  
+  .self-conprice{
+      display: flex;
+    flex-direction: column;
+  height: auto;
+
+  
+  .self-con{
+  
+      width: 240px;
+  }
+  
+  .header1{
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: $blue-500;
+  }
+  
+  
+  .address{
+      font-size: 15px;
+      font-weight: 400;
+    
+     
+      }
+      
+  .content-container, .content-container2{
+
+      display: flex;
+   
+  
+  }
+  
+  
+  .icon-textpro{
+      color: $green-300;
+              margin-left: 10px;
+              margin-bottom: 15px;
+          }
+  
+
+  .hrs{
+
+    width: 240px;
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+  //  height: 160px;
+
+
+}
+
+.horizontalhr{
+
+ //  width: 100%;
+      border-top: 1px solid black;
+        width: 240px;
+        margin: 5px 0; /* Adjust the margin for spacing above and below the horizontal line */
+}
+
+  
+    .room-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  
+  
+      .bedroom,
+      .bathroom,
+      .toilet,
+      .furnishing {
+  
+  
+          align-content: center;
+        width: 25%; /* Adjust the width of each room as needed */
+      }
+
+      .rrroom{
+font-size: 10px;
+      }
+    
+      .room {
+        border-left: 1px solid black; /* Set the style and color of the room container */
+   
+       
+        text-align: center;
+      }
+  
+      .rom{
+         
+      
+        text-align: center; 
+      }
+   
+    .icon-number{
+        display: flex;
+    margin-left:  5px;
+    }
+    
+    .icon-text{
+        margin-left: 5px;
+        font-size: 8px;
+        font-weight: 400;
+    }
+  
+  h1{
+  font-weight: 400;
+  font-size: 10px;
+  
+  }
+  
+    }
+  
+   
+  .header2{
+  font-size: 18px;
+  font-weight: 600;
+  
+  }
+  
+  .paratext{
+      font-size: 12px;
+      font-weight: 400;
+  width: 200px;
+      ::before {
+          content: "<"; // Unicode arrow character, you can replace it with your preferred icon
+          margin-right: 10px; // Adjust spacing between text and icon as needed
+        }
+  
+  
+  }
+  
+  .attractions, .Amenities, .House-rules{
+  
+  margin-top: 20px;
+  
+  
+  }
+  
+  .Amenities{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-con{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  ul{
+  
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+  }
+  
+  li {
+    margin-bottom: 10px; /* Add some vertical space between list items */
+  }
+  
+  /* Add custom bullet styles */
+  li::before {
+    content: "•"; /* Use a bullet character as content */
+    font-size: 20px;
+   // color: #ff0000; /* Customize the bullet color */
+    margin-right: 5px; /* Add some space between the bullet and the text */
+  }
+  
+  .header3{
+  
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 50px;
+  }
+  
+  .ameni{
+      margin-bottom: 0px;
+      font-size: 15px;
+      font-weight: 600;
+  }
+  
+  .icon-text2{
+      margin-left: 10px;
+      font-size: 16px;
+      font-weight: 500;
+  
+  }
+  
+  .content-container2{
+  margin-right:0px;
+  margin-bottom: 0px;
+  }
+  
+  .content-container3{
+      display: flex;
+  
+      }
+  
+  .content-con{
+  display: flex;
+  justify-content: space-between;
+  
+  width: 70%;
+  }
+  }
+  
+  
+  .sub-price{
+  margin-top:  20px;
+  width: 230px;
+  height: 432px;
+  margin-left: 3px;
+
+  }
+  
+  .labelbutton{
+  justify-content: space-between;
+      display: flex;
+      margin-top: 10px;
+      padding: 0 10px;
+  }
+  
+  .hprice{
+  font-size: 18px;
+  font-weight: 500;
+  }
+  
+  
+  .available{
+  width: 120px;
+  height: 35px;
+  
+  color: black;
+  margin-top: 10px;
+      border-radius: 16px;
+      border: 1.5px Solid $green-500;
+  }
+  
+  
+  .month-sub{
+      display: flex;
+      flex-direction: column;
+      padding: 0 10px;
+  }
+  
+  .monthprice{
+  color: $blue-500;
+      font-weight: 500;
+      font-size: 20px;
+  }
+  
+  .fee{
+  margin: 0px;
+      font-weight: 500;
+      font-size: 14px;
+  }
+  
+  .schedulebut, .subscribebut{
+  
+  border-radius: 16px;
+  width: 200px;
+  height: 42px;
+  margin: 20px 0 0 15px;
+  font-size: 16px;
+  font-weight: 600;
+  }
+  
+  
+  .info{
+      font-size: 8px;
+      font-weight: 400;
+   margin-left: 10px;}
+  
+
+      h2{
+        margin-left: 10px;
+  font-size: 13px;
+}
+  
+    
+  }
+  
+
+}
+
+
+
+

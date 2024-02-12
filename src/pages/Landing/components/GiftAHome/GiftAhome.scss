@@ -1,0 +1,1569 @@
+//font import
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@import "../../../../sass/base/variables";
+
+//mobile size edeclaration
+
+$breakpoint-mobile-xll: 1250px;
+
+$breakpoint-mobile-xl: 1024px;
+
+$breakpoint-mobile-lg: 992px;
+
+$breakpoint-mobile-lgg: 912px;
+
+$breakpoint-mobile-m: 870px;
+
+$breakpoint-mobile-md: 820px;
+
+$breakpoint-mobile-sm: 700px;
+
+$breakpoint-mobiles: 540px;
+
+$breakpoint-mobile: 430px;
+
+$breakpoint-mobile-a: 375px;
+
+$breakpoint-mobile-xxs: 360px;
+
+$breakpoint-mobile-xxss: 280px;
+
+//below
+.giftAHome {
+  max-width: 1440px;
+  overflow-x: hidden;
+
+  .giftAHomeTextandpicture {
+    width: 1165px;
+    height: 372px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); // Creates 3 columns of equal width
+    // grid-gap: 0px; // Adds a gap of 20px between grid items
+  }
+
+  .part1 {
+
+    width: 455px;
+    height: 372px;
+  }
+
+  .text-Part {
+    width: 378px;
+    margin-top: 20px;
+  }
+
+  .title-Home {
+    font-size: 50px;
+    color: #66cc99;
+    font-weight: 600;
+    margin-left: 0px;
+  }
+  .p-textdiv {
+    width: 330px;
+    height: 144px;
+    margin-left: 0px;
+  }
+
+  .p-text {
+    font-size: 13px;
+    margin-left: 0px;
+  }
+
+  .pic-Part {
+    height: 372px;
+    width: 608px;
+
+    // border-radius: 16px;
+  }
+
+  .img-part1 {
+    width: 608px;
+  }
+
+  .getStarted {
+    width: 1165px;
+    margin-top: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 691px;
+    //  width: 1240px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .howit-Works h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 4em;
+  }
+
+  .howit-Works h2 {
+    margin-left: 10.5em;
+    font-size: 17px;
+    font-weight: 400;
+  }
+
+  .imgphone {
+    margin-top: 20px;
+    margin-left: 80px;
+  }
+
+  .steps-lists {
+    width: 546px;
+    // background-color: green;
+    margin-left: 100px;
+    padding-top: 20px;
+  }
+
+  .bullet-list-item {
+    flex-direction: column;
+    //  align-items: center;
+    margin-bottom: 0px;
+    display: flex;
+  }
+  .content-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px; // Adjust spacing between icon and text as needed
+  }
+
+  .bullet-icon {
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  .bullet-text {
+    margin-bottom: 5px;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .bullet-text2 {
+    margin-top: 0px;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .butgetStarted {
+    width: 145px;
+    height: 48px;
+    background-color: $blue-400;
+    border-radius: 16px;
+    margin-left: 201px;
+    border: 1px solid $blue-500;
+    margin-top: 30px;
+    color: $white;
+    font-weight: 600;
+    font-size: 18px;
+
+    &:hover {
+      background-color: $blue-200;
+    }
+  }
+
+  .buynow-paylater-container,
+  .rentnow-paylater-container {
+    justify-content: center;
+    background-color: #d0efdf;
+    height: 697px;
+    // display: flex;
+    //  background-color: RED;
+    margin-left: 0px;
+    margin-top: 50px;
+    width: 1165px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .img-house {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    width: 1165px;
+  }
+
+  .buynow-paylater,
+  .rentnow-paylater {
+    display: flex;
+
+    //   align-items: center;
+  }
+
+  .buypaytext,
+  .rentpaytext {
+    margin-top: 20px;
+    margin-left: 30px;
+    font-weight: 600;
+    font-size: 48px;
+  }
+
+  .buynow-paylater-content,
+  .rentnow-paylater-content {
+    margin-left: 225px;
+    max-width: 500px; // Adjust the max-width as needed
+  }
+
+  label {
+    display: block;
+    font-size: 18px;
+    margin-top: 30px; // Adjust spacing between p and label as needed
+  }
+
+  a {
+    text-decoration: none;
+    color: $blue-500; // Adjust the link color as needed
+    font-weight: 600;
+    margin-left: 20px;
+  }
+
+  a::after {
+    content: ">"; // Unicode arrow character, you can replace it with your preferred icon
+    margin-left: 10px; // Adjust spacing between text and icon as needed
+  }
+
+  .footpage {
+    margin-top: 56px;
+    width: auto;
+  }
+}
+
+
+@media screen and (max-width: $breakpoint-mobile-xll){
+
+  .giftAHome{
+  padding: 0 30px;
+    max-width: 1992px;
+  
+  
+    .giftAHomeTextandpicture {
+      width: 992px;
+      height: 372px;
+     
+    }
+    .part1 {
+  
+      width: 305px;
+      height: 272px;
+    }
+  
+    .text-Part {
+    //  background-color: red;
+      width: 368px;
+      margin-top: 20px;
+    }
+  
+    .title-Home {
+      font-size: 45px;
+      color: #66cc99;
+      font-weight: 600;
+      margin-left: 0px;
+    }
+  
+    .p-textdiv {
+      width: 230px;
+      height: 144px;
+      margin-left: 0px;
+    }
+  
+    
+    .pic-Part {
+      height: 372px;
+      width: 698px;
+  
+      // border-radius: 16px;
+    }
+  
+    .img-part1 {
+      width: 478px;
+      
+    }
+  
+    .getStarted {
+      width: 780px;
+      margin-top: 30px;
+      height: 550px;
+  
+    }
+  
+    
+    .howit-Works h1 {
+      font-size: 45px;
+      margin-left: 1em;
+    }
+  
+    .howit-Works h2 {
+      margin-left: 3.5em;
+      font-size: 15px;
+    }
+  
+    .imgphone {
+      margin-top: 20px;
+      margin-left: 0px;
+      width: 360px;
+    }
+  
+  
+    .steps-lists {
+      width: 446px;
+      // background-color: green;
+      margin-left: 0px;
+      padding-top: 20px;
+    }
+  
+    
+    .bullet-icon {
+      margin-left: 0px;
+      margin-top: 15px;
+    }
+  
+    .bullet-text {
+      margin-bottom: 5px;
+      margin-left: 5px;
+      font-size: 15px;
+      font-weight: 500;
+    }
+  
+    .butgetStarted {
+      width: 145px;
+      height: 48px;
+       margin-left: 100px;
+  
+    }
+
+    .bullet-text2 {
+      margin-top: 0px;
+      margin-left: 20px;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  
+    .buynow-paylater-container,
+    .rentnow-paylater-container {
+     
+      height: 697px;
+  
+      margin-left: 0px;
+      margin-top: 20px;
+      width: 780px;
+  
+    }
+    .img-house {
+  
+      width: 780px;
+    }
+  
+    .buypaytext,
+    .rentpaytext {
+      margin-top: 10px;
+      margin-left: 30px;
+      font-weight: 600;
+      font-size: 30px;
+    }
+  
+    .buynow-paylater-content,
+    .rentnow-paylater-content {
+      margin-left: 50px;
+      max-width: 400px; // Adjust the max-width as needed
+    }
+  
+  }
+  
+  
+  }
+  
+  
+@media screen and (max-width: $breakpoint-mobile-lg){
+
+  .giftAHome{
+margin-left: 40px;
+    max-width: 992px;
+  
+  
+    .giftAHomeTextandpicture {
+      width: 992px;
+      height: 372px;
+     
+    }
+    .part1 {
+  
+      width: 305px;
+      height: 272px;
+    }
+  
+    .text-Part {
+      width: 268px;
+      margin-top: 20px;
+    }
+  
+    .title-Home {
+      font-size: 40px;
+      color: #66cc99;
+      font-weight: 600;
+      margin-left: 0px;
+    }
+  
+    .p-textdiv {
+      width: 230px;
+      height: 144px;
+      margin-left: 0px;
+    }
+  
+    
+    .pic-Part {
+      height: 372px;
+      width: 698px;
+  
+      // border-radius: 16px;
+    }
+  
+    .img-part1 {
+      width: 508px;
+      
+    }
+  
+    .getStarted {
+      width: 797px;
+      margin-top: 0px;
+      height: 491px;
+  
+    }
+  
+    
+    .howit-Works h1 {
+      font-size: 35px;
+      margin-left: 1em;
+    }
+  
+    .howit-Works h2 {
+      margin-left: 3.5em;
+      font-size: 15px;
+    }
+  
+    .imgphone {
+      margin-top: 20px;
+      margin-left: 0px;
+      width: 350px;
+    }
+  
+  
+    .steps-lists {
+      width: 446px;
+      // background-color: green;
+      margin-left: 0px;
+      padding-top: 20px;
+    }
+  
+    
+    .bullet-icon {
+      margin-left: 10px;
+      margin-top: 15px;
+    }
+  
+    .bullet-text {
+      margin-bottom: 5px;
+      margin-left: 10px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  
+    .butgetStarted {
+      width: 145px;
+      height: 48px;
+       margin-left: 150px;
+  
+    }
+  
+    .buynow-paylater-container,
+    .rentnow-paylater-container {
+     
+      height: 697px;
+  
+      margin-left: 0px;
+      margin-top: 20px;
+      width: 797px;
+  
+    }
+    .img-house {
+  
+      width: 797px;
+    }
+  
+    .buypaytext,
+    .rentpaytext {
+      margin-top: 10px;
+      margin-left: 30px;
+      font-weight: 600;
+      font-size: 25px;
+    }
+  
+    .buynow-paylater-content,
+    .rentnow-paylater-content {
+      margin-left: 225px;
+      max-width: 500px; // Adjust the max-width as needed
+    }
+  
+  }
+  
+  
+  }
+  
+  
+@media screen and (max-width: $breakpoint-mobile-m){
+
+  .giftAHome{
+margin-left: 0px;
+    max-width: 992px;
+  
+  
+    .giftAHomeTextandpicture {
+      width: 992px;
+      height: 372px;
+     
+    }
+    .part1 {
+  
+      width: 305px;
+      height: 272px;
+    }
+  
+    .text-Part {
+      width: 268px;
+      margin-top: 20px;
+    }
+  
+    .title-Home {
+      font-size: 40px;
+      color: #66cc99;
+      font-weight: 600;
+      margin-left: 0px;
+    }
+  
+    .p-textdiv {
+      width: 230px;
+      height: 144px;
+      margin-left: 0px;
+    }
+  
+    
+    .pic-Part {
+      height: 372px;
+      width: 698px;
+  
+      // border-radius: 16px;
+    }
+  
+    .img-part1 {
+      width: 508px;
+      
+    }
+  
+    .getStarted {
+      width: 797px;
+      margin-top: 0px;
+      height: 491px;
+  
+    }
+  
+    
+    .howit-Works h1 {
+      font-size: 35px;
+      margin-left: 1em;
+    }
+  
+    .howit-Works h2 {
+      margin-left: 3.5em;
+      font-size: 15px;
+    }
+  
+    .imgphone {
+      margin-top: 20px;
+      margin-left: 0px;
+      width: 350px;
+    }
+  
+  
+    .steps-lists {
+      width: 446px;
+      // background-color: green;
+      margin-left: 0px;
+      padding-top: 20px;
+    }
+  
+    
+    .bullet-icon {
+      margin-left: 10px;
+      margin-top: 15px;
+    }
+  
+    .bullet-text {
+      margin-bottom: 5px;
+      margin-left: 10px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  
+    .butgetStarted {
+      width: 145px;
+      height: 48px;
+       margin-left: 150px;
+  
+    }
+  
+    .buynow-paylater-container,
+    .rentnow-paylater-container {
+     
+      height: 697px;
+  
+      margin-left: 0px;
+      margin-top: 20px;
+      width: 797px;
+  
+    }
+    .img-house {
+  
+      width: 797px;
+    }
+  
+    .buypaytext,
+    .rentpaytext {
+      margin-top: 10px;
+      margin-left: 30px;
+      font-weight: 600;
+      font-size: 25px;
+    }
+  
+    .buynow-paylater-content,
+    .rentnow-paylater-content {
+      margin-left: 225px;
+      max-width: 500px; // Adjust the max-width as needed
+    }
+  
+  }
+  
+  
+  }
+
+  @media screen and (max-width: $breakpoint-mobile-md){
+
+    .giftAHome{
+      display: flex;
+      flex-direction: column;
+      max-width: 992px;
+    
+    
+      .giftAHomeTextandpicture {
+        width: 992px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+       
+      }
+      .part1 {
+
+   text-align: center;
+        width: 705px;
+        height: 272px;
+      }
+    
+      .text-Part {
+        width: 668px;
+        margin-top: 20px;
+      }
+    
+      .title-Home {
+        font-size: 40px;
+        color: #66cc99;
+        font-weight: 600;
+        margin-left: 0px;
+      }
+    
+      .p-textdiv {
+        width: 630px;
+        height: 144px;
+        margin-left: 30px;
+      }
+    
+      
+      .pic-Part {
+        height: 372px;
+        width: 708px;
+    
+        // border-radius: 16px;
+      }
+    
+      .img-part1 {
+        width: 705px;
+        
+      }
+    
+      .getStarted {
+        display: flex;
+        flex-direction: column;
+        width: 707px;
+        margin-top: 10em;
+        height: 520px;
+    
+      }
+    
+      
+      .howit-Works h1 {
+        font-size: 35px;
+        margin-left: 7em;
+      }
+    
+      .howit-Works h2 {
+        margin-left: 17.5em;
+        font-size: 15px;
+      }
+    
+      .imgphone {
+        margin-top: 20px;
+        margin-left: 10em;
+        width: 450px;
+      }
+    
+    
+      .steps-lists {
+        width: 646px;
+        text-align: justify;
+        // background-color: green;
+        margin-left: 8em;
+        padding-top: 5px;
+      }
+    
+      
+      .bullet-icon {
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+    
+      .bullet-text {
+        text-align: center;
+        margin-bottom: 0px;
+        margin-left: 5px;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    
+      .butgetStarted {
+
+        width: 145px;
+        height: 48px;
+         margin-left: 150px;
+    
+      }
+    
+      .buynow-paylater-container,
+      .rentnow-paylater-container {
+        margin-top: 25em;
+        height: 597px;
+    
+        margin-left: 0px;
+  
+        width: 707px;
+    
+      }
+
+      .rentnow-paylater-container{
+        margin-top: 2em;
+      }
+      .img-house {
+    
+        width: 707px;
+      }
+    
+      .buypaytext,
+      .rentpaytext {
+        margin-top: 10px;
+        margin-left: 30px;
+        font-weight: 600;
+        font-size: 25px;
+      }
+    
+      .buynow-paylater-content,
+      .rentnow-paylater-content {
+        margin-left: 225px;
+        max-width: 500px; // Adjust the max-width as needed
+      }
+    
+    }
+    
+    
+    }
+
+
+    @media screen and (max-width: $breakpoint-mobile-sm){
+
+      .giftAHome{
+        display: flex;
+        margin-left: 50px;
+        flex-direction: column;
+        max-width: 492px;
+      
+      
+        .giftAHomeTextandpicture {
+          
+          width: 392px;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+         
+        }
+        .part1 {
+  
+     text-align: center;
+          width: 392px;
+          height: 272px;
+        }
+      
+        .text-Part {
+          width: 368px;
+          text-align: center;
+          margin-top: 20px;
+        }
+      
+        .title-Home {
+          font-size: 35px;
+          color: #66cc99;
+          font-weight: 600;
+          margin-left: 100px;
+        }
+      
+        .p-textdiv {
+          width: 330px;
+          height: 144px;
+          margin-left: 110px;
+        }
+      
+        
+        .pic-Part {
+          height: 472px;
+          width: 458px;
+      
+          // border-radius: 16px;
+        }
+      
+        .img-part1 {
+       margin-left: 70px;
+          width: 405px;
+          
+        }
+      
+        .getStarted {
+          display: flex;
+          margin-left: 6em;
+          flex-direction: column;
+          width: 357px;
+          margin-top: 0em;
+          height: 750px;
+      
+        }
+      
+        
+        .howit-Works h1 {
+          font-size: 35px;
+          margin-left: 2em;
+        }
+      
+        .howit-Works h2 {
+          margin-left: 6.5em;
+          font-size: 15px;
+        }
+      
+        .imgphone {
+          margin-top: 20px;
+          margin-left: 4em;
+          width: 250px;
+        }
+      
+      
+        .steps-lists {
+          width: 336px;
+          text-align: center;
+          // background-color: green;
+          margin-left: 1em;
+          padding-top: 5px;
+        }
+      
+        
+        .bullet-icon {
+          margin-left: 5px;
+          margin-top: 10px;
+        }
+      
+        .bullet-text {
+          text-align: center;
+          margin-bottom: 0px;
+          margin-left: 5px;
+          font-size: 15px;
+          font-weight: 500;
+        }
+      
+        .butgetStarted {
+  
+          width: 135px;
+          height: 48px;
+           margin-left: 0px;
+      
+        }
+      
+        .buynow-paylater-container,
+        .rentnow-paylater-container {
+          margin-top: 2em;
+          height: 397px;
+      
+          margin-left: 6em;
+    
+          width: 357px;
+      
+        }
+  
+        .rentnow-paylater-container{
+          margin-top: 2em;
+        }
+        .img-house {
+      
+          width: 357px;
+        }
+      
+        .buypaytext,
+        .rentpaytext {
+          margin-top: 10px;
+          margin-left: 30px;
+          font-weight: 600;
+          font-size: 20px;
+        }
+      
+        .buynow-paylater-content,
+        .rentnow-paylater-content {
+          margin-left: 25px;
+          max-width: 500px; // Adjust the max-width as needed
+        }
+      
+      }
+      
+      
+      }
+
+      @media screen and (max-width: $breakpoint-mobiles){
+
+        .giftAHome{
+          display: flex;
+          margin-left: 0px;
+          flex-direction: column;
+          max-width: 492px;
+        
+        
+          .giftAHomeTextandpicture {
+            
+            width: 392px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+           
+          }
+          .part1 {
+    
+       text-align: center;
+            width: 392px;
+            height: 272px;
+          }
+        
+          .text-Part {
+            width: 368px;
+            text-align: center;
+            margin-top: 20px;
+          }
+        
+          .title-Home {
+            font-size: 35px;
+            color: #66cc99;
+            font-weight: 600;
+            margin-left: 100px;
+          }
+        
+          .p-textdiv {
+            width: 330px;
+            height: 144px;
+            margin-left: 110px;
+          }
+        
+          
+          .pic-Part {
+            height: 472px;
+            width: 458px;
+        
+            // border-radius: 16px;
+          }
+        
+          .img-part1 {
+         margin-left: 70px;
+            width: 405px;
+            
+          }
+        
+          .getStarted {
+            display: flex;
+            margin-left: 6em;
+            flex-direction: column;
+            width: 357px;
+            margin-top: 0em;
+            height: 750px;
+        
+          }
+        
+          
+          .howit-Works h1 {
+            font-size: 35px;
+            margin-left: 2em;
+          }
+        
+          .howit-Works h2 {
+            margin-left: 6.5em;
+            font-size: 15px;
+          }
+        
+          .imgphone {
+            margin-top: 20px;
+            margin-left: 4em;
+            width: 250px;
+          }
+        
+        
+          .steps-lists {
+            width: 336px;
+            text-align: center;
+            // background-color: green;
+            margin-left: 1em;
+            padding-top: 5px;
+          }
+        
+          
+          .bullet-icon {
+            margin-left: 5px;
+            margin-top: 10px;
+          }
+        
+          .bullet-text {
+            text-align: center;
+            margin-bottom: 0px;
+            margin-left: 5px;
+            font-size: 15px;
+            font-weight: 500;
+          }
+        
+          .butgetStarted {
+    
+            width: 135px;
+            height: 48px;
+             margin-left: 0px;
+        
+          }
+        
+          .buynow-paylater-container,
+          .rentnow-paylater-container {
+            margin-top: 2em;
+            height: 397px;
+        
+            margin-left: 6em;
+      
+            width: 357px;
+        
+          }
+    
+          .rentnow-paylater-container{
+            margin-top: 2em;
+          }
+          .img-house {
+        
+            width: 357px;
+          }
+        
+          .buypaytext,
+          .rentpaytext {
+            margin-top: 10px;
+            margin-left: 30px;
+            font-weight: 600;
+            font-size: 20px;
+          }
+        
+          .buynow-paylater-content,
+          .rentnow-paylater-content {
+            margin-left: 25px;
+            max-width: 500px; // Adjust the max-width as needed
+          }
+        
+        }
+        
+        
+        }
+  
+
+        @media screen and (max-width: $breakpoint-mobile){
+
+          .giftAHome{
+            display: flex;
+            margin-left: 10px;
+            flex-direction: column;
+            max-width: 380px;
+          
+          
+            .giftAHomeTextandpicture {
+              
+              width: 380px;
+              height: 70vh;
+              display: flex;
+              flex-direction: column;
+             
+            }
+            .part1 {
+      
+         text-align: center;
+              width: 380px;
+              height: 272px;
+            }
+          
+            .text-Part {
+   
+              width: 380px;
+              text-align: center;
+              margin-top: 20px;
+            }
+          
+            .title-Home {
+              font-size: 30px;
+              color: rgb(62, 21, 21);
+              font-weight: 600;
+              margin-left: 0px;
+            }
+          
+            .p-textdiv {
+              width: 270px;
+              height: 144px;
+              margin-left: 30px;
+            }
+          
+            
+            .pic-Part {
+              height: 452px;
+              width: 380px;
+          
+              // border-radius: 16px;
+            }
+          
+            .img-part1 {
+           margin-left: 0px;
+              width: 380px;
+              
+            }
+          
+            .getStarted {
+              display: flex;
+              margin-left: 0em;
+              flex-direction: column;
+              width: 357px;
+              margin-top: 0em;
+              height: 750px;
+          
+            }
+          
+            
+            .howit-Works h1 {
+              font-size: 35px;
+              margin-left: 2em;
+            }
+          
+            .howit-Works h2 {
+              margin-left: 6.5em;
+              font-size: 15px;
+            }
+          
+            .imgphone {
+              margin-top: 20px;
+              margin-left: 4em;
+              width: 250px;
+            }
+          
+          
+            .steps-lists {
+              width: 336px;
+              text-align: center;
+              // background-color: green;
+              margin-left: 1em;
+              padding-top: 5px;
+            }
+          
+            
+            .bullet-icon {
+              margin-left: 5px;
+              margin-top: 10px;
+            }
+          
+            .bullet-text {
+              text-align: center;
+              margin-bottom: 0px;
+              margin-left: 5px;
+              font-size: 15px;
+              font-weight: 500;
+            }
+          
+            .butgetStarted {
+      
+              width: 135px;
+              height: 48px;
+               margin-left: 0px;
+          
+            }
+          
+            .buynow-paylater-container,
+            .rentnow-paylater-container {
+              margin-top: 1em;
+              height: 397px;
+          
+              margin-left: 0em;
+        
+              width: 350px;
+          
+            }
+      
+            .rentnow-paylater-container{
+              margin-top: 2em;
+            }
+            .img-house {
+          
+              width: 350px;
+            }
+          
+            .buypaytext,
+            .rentpaytext {
+              margin-top: 10px;
+              margin-left: 30px;
+              font-weight: 600;
+              font-size: 20px;
+            }
+          
+            .buynow-paylater-content,
+            .rentnow-paylater-content {
+              margin-left: 25px;
+              max-width: 500px; // Adjust the max-width as needed
+            }
+          
+          }
+          
+          
+          }
+
+
+          @media screen and (max-width: $breakpoint-mobile-xxs){
+
+            .giftAHome{
+              display: flex;
+              margin-left: 0px;
+              flex-direction: column;
+              max-width: 340px;
+            
+            
+              .giftAHomeTextandpicture {
+                
+                width: 280px;
+                height: 70vh;
+                display: flex;
+                flex-direction: column;
+               
+              }
+              .part1 {
+        
+           text-align: center;
+                width: 230px;
+                height: 272px;
+              }
+            
+              .text-Part {
+     
+                width: 280px;
+                text-align: center;
+                margin-top: 20px;
+              }
+            
+              .title-Home {
+                font-size: 30px;
+    color: #66cc99;
+                font-weight: 600;
+                margin-left: 0px;
+              }
+            
+              .p-textdiv {
+                width: 270px;
+                height: 144px;
+                margin-left: 0px;
+              }
+            
+              
+              .pic-Part {
+                height: 452px;
+                width: 280px;
+            
+                // border-radius: 16px;
+              }
+            
+              .img-part1 {
+             margin-left: 0px;
+                width: 280px;
+                
+              }
+            
+              .getStarted {
+                display: flex;
+                margin-left: 0em;
+                flex-direction: column;
+                width: 280px;
+                margin-top: 2em;
+                height: 750px;
+            
+              }
+            
+              
+              .howit-Works h1 {
+                font-size: 32px;
+                margin-left: 1em;
+              }
+            
+              .howit-Works h2 {
+                margin-left: 3.5em;
+                font-size: 15px;
+              }
+            
+              .imgphone {
+                margin-top: 20px;
+                margin-left: 2em;
+                width: 240px;
+              }
+            
+            
+              .steps-lists {
+                width: 280px;
+                text-align: center;
+                // background-color: green;
+                margin-left: 0em;
+                padding-top: 5px;
+              }
+            
+              
+              .bullet-icon {
+                margin-left: 5px;
+                margin-top: 10px;
+              }
+            
+              .bullet-text {
+                text-align: center;
+                margin-bottom: 0px;
+                margin-left: 0px;
+                font-size: 12px;
+                font-weight: 500;
+              }
+            
+              .butgetStarted {
+        font-size: 15px;
+                width: 105px;
+                height: 42px;
+                 margin-left: 0px;
+            
+              }
+            
+              .buynow-paylater-container,
+              .rentnow-paylater-container {
+                margin-top: 1em;
+                height: 397px;
+            
+                margin-left: 0em;
+          
+                width: 280px;
+            
+              }
+        
+              .rentnow-paylater-container{
+                margin-top: 2em;
+              }
+              .img-house {
+            
+                width: 280px;
+              }
+            
+              .buypaytext,
+              .rentpaytext {
+                margin-top: 10px;
+                margin-left: 30px;
+                font-weight: 600;
+                font-size: 20px;
+              }
+            
+              .buynow-paylater-content,
+              .rentnow-paylater-content {
+                margin-left: 25px;
+                max-width: 500px; // Adjust the max-width as needed
+              }
+            
+            }
+            
+            
+            }
+  
+
+@media screen and (max-width: $breakpoint-mobile-xxss){
+
+.giftAHome{
+
+  max-width: 280px;
+margin-left: 0px;
+
+  .giftAHomeTextandpicture {
+    width: 280px;
+    height: 372px;
+   
+  }
+  .part1 {
+
+    width: 280px;
+    height: 272px;
+  }
+
+  .text-Part {
+    width: 250px;
+    margin-top: 0px;
+  }
+
+  .title-Home {
+    font-size: 30px;
+    color: #66cc99;
+    font-weight: 600;
+    margin-left: 0px;
+  }
+
+  .p-textdiv {
+    width: 250px;
+    height: 144px;
+    margin-left: 0px;
+  }
+
+  
+  .pic-Part {
+    height: 372px;
+    width: 498px;
+
+    // border-radius: 16px;
+  }
+
+  .img-part1 {
+    width: 308px;
+    
+  }
+
+  .getStarted {
+    width: 280px;
+    margin-top: 0px;
+    height: 591px;
+
+  }
+
+  
+  .howit-Works h1 {
+    font-size: 35px;
+    margin-left: 0.5em;
+  }
+
+  .howit-Works h2 {
+    margin-left: 1.5em;
+    font-size: 15px;
+  }
+
+  .imgphone {
+    margin-top: 30px;
+    margin-left: 5px;
+    width: 250px;
+  }
+
+
+  .steps-lists {
+    width: 240px;
+    height: 400px;
+ 
+    margin-left: 0px;
+    padding-top: 20px;
+  }
+
+  
+  .bullet-icon {
+    margin-left: 10px;
+    width: 15px;
+    margin-top: 10px;
+  }
+
+  .bullet-text {
+    margin-bottom: 0px;
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .bullet-text2 {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+
+  .butgetStarted {
+    width: 125px;
+    margin-top: 30px;
+    height: 48px;
+     margin-left: 0px;
+
+  }
+
+
+  .rentnow-paylater-container {
+   
+    height: 697px;
+
+    margin-left: 0px;
+    margin-top: 2em;
+    width: 255px;
+
+  }
+
+  .buynow-paylater-container {
+   
+    height: 697px;
+
+    margin-left: 0px;
+    margin-top: 15em;
+    width: 255px;
+
+  }
+  .img-house {
+
+    width: 255px;
+  }
+
+  .buypaytext,
+  .rentpaytext {
+    margin-top: 10px;
+    margin-left: 0px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .buynow-paylater-content,
+  .rentnow-paylater-content {
+    margin-left: 0px;
+    max-width: 100px; // Adjust the max-width as needed
+  }
+
+}
+
+
+}
