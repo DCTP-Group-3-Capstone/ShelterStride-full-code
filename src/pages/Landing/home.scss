@@ -1,4 +1,4 @@
-@import "../../scss/components/input.scss";
+ @use "../../scss/components/input.scss" as *;
 @import "../../scss/components/button.scss";
 @import "../../sass/base/variables";
 
