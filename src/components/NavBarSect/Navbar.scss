@@ -59,13 +59,13 @@ $breakpoint-mobile: 460px;
 }
 
 .navbar {
-  background: $white;
+ 
   height: 80px;
   // max-width: 1440px;
   // height: 100px;
   display: flex;
   justify-content: center;
-  align-items: center;
+//  align-items: center;
   font-size: 0.9rem;
   padding: 26px 100px;
   font-family: "poppins";
@@ -86,7 +86,7 @@ $breakpoint-mobile: 460px;
 }
 
 .navbar-logo {
-  width: 181.853px;
+  width: 178.853px;
   height: 41.802px;
   // justify-self: start;
   // margin-left: 20px;
@@ -106,8 +106,8 @@ $breakpoint-mobile: 460px;
   grid-gap: 10px;
   list-style: none;
   text-align: center;
-  width: 70vw;
-  justify-content: end;
+  width: 50vw;
+  justify-content: start;
   margin-right: 2rem;
 }
 

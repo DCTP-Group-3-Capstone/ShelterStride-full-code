@@ -1642,9 +1642,9 @@ font-weight: 600;
 
 
   .rentproduct-section {
-    //background-color: blue;
+
     width: 400px;
-    padding: 0 40px;
+    padding: 0 30px;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
@@ -1669,7 +1669,7 @@ font-weight: 600;
     }
   
     .details {
-  width: 350px;
+  width: 340px;
       margin-top: 30px;
     }
   
@@ -1878,7 +1878,7 @@ font-weight: 600;
   margin-top:  30px;
       background-color: #fff;
       border: 1.5px solid $green-100;
-  width: 350px;
+  width: 340px;
   height: 432px;
       border-radius: 16px;
   }
@@ -1887,7 +1887,7 @@ font-weight: 600;
   justify-content: space-between;
       display: flex;
       margin-top: 20px;
-      padding: 0 30px;
+      padding: 0 20px;
   }
   
   .hprice{
@@ -1909,14 +1909,14 @@ font-weight: 600;
   
   .month-sub{
       display: flex;
-      padding: 0 30px;
+      padding: 0 20px;
       flex-direction: column;
   }
   
   .monthprice{
   color: $blue-500;
       font-weight: 500;
-      font-size: 40px;
+      font-size: 35px;
   }
   
   .fee{

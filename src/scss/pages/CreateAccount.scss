@@ -212,7 +212,7 @@ a {
 
     //page container 
     .container {
-    
+    margin-left: 0px;
     width: 280px;
     
 
@@ -369,9 +369,9 @@ a {
 
     //page container 
     .container {
-    
+    margin: 0px;
     width: 280px;
-    
+
     //page header
   
     
@@ -526,28 +526,28 @@ a {
 
     //page container 
     .container {
-    
-    width: 280px;
-    
 
+    width: 390px;
+    margin-left: 0px;
+margin-top: 0px;
   
     
     //logo
     .heading img {
-    
+    margin-left: 0px;
     width: 150px;
     
     }
     
     // h3 text
     .question h3 {
-        font-size: 14px;
-   margin-left: 30px;
+        font-size: 18px;
+   margin-left: 65px;
     
     }
     
     .account-type {
-        width: 280px;
+        width: 350px;
         height: 500px;
         border: 0px;
     
@@ -556,9 +556,9 @@ a {
     //benefactor and sponsor container
     .account-type .benefactor,
     .sponsor {
-        width: 200px;
+        width: 260px;
         height: 224px;
-        margin: 0px 0 20px 30px;
+        margin: 0px 0 10px 40px;
     
     }
     
@@ -567,7 +567,7 @@ a {
     .sponsor p {
         color: $black-500;
         font-weight: 400;
-      
+      width: 250PX;
         font-size: 10px;
         font-family: 'Poppins';
         text-align: justify;
@@ -579,7 +579,7 @@ a {
         margin-top: 0px;
         gap: 6px;
         display: flex;
-    
+
     
     }
     
@@ -599,8 +599,8 @@ a {
     
     //separator line
     hr {
-        margin: 0px 0px 0px 30px;
-        width: 220px;
+        margin: 0px 0px 0px 40px;
+        width: 250px;
         place-items: center;
     
     
@@ -612,7 +612,7 @@ a {
         height: 42px;
         font-size: 14px;
         background-color: #fff;
-        margin-top: 30px;
+        margin-top: 20px;
        
     
         &:hover {
@@ -621,7 +621,7 @@ a {
     }
     //button 1 only
     .button1 {
-           width: 220px;
+           width: 240px;
               
             // background image (right arrow icon)
             background-image: url('../../src/assets/icon/right2.png');
@@ -635,7 +635,7 @@ a {
     //button 2 only
     .button2 {
     
-        width: 200px; 
+        width: 230px; 
     
     
     
@@ -675,6 +675,7 @@ a {
 
 }
 
+
 @media (min-width: $breakpoint-mobile-smm) {
 
 
@@ -682,7 +683,158 @@ a {
 
     //page container 
     .container {
+    margin-left: 50px;
+    width: 540px;
+    
 
+    
+    //logo
+    .heading img {
+    
+    width: 180px;
+    
+    }
+    
+    // h3 text
+    .question h3 {
+        font-size: 16px;
+   margin-left: 30px;
+    
+    }
+    
+    .account-type {
+        width: 530px;
+        height: 500px;
+        border: 1px solid $green-400;
+        border-radius: 20px;
+    }
+    
+    //benefactor and sponsor container
+    .account-type .benefactor,
+    .sponsor {
+        width: 400px;
+        height: 224px;
+        margin: 0px 0 20px 70px;
+    
+    }
+    
+    //benefactor and sponsor paragraph
+    .benefactor p,
+    .sponsor p {
+        color: $black-500;
+        font-weight: 400;
+      
+        font-size: 14px;
+        font-family: 'Poppins';
+        text-align: justify;
+    
+    
+    }
+    
+    .title {
+        margin-top: 0px;
+        gap: 16px;
+        display: flex;
+    
+    
+    }
+    
+    .title img {
+        justify-items: center;
+   width: 40px;
+    
+    }
+    
+    .title h4 {
+    
+        font-size: 16px;
+
+    
+     
+    }
+    
+    //separator line
+    hr {
+        margin: 0px 0px 0px 70px;
+        width: 400px;
+        place-items: center;
+    
+    
+    }
+    
+    
+    //buttons styling
+    .button1, .button2 {
+        height: 42px;
+        font-size: 14px;
+        background-color: #fff;
+        margin-top: 30px;
+       
+    
+        &:hover {
+            background-color: $blue-100;
+        }
+    }
+    //button 1 only
+    .button1 {
+           width: 220px;
+              
+
+    }
+    
+    //button 2 only
+    .button2 {
+    
+        width: 200px; 
+    
+    
+    
+    }
+    
+    .signin-text {
+        font-size: 15px;
+    
+    }
+    
+    
+    //link and hover style
+    a {
+        color: $blue-300;
+        text-decoration: none;
+        font-weight: 400;
+        margin: 0 0px;
+        transition: color 0.3s;
+        color: $green-400;
+    
+        &:hover {
+            color: $green-200;
+        }
+    }
+    
+    
+    }
+    
+
+
+
+
+
+
+
+
+
+}
+
+
+
+@media (min-width: $breakpoint-mobile-md) {
+
+
+
+
+    //page container 
+    .container {
+    margin-left: 400px;
     width: 540px;
     
 

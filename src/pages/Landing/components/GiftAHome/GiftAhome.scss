@@ -649,6 +649,7 @@ margin-left: 0px;
   @media screen and (max-width: $breakpoint-mobile-md){
 
     .giftAHome{
+   
       display: flex;
       flex-direction: column;
       max-width: 992px;
@@ -798,6 +799,7 @@ margin-left: 0px;
     @media screen and (max-width: $breakpoint-mobile-sm){
 
       .giftAHome{
+        
         display: flex;
         margin-left: 50px;
         flex-direction: column;
@@ -1105,10 +1107,11 @@ margin-left: 0px;
         @media screen and (max-width: $breakpoint-mobile){
 
           .giftAHome{
+    
             display: flex;
-            margin-left: 10px;
+            margin-left: 0px;
             flex-direction: column;
-            max-width: 380px;
+            max-width: 390px;
           
           
             .giftAHomeTextandpicture {
@@ -1150,22 +1153,22 @@ margin-left: 0px;
             .pic-Part {
               height: 452px;
               width: 380px;
-          
+              margin-top: 50px;
               // border-radius: 16px;
             }
           
             .img-part1 {
            margin-left: 0px;
-              width: 380px;
+              width: 340px;
               
             }
           
             .getStarted {
               display: flex;
-              margin-left: 0em;
+              margin-left: -0.3em;
               flex-direction: column;
-              width: 357px;
-              margin-top: 0em;
+              width: 340px;
+              margin-top: -4em;
               height: 750px;
           
             }
@@ -1173,11 +1176,11 @@ margin-left: 0px;
             
             .howit-Works h1 {
               font-size: 35px;
-              margin-left: 2em;
+              margin-left: 1.5em;
             }
           
             .howit-Works h2 {
-              margin-left: 6.5em;
+              margin-left: 5.5em;
               font-size: 15px;
             }
           
@@ -1189,10 +1192,10 @@ margin-left: 0px;
           
           
             .steps-lists {
-              width: 336px;
+              width: 330px;
               text-align: center;
               // background-color: green;
-              margin-left: 1em;
+              margin-left: 0.5em;
               padding-top: 5px;
             }
           
@@ -1220,12 +1223,12 @@ margin-left: 0px;
           
             .buynow-paylater-container,
             .rentnow-paylater-container {
-              margin-top: 1em;
+              margin-top: 1.5em;
               height: 397px;
           
-              margin-left: 0em;
+              margin-left: -0.5em;
         
-              width: 350px;
+              width: 340px;
           
             }
       
@@ -1234,13 +1237,13 @@ margin-left: 0px;
             }
             .img-house {
           
-              width: 350px;
+              width: 340px;
             }
           
             .buypaytext,
             .rentpaytext {
               margin-top: 10px;
-              margin-left: 30px;
+              margin-left: 10px;
               font-weight: 600;
               font-size: 20px;
             }
@@ -1261,6 +1264,7 @@ margin-left: 0px;
 
             .giftAHome{
               display: flex;
+       
               margin-left: 0px;
               flex-direction: column;
               max-width: 340px;

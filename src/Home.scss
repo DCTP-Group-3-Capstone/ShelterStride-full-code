@@ -13,7 +13,9 @@
     height: 100vh;
     min-width: 280px;
     overflow-y: scroll;
-    align-items: center;
+   // display: flex;
+
+    //flex-wrap: wrap;
     justify-content: center;
   }
   
@@ -29,6 +31,6 @@
   
   /* Hide the scrollbar track */
   body::-webkit-scrollbar-track {
-    background: transparent;
+   background: transparent; 
   }
   
