@@ -24,7 +24,7 @@ $breakpoint-mobile-smm: 540px;
 
 $breakpoint-mobile: 430px;
 
-$breakpoint-mobiles: 414px;
+$breakpoint-mobiles: 412px;
 
 $breakpoint-mobile-a: 390px;
 
@@ -199,11 +199,12 @@ $breakpoint-mobile-xxss: 280px;
 @media screen and (max-width: $breakpoint-mobile-xxs) {
     .Login-page {
      width: 380px;
-  
+
  
       margin: 40px 0 0 0px;
     
       .logolabel img {
+
         width: 140px;
         margin-left: 20px;
       }
@@ -283,7 +284,7 @@ $breakpoint-mobile-xxss: 280px;
 
 @media (max-width: $breakpoint-mobile-a) {
     .Login-page {
- 
+
 width: 390px;
 
       margin: 20px 0 0 0px;
@@ -292,6 +293,8 @@ width: 390px;
         width: 150px;
         height: 30px;
         margin-left: 0px;
+
+
       }
       .Login-container {
         margin-left: 25px;
@@ -369,3 +372,176 @@ width: 390px;
   }
 
 
+  @media (max-width: $breakpoint-mobile) {
+    .Login-page {
+   
+width: 390px;
+
+      margin: 20px 0 0 0px;
+
+      .logolabel img {
+        width: 150px;
+        height: 30px;
+        margin-left: 10px;
+      }
+      .Login-container {
+        margin-left: 25px;
+        width: 350px;
+      }
+      .welcome-back {
+        font-size: 18px;
+        margin-left: 5px;
+      }
+  
+      .Login-Box {
+        border: 0px;
+        margin-left: 5.3em;
+        width: 250px;
+        height: 330px;
+      }
+  
+      .Login-form {
+        margin: 5px 0px;
+        width: 170px;
+        margin-left: 0px;
+  
+        label {
+          margin: 15px 10px 10px -30px;
+          line-height: 10px;
+          font-size: 14px;
+        }
+      }
+  
+      .form-group {
+        align-self: center;
+        width: 240px;
+        height: 38px;
+        gap: 0px;
+      }
+      .form-group img {
+        margin: 0px 5px;
+      }
+  
+      .form-group .password-toggle img {
+        margin: 5px 10px 0px 0px;
+        right: 20px;
+        cursor: pointer;
+      }
+  
+      .form-group input {
+        height: 24px;
+        width: 200px;
+      }
+  
+      .forgot-password {
+        margin-right: -30px;
+        font-size: 8px;
+      }
+  
+      .button-group button {
+        width: 250px;
+        height: 38px;
+        gap: 2px;
+        align-content: center;
+        font-size: 16px;
+        margin-top: 25px;
+        font-weight: 400px;
+        margin-left: -40px;
+      }
+  
+      .signup-text {
+
+        font-size: 12px;
+        font-weight: 400px;
+        margin-top: -30px;
+        margin-left: 0em;
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-mobile-smm) {
+    .Login-page {
+    
+width: 430px;
+
+      margin: 20px 0 0 0px;
+
+      .logolabel img {
+        width: 150px;
+        height: 30px;
+        margin-left: 10px;
+      }
+      .Login-container {
+        margin-left: 25px;
+        width: 350px;
+      }
+      .welcome-back {
+        font-size: 18px;
+        margin-left: 35px;
+      }
+  
+      .Login-Box {
+        border: 0px;
+        margin-left: 6.3em;
+        width: 250px;
+        height: 330px;
+      }
+  
+      .Login-form {
+        margin: 5px 0px;
+        width: 200px;
+        margin-left: 0px;
+  
+        label {
+          margin: 15px 10px 10px -20px;
+          line-height: 10px;
+          font-size: 14px;
+        }
+      }
+  
+      .form-group {
+        align-self: center;
+        width: 240px;
+        height: 38px;
+        gap: 0px;
+      }
+      .form-group img {
+        margin: 0px 5px;
+      }
+  
+      .form-group .password-toggle img {
+        margin: 5px 10px 0px 0px;
+        right: 20px;
+        cursor: pointer;
+      }
+  
+      .form-group input {
+        height: 24px;
+        width: 200px;
+      }
+  
+      .forgot-password {
+        margin-right: -30px;
+        font-size: 8px;
+      }
+  
+      .button-group button {
+        width: 250px;
+        height: 38px;
+        gap: 2px;
+        align-content: center;
+        font-size: 16px;
+        margin-top: 25px;
+        font-weight: 400px;
+        margin-left: -25px;
+      }
+  
+      .signup-text {
+
+        font-size: 12px;
+        font-weight: 400px;
+        margin-top: -30px;
+        margin-left: 3em;
+      }
+    }
+  }
