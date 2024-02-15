@@ -354,6 +354,135 @@
 
 //media query styling
 
+
+@media only screen and (min-width: 390px) {
+  .home {
+    
+    }
+  }
+  .heroSect {
+    .heroContent {
+     
+
+      .heroBtn {
+
+        
+        .pryBtn {
+          @include blueBtn;
+          width: 40%;
+        font-size: 12px;
+          
+        }
+        .secBtn {
+          @include outlineBtn;
+          color: $white;
+          font-size: 12px;
+          width: 60%;
+          border: $white solid 1px;
+        }
+      }
+    }
+
+  
+  }
+
+  .shelterStrideBlog-wrapper {
+  // border: 3px solid maroon;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin: 2rem 0;
+  margin-bottom: 3rem;
+  .headerWrapper {
+    // border: 2px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+    h3{
+      font-size: 24px;
+    }
+    //main heading and button styling
+    .blogHeaderBtn {
+      button {
+        @include textBtn;
+        font-weight: 200;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 0;
+        // border: 3px solid orange;
+        color: $black-400;
+
+        // img {
+        //   // border: 3px solid brown;
+        // }
+      }
+    }
+  }
+  .blogPreviewWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+  }
+  //individual card housing
+  .blogPreview {
+    // border: 3px solid palegreen;
+    border-radius: 20px;
+    background: $white;
+    box-shadow: 0px 2px 14px 0px $black-100;
+    padding-bottom: 30px;
+
+    .blogImg {
+      width: fit-content;
+
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-bottom: 10px;
+      h4 {
+        // border: 2px solid burlywood;
+        margin: 0 20px;
+      }
+      img {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+      }
+    }
+
+    .blogBtn {
+      // border: 3px solid orange;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 20px;
+      // text-align: center;
+      button {
+        @include textBtn;
+        color: $green-500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+    }
+    .blogDate {
+      // border: 2px solid orange;
+      display: flex;
+      gap: 16px;
+      margin: 0 20px;
+    }
+  }
+  .blogSectBtnWrapper {
+    button {
+      display: none;
+    }
+  }
+}
+
+
 //small devices (large phones
 @media only screen and (min-width: 600px) {
   .home {
@@ -369,8 +498,14 @@
       margin: auto;
       // border: 3px solid red;
       width: 80%;
+
+     
     }
+
+  
   }
+
+
 }
 
 //medium devices(tablets)
