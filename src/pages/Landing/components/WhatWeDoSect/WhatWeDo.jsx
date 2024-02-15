@@ -1,11 +1,11 @@
-// import WeCards from "./WeCards";
+ import WeCards from "./WeCards";
 import WeStory from "./WeStory";
 
 function WhatWeDo() {
   return (
     <section className="whatWeDoSect">
       <WeStory />
-      {/* <WeCards /> */}
+      <WeCards />
     </section>
   );
 }

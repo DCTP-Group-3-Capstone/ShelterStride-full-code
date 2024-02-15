@@ -106,7 +106,7 @@ $breakpoint-mobile: 460px;
   grid-gap: 5px;
   list-style: none;
   text-align: center;
-  width: 40vw;
+  width: 100vw;
  
   margin-top: 10px;
   justify-content: start;
@@ -144,7 +144,7 @@ $breakpoint-mobile: 460px;
   display: none;
     border: 0px;
 }
-.nav-links-mobile-log-in {
+.nav-links-mobile-sign-up, .nav-links-mobile-log-in{
   display: none;
   
 }
@@ -186,9 +186,12 @@ $breakpoint-mobile: 460px;
   }
 
   .nav-links {
-    text-align: center;
-    padding: 2rem;
+    text-align: left;
+    padding: 0.5rem 2rem;
     width: 100%;
+    height: 50px;
+    font-size: 18px;
+   //  border-bottom: 1px solid rgba(19, 144, 210, 1);;
     display: table;
   }
 
@@ -236,20 +239,29 @@ $breakpoint-mobile: 460px;
     max-width: 100%;
   }
 
-  .nav-links-mobile-log-in {
+  .nav-links-mobile-log-in, .nav-links-mobile-sign-up {
     display: block;
-    
+    border-radius: 16px;
     text-align: center;
     padding: 0.8rem;
-    margin-top: 0.8rem;
-    border-radius: 4px;
-    width: 100%;
+   
+    margin: auto;
+    background-color: transparent;
+    width: 80%;
+    height: 48px;
     text-decoration: none;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1rem;
     border: 1.5px solid #176a96;
     color: #176a96;
-    max-width: 100%;
+   
+  }
+  .nav-links-mobile-sign-up{
+color: #fff;
+margin-bottom: 20px;
+margin-top: 20px;
+    background-color: #176a96;
+
   }
 
   .nav-links-mobile:hover {

@@ -82,7 +82,7 @@ const NavBar = () => {
             onMouseLeave={onMouseLeave}
             onClick={extendElement}
           >
-            <NavLink to="/gift" className="nav-links">
+            <NavLink className="nav-links">
               Gift a home <FiChevronDown />
             </NavLink>
             {dropdown && <Dropdown />}
@@ -100,7 +100,7 @@ const NavBar = () => {
           <li>
             <NavLink
               to="/createaccount"
-              className="nav-links-mobile-log-in"
+              className="nav-links-mobile-sign-up"
               onClick={closeMobileMenu}
             >
               Sign Up

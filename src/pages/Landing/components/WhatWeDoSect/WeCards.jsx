@@ -1,6 +1,6 @@
 import { useState } from "react";
 import CardList from "../../../../components/Cards/Card";
-import arrow from "../../../../assets/icon/greenRight arrow.svg";
+import arrow from "../../../../assets/icon/green-500RightArrow.svg";
 
 function WeCards() {
   const [cards, setCards] = useState([
