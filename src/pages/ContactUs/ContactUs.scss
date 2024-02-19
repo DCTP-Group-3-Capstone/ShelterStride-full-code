@@ -41,7 +41,7 @@ margin-top: 40px;
       }
   
     .form-group {
-        margin-left: 20px;
+        margin-left: 10px;
       margin-bottom: 15px;
   
       label {
@@ -54,6 +54,7 @@ margin-top: 40px;
       input[type='email'],
       textarea {
         width: 390px;
+        height: 40px;
         padding: 10px;
         background-color: #fff;
         border: 1px solid #ccc;
@@ -64,6 +65,7 @@ margin-top: 40px;
       textarea {
         width: 390px;
         height: 150px;
+        margin-left: 10px;
         background-color: #fff;
       }
     }
@@ -221,7 +223,7 @@ margin-top: 40px;
       input[type='text'],
       input[type='email'],
       textarea {
-        width: 255px280px;
+        width: 255px;
         padding: 10px;
         background-color: #fff;
         border: 1px solid #ccc;

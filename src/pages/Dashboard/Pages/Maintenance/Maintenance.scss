@@ -1,0 +1,75 @@
+
+@import '../../../../sass/base/variables';
+
+
+.maintenance-section {
+  margin: 0px;
+background-color: #f6f9f6;
+    padding:0 10px;
+  h1 {
+    margin-top: 5px;
+    padding: 0px;
+    font-size: 24px;
+    font-weight: 500px;
+    margin-bottom: 7px;
+  }
+
+  p {
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: 400px;
+  }
+
+  .list-header {
+    margin-top: 35px;
+ 
+    display: flex;
+    flex-direction: row;
+    background-color: #f6f9f6;
+    justify-content: space-between;
+    margin-inline: 250px;
+    margin-left: 0px;
+    list-style: none;
+    font-weight: 500;
+
+    font-size: 17px;
+  }
+ 
+
+.oops{
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 16px;
+    height: 430px;
+    align-content: center;
+    width: 900px;
+
+    h2, h5{
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    img{
+        margin-left: 18em;
+        
+        }
+        
+        button{
+            border-radius: 16px;
+            background-color: $blue-500;
+            color: #fff;
+            height: 43px;
+                width: 171px;
+                border: none;
+                margin-top: 20px;
+                margin-left: 27em;
+
+                &:hover{
+                  background-color: $blue-200;
+                }
+             
+        }
+}
+
+
+    }

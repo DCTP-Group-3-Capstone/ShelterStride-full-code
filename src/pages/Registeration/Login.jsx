@@ -108,7 +108,7 @@ function Login() {
         // Set token in local storage
         localStorage.setItem("secret_token", data.token);
         // Redirect to profile page
-        navigate("/donate")
+        navigate("/dashboard")
       }
 
     } catch (error) {

@@ -1,0 +1,195 @@
+@import "../../../../sass/base/variables";
+
+.dashboard {
+
+    .userName {
+        .header {
+          font-size: 18px;
+         padding-top: 10px;
+        }
+
+        .head{
+            font-size: 12px;
+            margin-top: 10px;
+        }
+      }
+.dash{
+margin-top: 40px;
+    display: flex;
+
+
+
+  .overview {
+    height: 550px;
+    width: 558px;
+    padding: 15px 25px;
+    border-radius: 16px;
+    background-color: #b7d1de;
+
+    p {
+      margin: 0px;
+    }
+
+    .subscription {
+      margin-top: 5px;
+      background-color: white;
+      border-radius: 8px;
+      height: 210px;
+      .sub-status {
+        display: flex;
+        flex-direction: row;
+        padding: 10px 10px;
+
+
+        &:hover{
+            border: 1px solid $green-500;
+            border-radius: 8px;
+     height: 210px;
+        }
+        .sub-stats {
+          padding: 0px;
+
+          margin-left: 15px;
+        }
+      }
+    }
+
+    .prop-flex{
+        margin-top: 20px;
+display: flex;
+justify-content: space-between;
+        .prop {
+      
+        padding: 10px;
+            margin-top: 5px;
+            width: 235px;
+            border-radius: 8px;
+            background-color: white;
+            
+        &:hover{
+            border: 1px solid $green-500;
+            border-radius: 8px;
+       
+        }
+          }
+
+
+    }
+     
+    }
+
+    .Notifications{
+margin-left: 20px;
+padding: 15px 10px;
+width: 342px;
+border-radius: 16px;
+        background-color: #b7d1de;
+
+.unread, .unreadd{
+    margin-top: 5px;
+    background-color: white;
+    border-radius: 8px;
+    height: 210px;
+
+
+    &:hover{
+        border: 1px solid $green-500;
+        border-radius: 8px;
+       
+    }
+    .imggg{
+        display: flex;
+        flex-direction: row;
+        padding: 10px 10px;
+        gap: 10px;
+
+        p{
+            margin-left: 80px;
+           
+           margin-top: 10px;
+        }
+    }
+hr{
+   margin: 0px 20px;
+}
+
+.cir{
+    margin-top: 0px;
+  margin-left: 100px;
+}
+
+.pp{
+    text-align: center;
+    font-size: 15px;
+}
+
+.ppp{
+    text-align: end;
+padding-right: 20px;
+font-size: 15px;
+}
+}
+
+.unreadd{
+    height: 240px;
+}
+.support{
+    margin-top: 0px;
+
+  
+    .i-contact, .i-mail{
+        display: flex;
+       padding-top: 30px;
+        gap: 10px;
+        
+
+     
+    
+       h3, p{
+          
+           font-size: 14px;
+           margin-top: 0px;
+        }
+}
+
+.i-mail{
+    margin-top: 20px;
+
+}
+
+}
+
+    }
+  
+}
+    
+}
+
+.toggle-button {
+    background-color: #878787;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 17px;
+    display: inline-block;
+    height: 12px;
+    outline: none;
+    position: relative;
+    width: 35px;
+  }
+  
+  .toggle-circle {
+    background-color: #c4c4c4;
+    border-radius: 50%;
+    display: block;
+    height: 12px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    transition: transform 0.3s ease;
+    width: 12px;
+  }
+  
+  .toggle-button.active .toggle-circle {
+    transform: translateX(24px);
+  }

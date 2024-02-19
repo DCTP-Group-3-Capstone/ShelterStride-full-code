@@ -1,0 +1,135 @@
+@import "../../../sass/base/variables";
+
+.sidebar-wrapper {
+  margin: 0;
+  padding: 20px 8px 0px 29px;
+  width: 290px;
+  height: 748px;
+  border-right: 1px solid #515b60;
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+
+    img {
+      max-width: 181px;
+      height: auto;
+    }
+    .acct-type {
+      font-size: 14px;
+      font-weight: 400px;
+    }
+  }
+
+  .nav-toggler {
+    background-color: $blue-200;
+    border-radius: 50%;
+    clip-path: circle(50% at 50% 50%);
+    display: grid;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 20px;
+    justify-content: center;
+    place-items: center;
+//margin-right: 29px;
+  }
+}
+
+.nav-menulists{
+    height: 434px;
+  
+}
+.nav-items {
+  width: 253px;
+
+  h2{
+    font-weight: 500px;
+    font-size: 16px;
+    margin: 35px 0;
+  
+  }
+   .menu {
+    a {
+      text-decoration: none;
+      color: inherit;
+    
+    }
+
+    .nav-item {
+      gap: 1rem;
+      display: flex;
+      background-color:transparent;
+      padding-left: 25px;
+      margin-top: 12px;
+      justify-content: start;
+      cursor: pointer;
+
+&:focus { /* Apply styles when button is active (clicked) */
+  color: #fff;
+       border-radius: 16px;
+       background-color: $blue-500; /* Change to your desired background color */
+     }
+
+      p {
+   
+        font-size: 16px;
+        font-weight: 500px;
+      }
+      img {
+        outline: none; /* Remove default outline for all images */
+      }
+    
+      &:focus img {
+        filter: brightness(0) invert(1); /* Change the color of the focused image to white */
+      }
+    }
+
+    
+  }
+
+  
+}
+
+.account{
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  
+  }
+
+    .nav-item{
+      gap: 1rem;
+      display: flex;
+      background-color:transparent;
+      padding-left: 25px;
+      margin-top: 15px;
+      justify-content: start;
+      cursor: pointer;
+
+      &:focus { /* Apply styles when button is active (clicked) */
+        color: #fff;
+             border-radius: 16px;
+             background-color: $blue-500; /* Change to your desired background color */
+           }
+           img {
+            outline: none; /* Remove default outline for all images */
+          }
+        
+          &:focus img {
+            filter: brightness(0) invert(1); /* Change the color of the focused image to white */
+          }
+  }
+    h2{
+        font-size: 14px;
+    margin-top: 30px;
+        font-weight: 500px; 
+    }
+  }
+}

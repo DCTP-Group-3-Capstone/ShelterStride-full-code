@@ -1,0 +1,88 @@
+@import '../../../../../sass/base/variables';
+
+
+.guarantor-page{
+ margin-top: 30px;
+background-color: #fff;
+    h3{
+margin-bottom: 0px;
+        font-size: 16px;
+    }
+
+.address-part{
+    display: flex;
+    flex-direction: row;
+   
+    justify-content: space-between;
+}
+
+.address-part > * {
+    flex: 1; /* This ensures that each item takes up equal space */
+    margin-right: 10px; /* Adjust the margin to reduce the gap between items */
+  }
+
+ 
+ .profileform-group{
+     align-items: center;
+ width:350px;
+ display: flex;
+ height: 43px;
+ border: 1px solid $green-500;
+ border-radius: 16px;
+ gap: 10px;
+ }
+ 
+ 
+ 
+ 
+ .profileform-groupadd{
+     align-items: center;
+ width:800px;
+ display: flex;
+ height: 43px;
+ border: 1px solid $green-500;
+ border-radius: 16px;
+ gap: 10px;
+ }
+ 
+ 
+ input{
+ margin-left: 10px;
+     background-color: transparent;
+     border: none;
+   margin-top: 0px;
+   outline: none;
+   font-size: 16px;
+   height: 20px;
+   width: 300px;
+ }
+ 
+ img{
+ 
+     margin: 0px 10px 0 10px;
+ }
+ 
+ label{
+ 
+    margin: 20px 0;
+     font-size: 18px;
+     font-weight: 500;
+     display: flex;   
+ }
+
+ 
+ .butt{
+    border-radius: 16px;
+background-color: $blue-500;
+color: #fff;
+height: 43px;
+    width: 151px;
+    border: none;
+    margin-top: 20px;
+   margin-left: 53em;
+
+
+   &:hover{
+    background-color: $blue-200;
+}
+}}

@@ -6,7 +6,19 @@ const Hidenavbar = ({ children }) => {
   const [noNavbar, setnoNavbar] = useState(false);
 
   useEffect(() => {
-    if (location.pathname === "/login" || location.pathname === "/createaccount") {
+    if (location.pathname === "/login" || location.pathname === "/createaccount" 
+    || location.pathname === "/signupbenefactor" 
+     || location.pathname === "/dashboard/rent"
+     || location.pathname === "/dashboard/buy"
+     || location.pathname === "/dashboard/maintenance"
+     || location.pathname === "/dashboard/payment"
+     || location.pathname === "/dashboard/settings" 
+     || location.pathname === "/dashboard/settings/rental" 
+     || location.pathname === "/dashboard/settings/employmentDetails" 
+     || location.pathname === "/dashboard/settings/guarantor" 
+     || location.pathname === "/dashboard/settings/document" 
+     || location.pathname === "/dashboard/settings/" 
+    || location.pathname === "/dashboard" ) {
       setnoNavbar(false);
     } else {
       setnoNavbar(true);

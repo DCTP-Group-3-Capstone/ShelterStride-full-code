@@ -1,0 +1,11 @@
+@import "../../sass/base/variables";
+
+.dashboard-layout {
+    display: flex;
+background-color: #f6f9f6;
+    .content {
+        flex: 1;
+    
+        padding: 1rem 0 0 1rem;
+    }
+}

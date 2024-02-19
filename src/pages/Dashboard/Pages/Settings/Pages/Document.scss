@@ -1,0 +1,48 @@
+@import '../../../../../sass/base/variables';
+
+
+.document{
+height: 380px;
+margin-top: 20px;
+    .id-upload{
+        display: flex;
+        justify-content: space-evenly;
+   
+        margin-block: 20px;
+       // flex-direction: row;
+    }
+    
+background-color: #fff;
+h1, p{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.v-income{
+margin-top: 20px;
+margin-left: 1em;
+}
+
+
+.v-id{
+    margin-top: 20px;
+   
+    }
+img{
+    margin-left: 50px;
+}
+    button{
+        border-radius: 16px;
+        background-color: $blue-500;
+        color: #fff;
+        height: 40px;
+            width: 151px;
+            margin-top: 20px;
+            border: none;
+
+
+            &:hover{
+                background-color: $blue-200;
+            }
+    }
+}

@@ -16,12 +16,14 @@ import Subscribe from "./pages/SubscribePage/Subscribe";
 import Schedule from "./pages/ScheduleVisitPage/Schedule";
 import ContactUs from "./pages/ContactUs/ContactUs";
 import Buy from "./pages/BuyPage/Buy";
+import Dashboard from "./pages/Dashboard/Dashboard";
 import ErrorPage from "./Error-page";
 import Hidenavbar from "./components/Hidenavbar";
 import Headroom from "react-headroom";
 
 function Home() {
   return (
+    
     <div>
       <Headroom>
         <Hidenavbar>
@@ -44,6 +46,7 @@ function Home() {
         <Route path="/createaccount" element={<CreateAccount />} />
         <Route path="/Rent" element={<Rent />} />
         <Route path="/Buy" element={<Buy />} />
+        <Route path="/dashboard/*" element={<Dashboard/>}/>
         <Route path="/*" element={<ErrorPage />} />
       </Routes>
     </div>

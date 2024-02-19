@@ -1,5 +1,3 @@
-
-//import { useHistory } from 'react-router-dom';
 import "../GiftAHome/GiftAhome.scss";
 import frame256 from "../../img/Frame286.svg";
 import phone from "../../img/phone.svg";

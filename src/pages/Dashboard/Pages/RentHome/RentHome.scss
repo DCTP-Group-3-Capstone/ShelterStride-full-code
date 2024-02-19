@@ -1,0 +1,88 @@
+@import '../../../../sass/base/variables';
+
+
+.Rent-section {
+background-color: #f6f9f6;
+    padding:0 10px;
+  h1 {
+    margin-top: 5px;
+    padding: 0px;
+    font-size: 24px;
+    font-weight: 500px;
+    margin-bottom: 7px;
+  }
+
+  p {
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: 400px;
+  }
+
+  .list-header {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-inline: 200px;
+    margin-left: 0px;
+    list-style: none;
+    font-weight: 500;
+
+    font-size: 17px;
+  }
+  .list {
+    margin-top: 3em;
+    background-color: #fffdfd;
+    height: 390px;
+    border-radius: 16px;
+width: 900px;
+
+    .list-items,
+    .list-items2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-inline: 30px;
+      margin-left: 10px;
+      list-style: none;
+      align-items: center;
+      font-weight: 400;
+      font-size: 14px;
+
+      .item-border {
+        border: 0.2px solid gray;
+        padding: 10px;
+        width: 150px;
+
+        text-align: center;
+        justify-content: center;
+        border-radius: 16px;
+      }
+    }
+
+    .list-items2 {
+      margin-top: 20px;
+    }
+  }
+
+.but-div{
+    margin-top: 30px;
+
+
+    .button-explore{
+border-radius: 16px;
+width: 142px;
+border: 0px;
+margin-left: 25em;
+color: #f6f6f6;
+height: 40px;
+
+        background-color: $blue-500;
+
+        &:hover{
+            background-color: $blue-200;
+        }
+    }
+}
+
+}
