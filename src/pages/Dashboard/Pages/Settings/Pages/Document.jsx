@@ -7,6 +7,10 @@ import face from "../../../../../assets/icon/face.svg";
 function Document() {
   const profilePictureInputRef = useRef(null);
   const accountStatementInputRef = useRef(null);
+  const videoRef = useRef(null);
+  const mediaStreamRef = useRef(null);
+
+
 
   const handleProfilePictureUploadButtonClick = () => {
     profilePictureInputRef.current.click();
@@ -14,6 +18,26 @@ function Document() {
 
   const handleAccountStatementUploadButtonClick = () => {
     accountStatementInputRef.current.click();
+  };
+
+
+  const handleCaptureFaceButtonClick = async () => {
+    try {
+      // Get media stream from user's camera
+      const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+      mediaStreamRef.current = stream;
+      // Attach the stream to the video element
+      videoRef.current.srcObject = stream;
+    } catch (error) {
+      console.error("Error accessing camera:", error);
+    }
+  };
+
+  const handleStopCaptureButtonClick = () => {
+    // Stop capturing video and release the camera
+    if (mediaStreamRef.current) {
+      mediaStreamRef.current.getTracks().forEach(track => track.stop());
+    }
   };
 
   const handleFileChange = (event) => {

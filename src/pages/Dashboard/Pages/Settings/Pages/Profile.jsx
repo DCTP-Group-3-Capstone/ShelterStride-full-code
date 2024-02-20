@@ -6,7 +6,6 @@ import Call from "../../../../../assets/icon/Call.svg";
 import UnSee from "../../../../../assets/icon/Unsee.svg";
 import See from "../../../../../assets/icon/See.svg";
 import "./Profile.scss";
-import profileImage from "../../../../../assets/images/Profile-image.svg";
 import DropdownSelect from "../../../../../components/DropdownSelect";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -32,6 +31,22 @@ function Profile() {
   const [dateOfBirth, setDateOfBirth] = useState(""); // Define dateOfBirth
   const [isValidPhoneNumber, setIsValidPhoneNumber] = useState(true); // Define isValidPhoneNumber
   const navigate = useNavigate();
+  const [profileImage, setProfileImage] = useState(null);
+
+
+  const handleImageChange = (event) => {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+
+    reader.onloadend = () => {
+      setProfileImage(reader.result);
+    };
+
+    if (file) {
+      reader.readAsDataURL(file);
+    }
+  };
+
 
   const handleaccountype = (selectedAccountType) => {
     setSelectedAccountType(selectedAccountType);
@@ -107,9 +122,22 @@ function Profile() {
       <div className="profile-page">
         <form>
 
-        <div className="profile">
-      <img src={profileImage} alt="Profile" className="profile-picture" />
-    </div>
+        <div className="profile-picture-container">
+        <label htmlFor="upload-picture" className="profile-picture">
+          {profileImage ? (
+            <img src={profileImage} alt="Profile" />
+          ) : (
+            <span className="up-pic">Upload Picture</span>
+          )}
+        </label>
+        <input className="inn"
+          type="file"
+          id="upload-picture"
+          accept="image/*"
+          onChange={handleImageChange}
+          style={{ display: "none" }}
+        />
+      </div>
 
           <div className="profileinfo">
             <div className="flname">
