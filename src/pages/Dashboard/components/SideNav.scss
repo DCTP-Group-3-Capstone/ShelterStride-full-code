@@ -7,129 +7,133 @@
   height: 748px;
   border-right: 1px solid #515b60;
 
-.logo-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  .logo {
+  .logo-wrapper {
     display: flex;
-    flex-flow: column;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
 
-    img {
-      max-width: 181px;
-      height: auto;
+    .logo {
+      display: flex;
+      flex-flow: column;
+      align-items: flex-end;
+
+      img {
+        max-width: 181px;
+        height: auto;
+      }
+      .acct-type {
+        font-size: 14px;
+        font-weight: 400px;
+      }
     }
-    .acct-type {
-      font-size: 14px;
-      font-weight: 400px;
+
+    .nav-toggler {
+      background-color: $blue-200;
+      border-radius: 50%;
+      clip-path: circle(50% at 50% 50%);
+      display: grid;
+      width: 32px;
+      height: 32px;
+      margin-bottom: 20px;
+      justify-content: center;
+      place-items: center;
+      //margin-right: 29px;
     }
   }
 
-  .nav-toggler {
-    background-color: $blue-200;
-    border-radius: 50%;
-    clip-path: circle(50% at 50% 50%);
-    display: grid;
-    width: 32px;
-    height: 32px;
-    margin-bottom: 20px;
-    justify-content: center;
-    place-items: center;
-//margin-right: 29px;
-  }
-}
-
-.nav-menulists{
+  .nav-menulists {
     height: 434px;
-  
-}
-.nav-items {
-  width: 253px;
-
-  h2{
-    font-weight: 500px;
-    font-size: 16px;
-    margin: 35px 0;
-  
   }
-   .menu {
-    a {
-      text-decoration: none;
-      color: inherit;
-    
+  .nav-items {
+    width: 253px;
+
+    h2 {
+      font-weight: 500px;
+      font-size: 16px;
+      margin: 35px 0;
+    }
+    .menu {
+      a.active {
+        color: #fff;
+        border-radius: 16px;
+        background-color: $blue-500; /* Active link background color */
+      }
+
+      .nav-item {
+        gap: 1rem;
+        color: inherit;
+        display: flex;
+        text-decoration: none;
+        background-color: transparent;
+        padding-left: 25px;
+        margin-top: 12px;
+        justify-content: start;
+        cursor: pointer;
+
+        p {
+          font-size: 16px;
+          font-weight: 500px;
+        }
+        img {
+          transition: filter 0.3s ease; // Add transition for smooth effect
+          outline: none; /* Remove default outline for all images */
+        }
+
+       &.active {
+        color: #fff;
+        border-radius: 16px;
+        background-color: $blue-500; // Active link background color
+
+        img {
+          filter: brightness(0) invert(1); // Apply filter to invert image color
+        }
+      }
+      }
+    }
+  }
+
+  .account {
+    a.active {
+      color: #fff;
+      border-radius: 16px;
+      background-color: $blue-500; /* Active link background color */
     }
 
     .nav-item {
+      text-decoration: none;
+      color: inherit;
       gap: 1rem;
       display: flex;
-      background-color:transparent;
-      padding-left: 25px;
-      margin-top: 12px;
-      justify-content: start;
-      cursor: pointer;
-
-&:focus { /* Apply styles when button is active (clicked) */
-  color: #fff;
-       border-radius: 16px;
-       background-color: $blue-500; /* Change to your desired background color */
-     }
-
-      p {
-   
-        font-size: 16px;
-        font-weight: 500px;
-      }
-      img {
-        outline: none; /* Remove default outline for all images */
-      }
-    
-      &:focus img {
-        filter: brightness(0) invert(1); /* Change the color of the focused image to white */
-      }
-    }
-
-    
-  }
-
-  
-}
-
-.account{
-
-  a {
-    text-decoration: none;
-    color: inherit;
-  
-  }
-
-    .nav-item{
-      gap: 1rem;
-      display: flex;
-      background-color:transparent;
+      background-color: transparent;
       padding-left: 25px;
       margin-top: 15px;
       justify-content: start;
       cursor: pointer;
 
-      &:focus { /* Apply styles when button is active (clicked) */
-        color: #fff;
-             border-radius: 16px;
-             background-color: $blue-500; /* Change to your desired background color */
-           }
-           img {
-            outline: none; /* Remove default outline for all images */
-          }
-        
-          &:focus img {
-            filter: brightness(0) invert(1); /* Change the color of the focused image to white */
-          }
-  }
-    h2{
-        font-size: 14px;
-    margin-top: 30px;
-        font-weight: 500px; 
+      p {
+        font-size: 16px;
+        font-weight: 500px;
+      }
+      img {
+        transition: filter 0.3s ease; // Add transition for smooth effect
+        outline: none; /* Remove default outline for all images */
+      }
+
+     &.active {
+      color: #fff;
+      border-radius: 16px;
+      background-color: $blue-500; // Active link background color
+
+      img {
+        filter: brightness(0) invert(1); // Apply filter to invert image color
+      }
+    }}
+    h2 {
+      font-size: 14px;
+      margin-top: 30px;
+      font-weight: 500px;
     }
+
+
   }
 }

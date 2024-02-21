@@ -12,27 +12,16 @@ const SideNav = () => {
   const [activeLink, setActiveLink] = useState(null);
   const sideNavRef = useRef(null);
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      // Check if the click target is within the sidebar or a link within the sidebar
-      if (
-        sideNavRef.current &&
-        !sideNavRef.current.contains(event.target) &&
-        !event.target.classList.contains('nav-item')
-      ) {
-        setActiveLink(null);
-      }
-    };
-  
-    document.addEventListener("mousedown", handleClickOutside);
-  
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
-  
-  const handleLinkClick = (linkName) => {
-    setActiveLink(linkName);
+  const handleLinkClick = (linkId) => {
+    // Remove active class from previously active link
+    if (activeLink) {
+      activeLink.classList.remove('active');
+    }
+
+    // Add active class to the clicked link
+    const link = document.getElementById(linkId);
+    link.classList.add('active');
+    setActiveLink(link);
   };
 
   return (
@@ -51,7 +40,8 @@ const SideNav = () => {
         <div className="nav-items">
           <h2>MENU</h2>
           <div className="menu">
-            <Link
+
+            <Link id="dashboard"
               to="/dashboard"
               className={`nav-item ${activeLink === "dashboard" ? "active" : ""}`}
               onClick={() => handleLinkClick("dashboard")}
@@ -60,7 +50,7 @@ const SideNav = () => {
               <p>Dashboard</p>
             </Link>
 
-            <Link
+            <Link id="rent"
               to={"/dashboard/rent"}
               className={`nav-item ${activeLink === "rent" ? "active" : ""}`}
               onClick={() => handleLinkClick("rent")}
@@ -69,7 +59,7 @@ const SideNav = () => {
               <p>Rent a home</p>
             </Link>
 
-            <Link
+            <Link id="buy"
               to={"/dashboard/buy"}
               className={`nav-item ${activeLink === "buy" ? "active" : ""}`}
               onClick={() => handleLinkClick("buy")}
@@ -78,7 +68,7 @@ const SideNav = () => {
               <p>Buy a home</p>
             </Link>
 
-            <Link
+            <Link id="maintenance"
               to={"/dashboard/maintenance"}
               className={`nav-item ${activeLink === "maintenance" ? "active" : ""}`}
               onClick={() => handleLinkClick("maintenance")}
@@ -87,7 +77,7 @@ const SideNav = () => {
               <p>Maintenance</p>
             </Link>
 
-            <Link
+            <Link id="payment"
               to={"/dashboard/payment"}
               className={`nav-item ${activeLink === "payment" ? "active" : ""}`}
               onClick={() => handleLinkClick("payment")}
@@ -101,7 +91,7 @@ const SideNav = () => {
         <div className="account">
           <h2>ACCOUNT MANAGEMENT</h2>
 
-          <Link
+          <Link id="settings"
             to={"/dashboard/settings"}
             className={`nav-item ${activeLink === "settings" ? "active" : ""}`}
             onClick={() => handleLinkClick("settings")}
