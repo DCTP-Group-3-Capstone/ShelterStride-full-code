@@ -28,7 +28,10 @@ const SideNav = () => {
     <div className="sidebar-wrapper" ref={sideNavRef}>
       <div className="logo-wrapper">
         <div className="logo">
+          <a href="/">
           <img src={Logo} alt="logo" />
+          </a>
+          
           <span className="acct-type">For Beneficiary</span>
         </div>
 

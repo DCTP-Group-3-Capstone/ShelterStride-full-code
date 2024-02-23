@@ -12,8 +12,6 @@ import Rent from "./pages/RentPage/Rent";
 import Gift from "./pages/Landing/components/GiftAHome/GiftAHome";
 import BuyProduct from "./pages/Buyahomeproductpage/BuyAHomeProduct";
 import RentProduct from "./pages/Rentahomeproductpage/RentAHomeProduct";
-import Subscribe from "./pages/SubscribePage/Subscribe";
-import Schedule from "./pages/ScheduleVisitPage/Schedule";
 import ContactUs from "./pages/ContactUs/ContactUs";
 import Buy from "./pages/BuyPage/Buy";
 import Dashboard from "./pages/Dashboard/Dashboard";
@@ -39,8 +37,6 @@ function Home() {
         <Route path="/gift" element={<Gift />} />
         <Route path="/buyProduct" element={<BuyProduct />} />
         <Route path="/rentProduct" element={<RentProduct />} />
-        <Route path="/subscribe" element={<Subscribe />} />
-        <Route path="/scheduleVisit" element={<Schedule />} />
         <Route path="/contactUs" element={<ContactUs />} />
         <Route path="/signupbenefactor" element={<SignUpBenefactor />} />
         <Route path="/createaccount" element={<CreateAccount />} />

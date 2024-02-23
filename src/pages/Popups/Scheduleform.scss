@@ -1,4 +1,7 @@
 // SubscribePopupForm.scss
+@import '../../sass/base/variables';
+
+
 
 .popupsche-form {
   position: fixed;
@@ -10,7 +13,7 @@
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  width: 300px;
+  width: 400px;
     form {
       display: flex;
       flex-direction: column;
@@ -27,16 +30,16 @@
 
         label{
 
-          margin-left: 0px;
+          margin-left: 10px;
         }
       }
   
       input[type="time"],
       input[type="date"] {
         width: 95%;
-        height: 18px;
+        height: 38px;
         padding: 10px;
-        margin-left: -5px;
+        margin-left: 10px;
         border: 1px solid #66CC99;
         border-radius: 16px;
         font-size: 14px;
@@ -46,9 +49,10 @@
         background-color: #176a96;
         color: #fff;
         border: none;
+        height: 48px;
         margin-top: 20px;
         border-radius: 16px;
-        padding: 10px 0;
+        padding: 0px 10px;
         font-size: 16px;
         cursor: pointer;
       }
@@ -58,22 +62,34 @@
       position: absolute;
       top: 10px;
       right: 10px;
-      background: transparent;
-      color: red;
+      border: none;
+      border-radius: 6px;
+      background-color: $blue-500;
+      color: #fff;
       font-size: 12px;
       cursor: pointer;
       padding: 5px;
+
+      &:hover{
+color: red;
+        background-color: $blue-200;
+      }
     }
 
     .form-check {
-      font-size: 12px;
-      margin-top: 20px;     
+      display: flex;
+      gap: 10px;
+      align-items: center; /* Align items vertically in the center */
     }
-
+    
     .check {
-      margin-right: 5px;
+      width: 20px;
+      order: -1; /* Move the checkbox to the left by changing its order */
     }
+    
+    .statement {
 
-
+     font-size: 12px; /* Add some space between the checkbox and the statement */
+    }
 
   }

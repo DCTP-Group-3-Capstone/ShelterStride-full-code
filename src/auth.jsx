@@ -1,42 +1,101 @@
-// auth.js
-
 export const getToken = () => {
-    return localStorage.getItem("secret_token");
+    try {
+      return localStorage.getItem("secret_token");
+    } catch (error) {
+      console.error("Error getting token from localStorage:", error);
+      return null;
+    }
   };
   
   export const setToken = (token) => {
-    localStorage.setItem("secret_token", token);
+    try {
+      localStorage.setItem("secret_token", token);
+    } catch (error) {
+      console.error("Error setting token in localStorage:", error);
+    }
   };
   
   export const removeToken = () => {
-    localStorage.removeItem("secret_token");
+    try {
+      localStorage.removeItem("secret_token");
+    } catch (error) {
+      console.error("Error removing token from localStorage:", error);
+    }
   };
   
   export const isTokenValid = () => {
-    const token = getToken();
-    if (token) {
-      // Decode the token to check if it's expired or not
-      // Here, you would decode the token and check its expiration date
-      // For demonstration, let's assume the token is always valid
-      return true;
-    } else {
+    try {
+      const token = getToken();
+      if (!token) {
+        return false; // Token doesn't exist
+      }
+  
+      const tokenData = JSON.parse(atob(token.split('.')[1])); // Decoding token payload
+      const expirationTime = tokenData.exp * 1000; // Expiration time in milliseconds
+  
+      // Check if current time is past the expiration time
+      return Date.now() < expirationTime;
+    } catch (error) {
+      console.error("Error validating token:", error);
       return false;
     }
   };
+  
+  export const isLoggedIn = () => {
+    try {
+      const token = getToken();
+      const id = getId();
+      return !!token, id;
+    } catch (error) {
+      console.error("Error checking login status:", error);
+      return false;
+    }
+  };
+  
+  export const logout = () => {
+    try {
+      removeToken();
+      removeId();
+      // Additionally, you might want to redirect the user to the login page or perform any other necessary cleanup
+    } catch (error) {
+      console.error("Error logging out:", error);
+    }
+  };
+  
+
+
+  export const getId = () => {
+    try {
+      // Retrieving the user object from localStorage
+      const id = localStorage.getItem("id");
+     // const user = JSON.parse(userString);
+  
+      // Accessing the id from the user object
+     // const id = user.id;
+  
+      return id;
+    } catch (error) {
+      console.error("Error getting id from localStorage:", error);
+      return null;
+    }
+  };
+  
+  
+  export const setId = (id) => {
+    try {
+      localStorage.setItem("id", id);
+    } catch (error) {
+      console.error("Error setting id in localStorage:", error);
+    }
+  };
+  
+  export const removeId = () => {
+    try {
+      localStorage.removeItem("id");
+    } catch (error) {
+      console.error("Error removing token from localStorage:", error);
+    }
+  };
+  
 
   
-// Define the isLoggedIn function
-export const isLoggedIn = () => {
-    // Implement logic to check if the user is logged in
-    // For example, you can check if the authentication token exists in localStorage
-    const token = localStorage.getItem('secret_token');
-    return !!token; // Return true if the token exists, false otherwise
-  };
-  
-  // Define the logout function
-export const logout = () => {
-    // Implement the logout logic here
-    // For example, you can remove the authentication token from localStorage
-    localStorage.removeItem('secret_token');
-    // Additionally, you might want to redirect the user to the login page or perform any other necessary cleanup
-  };

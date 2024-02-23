@@ -86,31 +86,38 @@ function Login() {
 
     try {
       setIsLoading(true);
-
+  
       const result = await axios.post("https://shelterstride.onrender.com/api/v1/login", {
         email,
         password
       });
-  
-    setIsLoading(false)
+    
+      setIsLoading(false)
       const { status, data } = result;
-
+  
       if (status == 200) {
-     
-
         Swal.fire({
           title: "Success",
           text: "logged in successful",
           icon: "success",
           timer: 2000
         });
-
+  
         // Set token in local storage
         localStorage.setItem("secret_token", data.token);
-        // Redirect to profile page
+     
+        // Store user object in localStorage
+        localStorage.setItem("user", JSON.stringify(data.user));
+  
+        // Store user ID in localStorage
+        localStorage.setItem("userId", data.user.id);
+  
+        console.log(data.token);
+        console.log(data.user.id);
+      
         navigate("/dashboard")
       }
-
+  
     } catch (error) {
       setIsLoading(false)
 
