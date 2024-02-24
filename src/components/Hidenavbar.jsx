@@ -12,12 +12,15 @@ const Hidenavbar = ({ children }) => {
      || location.pathname === "/dashboard/buy"
      || location.pathname === "/dashboard/maintenance"
      || location.pathname === "/dashboard/payment"
+     || location.pathname === "/dashboard/payment/" 
+     || location.pathname === "/dashboard/payment/history" 
      || location.pathname === "/dashboard/settings" 
      || location.pathname === "/dashboard/settings/rental" 
      || location.pathname === "/dashboard/settings/employmentDetails" 
      || location.pathname === "/dashboard/settings/guarantor" 
      || location.pathname === "/dashboard/settings/document" 
      || location.pathname === "/dashboard/settings/" 
+   
     || location.pathname === "/dashboard" ) {
       setnoNavbar(false);
     } else {

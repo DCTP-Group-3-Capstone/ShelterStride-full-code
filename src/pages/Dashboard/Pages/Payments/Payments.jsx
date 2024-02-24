@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Menubar from "./Menubar";
 import "./Payments.scss";
 import PaymentDetails from "./Pages/PaymentDetails";
+import PaymentHistory from "./Pages/PaymentHistory";
 // Import other page components
 
 const Payments = () => {
@@ -25,7 +26,7 @@ const Payments = () => {
 
 
           <Route path="/paymentdetails" element={<PaymentDetails />} />
-         
+          <Route path="/paymenthistory" element={<PaymentHistory />} />
           
           {/* Add routes for other pages */}
         </Routes>

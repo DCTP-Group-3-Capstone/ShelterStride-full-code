@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Payments";
+import "../../Payments/Pages/PaymentDetails.scss";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
@@ -39,14 +39,14 @@ function PaymentDetails() {
           <div className="profileinfo2">
             <div className="address-part">
               <div>
-                <label htmlFor="bnv">BNV</label>
+                <label htmlFor="bnv">BVN</label>
                 <div className="profileform-group">
                   <input
                     type="text"
                     id="bnv"
                     value={bnv}
                     onChange={handleBNVChange}
-                    placeholder="BNV"
+                    placeholder="Type your BVN here"
                   />
                 </div>
               </div>
@@ -59,7 +59,7 @@ function PaymentDetails() {
                     id="accountName"
                     value={accountName}
                     onChange={handleAccountNameChange}
-                    placeholder="Account Name"
+                    placeholder="Type your account name here"
                   />
                 </div>
               </div>

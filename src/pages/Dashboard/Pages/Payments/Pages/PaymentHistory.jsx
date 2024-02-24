@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import surfing from "../../../../assets/images/surfing.svg";
+import surfing from "../../../../../assets/images/surfing.svg";
 import "../Pages/PaymentHistory.scss";
 
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
-function Guarantor() {
+function PaymentHistory() {
 
  
   const navigate = useNavigate();
@@ -35,4 +35,4 @@ function Guarantor() {
   );
 }
 
-export default Guarantor;
+export default PaymentHistory;

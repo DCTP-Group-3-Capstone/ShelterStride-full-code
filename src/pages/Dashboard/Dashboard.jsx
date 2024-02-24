@@ -30,6 +30,7 @@ const Dashboard =()=> {
           <Route path='/maintenance' element={<Maintenance />} />
           <Route path='/payment' element={<Payments />} />
           <Route path='/settings/*' element={<Settings />} />
+          <Route path='/payment/*' element={<Payments />} />
          
 
         </Routes>
