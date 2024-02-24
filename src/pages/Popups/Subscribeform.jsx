@@ -196,7 +196,7 @@ const SubscribePopupForm = ({ onClose }) => {
          <hr />
          <div className="sub-fees">
             <h5 htmlFor="subfee"> Total</h5>
-            <h5 htmlFor="subfee">N{ <h5 htmlFor="subfee">N{subscriptionPrice || subscriptionPrice2}</h5> || subscriptionPrice}</h5>
+            <h5 htmlFor="subfee">N{subscriptionPrice || subscriptionPrice2}</h5>
           </div>
         </div>
       </form>
