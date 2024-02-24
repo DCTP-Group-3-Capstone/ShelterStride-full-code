@@ -1,5 +1,5 @@
  import "/src/scss/pages/_login.scss";
- 
+import shelterstride from "../../assets/images/ShelterStrideSideLogo.svg";
 import Email from "../../assets/icon/Email.svg";
 import lock from "../../assets/icon/lock.svg";
 import See from "../../assets/icon/See.svg";
@@ -143,10 +143,9 @@ function Login() {
     <>
       <div className="Login-page">
         <div className="logolabel">
-          <img
-            src="src\assets\images\ShelterStrideSideLogo.svg"
-            alt="Shelters Stride"
-          />
+        <a href="/">
+          <img src={shelterstride} alt="logo" />
+          </a>
         </div>
         <div className="Login-container">
           <h2 className="welcome-back"> Welcome Back</h2>

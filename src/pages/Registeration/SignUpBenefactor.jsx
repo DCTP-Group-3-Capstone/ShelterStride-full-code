@@ -300,10 +300,9 @@ function SignUpBenefactor() {
     <>
       <div className="signupben-page">
         <div className="logolabel">
-          <img
-            src="src\assets\images\ShelterStrideSideLogo.svg"
-            alt="Shelters Stride"
-          />
+        <a href="/">
+          <img src={shelterstride} alt="logo" />
+          </a>
         </div>
         <div className="signupben-container">
           <h2> Create your account</h2>

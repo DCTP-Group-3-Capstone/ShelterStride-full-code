@@ -226,7 +226,9 @@ return (
 
     <div className="Signupsponsor-page">
       <div className="logolabel">
-        <img src={shelterstride} alt="Shelters Stride" />
+      <a href="/">
+          <img src={shelterstride} alt="logo" />
+          </a>
       </div>
 
       <div className="Signupsponsor-container">

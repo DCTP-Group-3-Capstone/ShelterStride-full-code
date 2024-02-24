@@ -17,7 +17,10 @@ const CreateAccount = () => {
 
     <div className="container">
       <div className="heading">
-      <img src={shelterstride} alt="shelterstridelogo" />
+     
+      <a href="/">
+          <img src={shelterstride} alt="logo" />
+          </a>
       </div>
 
       <div className="question">
