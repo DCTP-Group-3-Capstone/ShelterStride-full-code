@@ -16,17 +16,14 @@ function PaymentHistory() {
     <>
       <div className="history-page">
        
-
-       <h2>Buy A Home</h2>
-       <p>Let's help you own a home</p>
        <div className="home-request">
        <h5>Your payment history  will appear here</h5>
     <div>
     <img src={surfing} alt="" />
     </div>  
-    <h5>Looks like you haven’t made any payment yet</h5>
+    <h2>Looks like you haven’t made any payment yet</h2>
 
-        <button>Get Started</button>
+ 
        </div>
      
      

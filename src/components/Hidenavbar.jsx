@@ -13,7 +13,7 @@ const Hidenavbar = ({ children }) => {
      || location.pathname === "/dashboard/maintenance"
      || location.pathname === "/dashboard/payment"
      || location.pathname === "/dashboard/payment/" 
-     || location.pathname === "/dashboard/payment/history" 
+     || location.pathname === "/dashboard/payment/paymenthistory" 
      || location.pathname === "/dashboard/settings" 
      || location.pathname === "/dashboard/settings/rental" 
      || location.pathname === "/dashboard/settings/employmentDetails" 

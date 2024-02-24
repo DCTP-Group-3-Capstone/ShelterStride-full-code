@@ -34,7 +34,7 @@ const Menubar = () => {
         <li>
           <Link
             id='History'
-            to="/dashboard/payment/history"
+            to="/dashboard/payment/paymenthistory"
             onClick={() => handleLinkClick('History')}
             className={activeLink === 'History' ? 'active' : ''}
           >

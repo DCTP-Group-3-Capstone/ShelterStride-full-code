@@ -1,13 +1,8 @@
 @import "../../../../../sass/base/variables";
 
 
-.homehistory-page{
+.history-page{
 padding: 0 10px;
-
-h2{
-  margin-top: 10px;
-    font-size: 20px;
-}
 
 p{
   margin-top: 5px;
@@ -17,16 +12,21 @@ p{
     .home-request{
         height: 450px;
         width: 900px;
-        margin-top: 45px;
+        margin-top: 0px;
 background-color: #fff;
 border-radius: 16px;
 
 h5{
-    font-size: 20px;
-    padding-top: 50px;
+    font-size: 18px;
+    margin-top: 30px;
     text-align: center;
 }
 
+h2{
+    font-size: 14px;
+    padding-top: 30px;
+    text-align: center;
+}
 img{
 margin-left: 18em;
 
