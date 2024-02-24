@@ -1,0 +1,33 @@
+// Sidebar.scss
+@import '../../../../sass/base/variables';
+
+.menubar-div2 {
+  width: 820px;
+  padding: 10px;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+
+
+    &.active {
+      text-decoration: underline; // Add underline to active link
+      color: $blue-500; // Change color of active link
+    }
+  }
+}

@@ -1,69 +1,137 @@
 // SubscribePopupForm.jsx
-import ReactDOM from 'react-dom';
 import Swal from 'sweetalert2';
+import Spinner from '../../assets/icon/Spinner.svg';
+import ReactDOM from 'react-dom';
+import React, { useState, useEffect, useRef } from 'react';
+import { subscriptionPrice } from '../Rentahomeproductpage/RentAHomeProduct.jsx';
+import { isLoggedIn, getId } from '../../auth.jsx'; // Import isLoggedIn and getId from auth.jsx
+import { getUserInfo } from '../../getUserInfo.jsx'; 
 import axios from 'axios';
 import DropdownSelect from "../../components/DropdownSelect";
-import React, { useState, useEffect, useRef } from 'react';
 import './Subscribeform.scss'; // Import SCSS file for styling
 
 const SubscribePopupForm = ({ onClose }) => {
   const [moveindate, setmoveindate] = useState("");
   const [plan, setpaymentplan] = useState("");
-
-
+  const [isLoading, setIsLoading] = useState(false);
+  const [userInfo, setUserInfo] = useState(null);
   const formRef = useRef(null);
+  const currentDate = new Date(); // Define currentDate with the current date and time
+
+
+  useEffect(() => {
+    // Fetch user information when the component mounts
+    const fetchUserData = async () => {
+      if (isLoggedIn()) {
+        try {
+          const id = getId(); // Retrieve id
+          const user = await getUserInfo(id); // Pass id to getUserInfo
+          setUserInfo(user);
+         
+        } catch (error) {
+          console.error('Error fetching user information:', error);
+        }
+      }
+    };
+    fetchUserData();
+  }, []);
 
   const handleDateChange = (event) => {
-    setmoveindate(event.target.value);
+    const selectedDate = event.target.value;
+    setmoveindate(selectedDate);
+  
   };
+  
 
-  const handlepaymentplanchange = (event) => {
-    setpaymentplan(event.target.value);
+  const handlepaymentplanchange = (plan) => {
+    setpaymentplan(plan);
+    
   };
+  
+  
+  
+  
 
  //api
   const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log("Selected Date:", moveindate);
-    console.log("Selected plan:", plan);
+
   
+
+    // Check if the user is logged in
+    if (!isLoggedIn()) {
+      // Prompt user to log in or sign up
+    //  alert('Please log in or sign up to schedule a visit.');
+    
+      Swal.fire({
+        title: "Error",
+        text: "Please log in or signup to continue",
+        icon: "error",
+        timer: 2000
+      });
+      return;
+    }
+    
+
+  // Check if user information is available
+  if (!userInfo) {
+    console.error('User information not available.');
+    return;
+  }
+
+  const { id } = userInfo;
+
+
     try {
+
+      setIsLoading(true);
       // Make an Axios POST request to your API endpoint
-      const response = await axios.post("https://shelterstride.onrender.com/api/v1/users/id/subscription", {
-        moveindate,
+    // Send visit scheduling request with user information
+    const token = localStorage.getItem("token"); // Get the token from localStorage
+    
+    const response = await axios.post(`https://shelterstride.onrender.com/api/v1/users/${id}/subscription?secret_token=${token}`, {
         plan,
-        precost : "125000",
-        spacename: "Outlet 1",
-        status: "pending",
+        spacename: 'Outlet 1',
+        moveindate,
+        precost : subscriptionPrice,  
+        subscriptiondate: currentDate.toISOString(), // Format the date to ISO string     
+        status: 'pending'
 
       });
   
-      console.log('API Response:', response.data);
-  
+     // console.log('API Response:', response.data);
+      setIsLoading(false);
       // Show success popup
       Swal.fire({
         icon: 'success',
         title: 'Subscription Successful!',
         text: 'Your subscription has been successfully submitted.',
-        position: 'top'
+        position: 'top',
+        timer: 2000
       });
   
       // Close the popup form
       onClose();
     } catch (error) {
-      console.error('Error:', error);
+      setIsLoading(false);
+
+      let errorMessage = "An unexpected error occurred, please try again";
+      console.log(errorMessage);
+
+      if (error.response && error.response.data) {
+        errorMessage = error.response.data.error || errorMessage;
+      }
   
       // Show error popup
       Swal.fire({
         icon: 'error',
         title: 'Error!',
-        text: 'An error occurred while processing your subscription. Please try again later.',
+        text: errorMessage,
+        timer: 3000,
         position: 'top'
       });
     }
   };
-
-
 
 
   const handleClickOutside = (event) => {
@@ -79,7 +147,7 @@ const SubscribePopupForm = ({ onClose }) => {
     };
   }, []);
 
-  return (
+  return ReactDOM.createPortal(
     <div className="popupsub-form" ref={formRef}>
       <button className="close-btn" onClick={onClose}>
         Close
@@ -93,7 +161,7 @@ const SubscribePopupForm = ({ onClose }) => {
       <DropdownSelect className="paymentplan"
                       onSelect={handlepaymentplanchange}
                         options={['Monthly', 'Yearly']}
-                        defaultSelected={"Select"}
+                        defaultSelected={"Monthly"}
                       />
       </div>   
         </div>
@@ -111,12 +179,14 @@ const SubscribePopupForm = ({ onClose }) => {
             required
           />
         </div>
-        <button type="submit">Subscribe Now</button>
+        <button type="submit">
+          {isLoading ? <img src={Spinner} alt="" /> : "Subscribe Now"}
+        </button>
 
         <div className="total-sub">
           <div className="sub-fees">
             <h5 htmlFor="subfee"> Subscription Fee</h5>
-            <h5 htmlFor="subfee"> N 125,000</h5>
+            <h5 htmlFor="subfee"> N{subscriptionPrice}</h5>
           </div>
           <div className="sub-fees">
             <h5 htmlFor="subfee"> Service charge</h5>
@@ -125,11 +195,12 @@ const SubscribePopupForm = ({ onClose }) => {
          <hr />
          <div className="sub-fees">
             <h5 htmlFor="subfee"> Total</h5>
-            <h5 htmlFor="subfee"> N 125,000</h5>
+            <h5 htmlFor="subfee"> N{subscriptionPrice}</h5>
           </div>
         </div>
       </form>
-    </div>
+    </div>,
+    document.getElementById('popup-root')
   );
 };
 

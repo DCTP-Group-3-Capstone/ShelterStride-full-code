@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Swal from "sweetalert2";
+import { setToken, setId } from '../../auth';
 import Spinner from '../../assets/icon/Spinner.svg';
 
 
@@ -103,25 +104,25 @@ function Login() {
           timer: 2000
         });
   
-        // Set token in local storage
-        localStorage.setItem("secret_token", data.token);
-     
+        // Set token and ID in local storage
+        setToken(data.token);
+        setId(data.user.id);
+  
         // Store user object in localStorage
         localStorage.setItem("user", JSON.stringify(data.user));
   
         // Store user ID in localStorage
         localStorage.setItem("userId", data.user.id);
+        localStorage.setItem("useremail", data.user.email);
+
   
-        console.log(data.token);
-        console.log(data.user.id);
-      
         navigate("/dashboard")
       }
   
     } catch (error) {
       setIsLoading(false)
 
-      let errorMessage = "An unexpected error occurred, please try again";
+      let errorMessage = "An unexpected error occurred, please check connection";
 
       if (error.response && error.response.data) {
         errorMessage = error.response.data.error || errorMessage;

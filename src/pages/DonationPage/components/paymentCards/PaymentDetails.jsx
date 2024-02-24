@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
-
+import Swal from 'sweetalert2';
+import Spinner from '../../../../assets/icon/Spinner.svg';
+import { isLoggedIn, getId } from '../../../../auth.jsx'; // Import isLoggedIn and getId from auth.jsx
+import { getUserInfo } from '../../../../getUserInfo.jsx'; 
 import { useDonateContext } from "../../components/payment/DonateContext";
 import axios from "axios";
 import check from "../../icon/greenCheckMark.svg";
 import payPal from "../../icon/Paypal Logo.svg";
 import wallet from "../../../../assets/icon/Wallet.svg";
-import Success from "./success";
-//import { useHistory } from "react-router-dom";
+import { subscriptionPrice } from '../../../Rentahomeproductpage/RentAHomeProduct.jsx';
+
 
 function PaymentDetails() {
   const [firstName, setFirstName] = useState("");
@@ -18,43 +21,41 @@ function PaymentDetails() {
   const [expiryDate, setExpiryDate] = useState("");
   const [cvv, setCVV] = useState("");
   const [paymentOption, setPaymentOption] = useState("wallet");
-  const [isSuccess, setIsSuccess] = useState(false);
   const { selectedAmount } = useDonateContext();
-  const [error, setError] = useState(null);
-  const secret_token = localStorage.getItem('secret_token');
+  const [isLoading, setIsLoading] = useState(false);
+  const [userInfo, setUserInfo] = useState(null);
+  const [error, setError] = useState(null); // Define the error state
+
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phoneNumber: "",
+    cardName: "",
+    cardNumber: "",
+    expiryDate: "",
+    cvv: "",
+    paymentOption: "wallet"
+  });
 
 
   useEffect(() => {
-    // Function to authenticate the user and save the token
-    const authenticateUser = async () => {
-      try {
-        // Perform user authentication and retrieve token from the server
-        const response = await axios.post(authenticationApiUrl, {
-          // Include login credentials here
-        });
-
-        // Extract the token from the response
-        const { secret_token } = response.data;
-
-        // Save the token to localStorage
-        localStorage.setItem('secret_token', secret_token);
-
-        // Proceed with any additional actions after successful authentication
-      } catch (error) {
-        console.error("Error authenticating user:", error.message);
+    // Fetch user information when the component mounts
+    const fetchUserData = async () => {
+      if (isLoggedIn()) {
+        try {
+          const id = getId(); // Retrieve id
+          const user = await getUserInfo(id); // Pass id to getUserInfo
+          setUserInfo(user);
+          console.log("User Information:", user); // Log the received userInfo
+        } catch (error) {
+          console.error('Error fetching user information:', error);
+        }
       }
     };
-
-    // Call the authentication function when the component mounts
-    authenticateUser();
+    fetchUserData();
   }, []);
- //  const history = useHistory();
-  const donationApiUrl =
-  //   // process.env.DONATION_API_URL ||
-     "https://shelterstride.onrender.com/api/v1/users/id/donation";
-  // // const authenticationApiUrl =
-  //   // process.env.LOGIN_API_URL ||
-   "https://shelterstride.onrender.com/api/v1/login";
+
   const handleFirstNameChange = (e) => {
     setFirstName(e.target.value);
   };
@@ -90,83 +91,73 @@ function PaymentDetails() {
   const handlePaymentOptionChange = (e) => {
     setPaymentOption(e.target.value);
   };
-  const handleError = (e) => {
-    setError(e.target.value);
-  };
+  
 
   const confirmPayment = async (e) => {
     e.preventDefault();
-
+  
+    if (!isLoggedIn()) {
+      alert('Please log in or sign up to schedule a visit.');
+      return;
+    }
+  
+    if (!userInfo) {
+      console.error('User information not available.');
+      return;
+    }
+  
+    const { id } = userInfo;
+  
     try {
-      // Retrieve token from local storage
-      const secret_token = localStorage.getItem('secret_token ');
-
-      if (!secret_token ) {
-        // Token not found, redirect to login page or handle authentication error
-        console.log("User is not logged in.");
-     
-        // Redirect to login page or handle authentication error
-       return;
-      }
-
-      // Send token to authentication endpoint to verify user authentication
-      const isAuthenticated = await axios.post("https://shelterstride.onrender.com/api/v1/login", {
-        headers: {
-          Authorization: `Bearer ${secret_token }`
-        }
+      setIsLoading(true);
+      const token = localStorage.getItem("token");
+  
+      const response = await axios.post(`https://shelterstride.onrender.com/api/v1/users/${id}/donation?secret_token=${token}`, {
+        amount: selectedAmount
       });
-
-      if (isAuthenticated) {
-        // User is authenticated, proceed with payment processing
-
-        const donationData = {
-          firstName,
-          lastName,
-          email,
-          phoneNumber,
-          cardName,
-          cardNumber,
-          expiryDate,
-          cvv,
-          paymentOption,
-          amount: selectedAmount, // Assuming selectedAmount is defined somewhere
-        };
-
-        // Send payment request
-        axios.post(donationApiUrl, donationData, {
-          headers: {
-            Authorization: `Bearer ${userToken}`
-          }
-        });
-        if (response.status === 200) {
-          console.log("Donation successful!");
-          setIsSuccess(true);
-          // Reset form fields
-          setFirstName("");
-          setLastName("");
-          setEmail("");
-          setPhoneNumber("");
-          setCardName("");
-          setCardNumber("");
-          setExpiryDate("");
-          setCVV("");
-          setPaymentOption("wallet");
-        } else {
-          setError("Failed to donate. Please try again later.");
-          console.error("Failed to donate:", response.statusText);
-        }
-      } else {
-        // User is not authenticated, redirect to login page or handle authentication error
-        console.log("User is not logg in.");
-   
-        // Redirect to login page or handle authentication error
-      }
+  
+      console.log('API Response:', response.data);
+      setIsLoading(false);
+  
+      Swal.fire({
+        icon: 'success',
+        title: 'Donation Successful!',
+        text: 'Your Donation has been successfully submitted.',
+        timer: 2000,
+      });
+  
+      // Reset the form data
+      setFirstName("");
+      setLastName("");
+      setEmail("");
+      setPhoneNumber("");
+      setCardName("");
+      setCardNumber("");
+      setExpiryDate("");
+      setCVV("");
+      setPaymentOption("wallet");
+  
     } catch (error) {
-      setError("Error processing payment. Please try again later.");
-      console.error("Error processing payment:", error.message);
+      setIsLoading(false);
+  
+      let errorMessage = 'An unexpected error occurred, please try again';
+      console.log(errorMessage);
+  
+      if (error.response && error.response.data) {
+        errorMessage = error.response.data.message || errorMessage;
+      }
+  
+      Swal.fire({
+        icon: 'error',
+        title: 'Error!',
+        text: errorMessage,
+        timer: 3000
+      });
     }
   };
-
+  
+  
+  
 
 
 
@@ -318,11 +309,12 @@ function PaymentDetails() {
           </p>
         </div>
         <div className="confirmButton">
-          <button onClick={confirmPayment}>Confirm payment</button>
+          <button onClick={confirmPayment}>
+           {isLoading ? <img src={Spinner} alt="" /> : "Confirm Payment"}</button>
           <button>Back</button>
         </div>
       </form>
-      {isSuccess && <Success />}
+      
     </div>
   );
 }

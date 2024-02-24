@@ -2,9 +2,8 @@ import Swal from 'sweetalert2';
 import Spinner from '../../assets/icon/Spinner.svg';
 import ReactDOM from 'react-dom';
 import React, { useState, useEffect, useRef } from 'react';
-import { isLoggedIn } from '../../auth.jsx'; 
+import { isLoggedIn, getId } from '../../auth.jsx'; // Import isLoggedIn and getId from auth.jsx
 import { getUserInfo } from '../../getUserInfo.jsx'; 
-import { useNavigate } from "react-router-dom";
 import axios from 'axios'; // Import Axios for making API calls
 import './Scheduleform.scss'; // Import SCSS file for styling
 
@@ -15,14 +14,15 @@ const SchedulePopupForm = ({ onClose }) => {
   const [acceptConditions, setAcceptConditions] = useState(false);
   const [userInfo, setUserInfo] = useState(null);
   const formRef = useRef(null);
-  const navigate = useNavigate();
+
 
   useEffect(() => {
     // Fetch user information when the component mounts
     const fetchUserData = async () => {
       if (isLoggedIn()) {
         try {
-          const user = await getUserInfo(); // Retrieve user information
+          const id = getId(); // Retrieve id
+          const user = await getUserInfo(id); // Pass id to getUserInfo
           setUserInfo(user);
           console.log("User Information:", user); // Log the received userInfo
         } catch (error) {
@@ -32,8 +32,6 @@ const SchedulePopupForm = ({ onClose }) => {
     };
     fetchUserData();
   }, []);
-  
-
   const handleDateChange = (event) => {
     setInspectionDate(event.target.value);
   };
@@ -62,23 +60,20 @@ const SchedulePopupForm = ({ onClose }) => {
       return;
     }
   
-    // Destructure user information
-    const { id, firstname, lastname, email } = userInfo;
+    const { id } = userInfo;
   
     try {
       setIsLoading(true);
   
       // Send visit scheduling request with user information
-      const response = await axios.post("https://shelterstride.onrender.com/api/v1/users/id/visit", {
+      const token = localStorage.getItem("token"); // Get the token from localStorage
+    
+      const response = await axios.post(`https://shelterstride.onrender.com/api/v1/users/${id}/visit?secret_token=${token}`, {
         inspectiondate,
-        inspectiontime,
-        id,
-        firstname,
-        lastname,
-        email
+        inspectiontime
       });
-      
-      console.log('API Response:', response.data);
+    
+    //  console.log('API Response:', response.data);
   
       setIsLoading(false);
   

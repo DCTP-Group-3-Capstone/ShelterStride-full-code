@@ -9,6 +9,11 @@ import SubscribePopupForm from "../Popups/Subscribeform";
 
 import RentSub from "../../components/Subscribecomponent/Rentsub";
 
+
+// Define the subscription price as a variable
+export const subscriptionPrice = 30000; // Naira
+
+
 function RentProduct() {
   const [showSubscribePopup, setShowSubscribePopup] = useState(false);
   const [showSchedulePopup, setShowSchedulePopup] = useState(false);
@@ -181,7 +186,7 @@ function RentProduct() {
             </div>
 
             <div className="month-sub">
-              <h1 className="monthprice">N30,000/month</h1>
+              <h1 className="monthprice">N{subscriptionPrice}/month</h1>
               <h1 className="fee">No additional free</h1>
             </div>
 

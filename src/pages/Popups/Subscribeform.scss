@@ -1,4 +1,6 @@
 // SubscribePopupForm.scss
+@import '../../sass/base/variables';
+
 
 .popupsub-form {
   position: fixed;
@@ -7,48 +9,48 @@
   transform: translate(-50%, -50%);
   z-index: 1000; /* Set a high z-index to ensure it appears on top */
   background-color: white;
-  padding: 10px;
+  padding: 20px;
   border-radius: 16px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  width: 300px;
+  width: 400px;
 
     form {
       display: flex;
       flex-direction: column;
-     // margin-top: 10px;
+      margin-top: 10px;
    
 
       .form-group {
-       // margin-bottom: 5px;
-        align-self: center;
+      margin-bottom: 15px;
         
       }
       
       .label-d {
-        margin-bottom: 0px;
+        margin-bottom: 5px;
       //  margin-left: 30px; /* Adjusted margin-left */
 
         label{
-          font-size: 12px;
-          margin-left: -95px;
+          margin-left: 10px;
+          margin-top: 0px;
         }
       }
 
       .paymentplan{
         padding: 0px 10px;
-        width: 280px;
+        margin-left: 10px;
+        width: 95%;
         border: 1px solid #66CC99;
         border-radius: 16px;
         font-size: 14px;
-
-        justify-content: ce;
+        height: 40px;
         align-self: center;
        
       }
    
       input[type="date"] {
-        padding: 10px 10px;
-        width: 280px;
+        padding: 10px;
+        width: 95%;
+        height: 40px;
         border: 1px solid #66CC99;
         border-radius: 16px;
         font-size: 14px;
@@ -59,11 +61,12 @@
         background-color: #176a96;
         color: #fff;
         border: none;
-        width: 300px;
         align-self: center;
-        margin-top: 15px;
+        width: 95%;
+        height: 48px;
+        margin-top: 20px;
         border-radius: 16px;
-        padding: 5px 0;
+        padding: 0px 10px;
         font-size: 16px;
         cursor: pointer;
       }
@@ -73,19 +76,32 @@
       position: absolute;
       top: 10px;
       right: 10px;
-      background: transparent;
-      color: red;
-      font-size: 10px;
+      border: none;
+      border-radius: 6px;
+      background-color: $blue-500;
+      color: #fff;
+      font-size: 12px;
       cursor: pointer;
       padding: 5px;
+
+      &:hover{
+color: red;
+        background-color: $blue-200;
+      }
     }
 
+
     .total-sub{
-      margin-top: 10px;
+      margin-top: 20px;
       align-self: center;
 border: 1.5px solid #f6f6f6;
 border-radius: 10px;
-width: 300px;
+width: 95%;
+
+&:hover{
+ // color: red;
+          background-color: $blue-200;
+        }
 
     }
  
@@ -101,7 +117,7 @@ width: 300px;
 
 
     hr {
-      width: 290px;
+      width: 98%;
       margin: 0 5px; // Adjust margin as needed
       align-items: center;
     }
