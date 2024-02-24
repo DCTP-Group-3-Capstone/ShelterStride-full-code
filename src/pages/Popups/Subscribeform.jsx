@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 import React, { useState, useEffect, useRef } from 'react';
 import { subscriptionPrice } from '../Rentahomeproductpage/RentAHomeProduct.jsx';
 import { isLoggedIn, getId } from '../../auth.jsx'; // Import isLoggedIn and getId from auth.jsx
+import { subscriptionPrice2 } from '../Buyahomeproductpage/BuyAHomeProduct.jsx';
 import { getUserInfo } from '../../getUserInfo.jsx'; 
 import axios from 'axios';
 import DropdownSelect from "../../components/DropdownSelect";
@@ -93,7 +94,7 @@ const SubscribePopupForm = ({ onClose }) => {
         plan,
         spacename: 'Outlet 1',
         moveindate,
-        precost : subscriptionPrice,  
+        precost: subscriptionPrice || subscriptionPrice2, // Using the appropriate subscription price 
         subscriptiondate: currentDate.toISOString(), // Format the date to ISO string     
         status: 'pending'
 
@@ -186,7 +187,7 @@ const SubscribePopupForm = ({ onClose }) => {
         <div className="total-sub">
           <div className="sub-fees">
             <h5 htmlFor="subfee"> Subscription Fee</h5>
-            <h5 htmlFor="subfee"> N{subscriptionPrice}</h5>
+            <h5 htmlFor="subfee">N{subscriptionPrice || subscriptionPrice2}</h5>
           </div>
           <div className="sub-fees">
             <h5 htmlFor="subfee"> Service charge</h5>
@@ -195,7 +196,7 @@ const SubscribePopupForm = ({ onClose }) => {
          <hr />
          <div className="sub-fees">
             <h5 htmlFor="subfee"> Total</h5>
-            <h5 htmlFor="subfee"> N{subscriptionPrice}</h5>
+            <h5 htmlFor="subfee">N{ <h5 htmlFor="subfee">N{subscriptionPrice || subscriptionPrice2}</h5> || subscriptionPrice}</h5>
           </div>
         </div>
       </form>

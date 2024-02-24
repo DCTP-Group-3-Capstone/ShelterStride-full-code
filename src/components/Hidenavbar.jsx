@@ -8,6 +8,7 @@ const Hidenavbar = ({ children }) => {
   useEffect(() => {
     if (location.pathname === "/login" || location.pathname === "/createaccount" 
     || location.pathname === "/signupbenefactor" 
+    || location.pathname === "/signup" 
      || location.pathname === "/dashboard/rent"
      || location.pathname === "/dashboard/buy"
      || location.pathname === "/dashboard/maintenance"

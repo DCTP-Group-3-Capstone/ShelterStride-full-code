@@ -8,6 +8,9 @@ import "./BuyAHomeProduct.scss";
 import SchedulePopupForm from '../Popups/Scheduleform';
 import Buysub from "../../components/Subscribecomponent/Buysub";
 
+
+export const subscriptionPrice2 = 125000; 
+
 function BuyProduct() {
   const [showSubscribePopup, setShowSubscribePopup] = useState(false);
   const [showSchedulePopup, setShowSchedulePopup] = useState(false);
@@ -118,7 +121,7 @@ function BuyProduct() {
           </div>
 
           <div className="month-sub">
-            <h1 className="monthprice">N125,000/month</h1>
+            <h1 className="monthprice">N{subscriptionPrice2}/month</h1>
             <h1 className="fee">No additional free</h1>
           </div>
 
