@@ -5,7 +5,8 @@ import phone from "../../../../assets/icon/green_phone.svg";
 import circle from "../../../../assets/icon/speech-bubble.svg";
 import dashboard from "../../../../assets/icon/Home.svg";
 import "../DashboardHome/DashboardHome.scss";
-import { isLoggedIn, logout } from '../../../../auth';
+import { getUserInfo } from '../../../../getUserInfo.jsx';
+import { isLoggedIn } from '../../../../auth';
 
 
 const ToggleButton = ({ initialValue = false, onChange }) => {
@@ -28,34 +29,22 @@ const ToggleButton = ({ initialValue = false, onChange }) => {
 
 
 function DashboardHome() {
-
-  const [userName, setUserName] = useState('');
+  const [firstName, setFirstName] = useState('');
 
   useEffect(() => {
     const fetchUserInfo = async () => {
       try {
-        // Check if the user is logged in
         if (isLoggedIn()) {
-          const token = localStorage.getItem('secret_token');
-          const response = await fetch('https://shelterstride.onrender.com/api/v1/users', {
-            method: 'GET',
-            headers: {
-              Authorization: `Bearer ${token}`,
-            },
-          });
-
-          if (response.ok) {
-            const data = await response.json();
-            setUserName(data.firstname);
-          } else {
-            console.error('Failed to fetch user information');
-          }
+          const userInfo = await getUserInfo();
+          setFirstName(userInfo.firstname);
         } else {
-          // Redirect to login page or handle unauthorized access
-          console.log('User is not logged in');
+          // User is not logged in, handle accordingly
+          setFirstName('');
         }
       } catch (error) {
-        console.error('Error fetching user information:', error);
+        // Error fetching user info, handle accordingly
+        console.error('Error fetching user info:', error);
+        setFirstName('');
       }
     };
 
@@ -63,10 +52,11 @@ function DashboardHome() {
   }, []);
 
 
+
   return (
     <div className="dashboard">
       <div className="userName">
-        <h1 className='header'>Good day, {userName}</h1>
+        <h1 className='header'>Good day, {firstName}</h1>
         <p className='head'>Welcome to your Shelterstride dashboard</p>
       </div>
 <div className="dash">

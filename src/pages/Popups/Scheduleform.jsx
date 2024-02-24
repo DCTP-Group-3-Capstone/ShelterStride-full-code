@@ -24,7 +24,7 @@ const SchedulePopupForm = ({ onClose }) => {
           const id = getId(); // Retrieve id
           const user = await getUserInfo(id); // Pass id to getUserInfo
           setUserInfo(user);
-          console.log("User Information:", user); // Log the received userInfo
+        //  console.log("User Information:", user); // Log the received userInfo
         } catch (error) {
           console.error('Error fetching user information:', error);
         }
@@ -32,6 +32,9 @@ const SchedulePopupForm = ({ onClose }) => {
     };
     fetchUserData();
   }, []);
+
+
+
   const handleDateChange = (event) => {
     setInspectionDate(event.target.value);
   };

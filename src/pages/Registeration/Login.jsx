@@ -122,7 +122,7 @@ function Login() {
     } catch (error) {
       setIsLoading(false)
 
-      let errorMessage = "An unexpected error occurred, please check connection";
+      let errorMessage = "An unexpected error occurred, please check network connection";
 
       if (error.response && error.response.data) {
         errorMessage = error.response.data.error || errorMessage;
